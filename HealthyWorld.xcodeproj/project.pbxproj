@@ -19,6 +19,7 @@
 		414E6C222263A2D600EE02EE /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C1C2263A2D600EE02EE /* PageCell.swift */; };
 		4192862922648D4200953634 /* HealthyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192862722648D4200953634 /* HealthyProfileViewController.swift */; };
 		4192862A22648D4200953634 /* HealthyProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4192862822648D4200953634 /* HealthyProfileViewController.xib */; };
+		4192862C22651B2300953634 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192862B22651B2300953634 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		414E6C1C2263A2D600EE02EE /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		4192862722648D4200953634 /* HealthyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyProfileViewController.swift; sourceTree = "<group>"; };
 		4192862822648D4200953634 /* HealthyProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthyProfileViewController.xib; sourceTree = "<group>"; };
+		4192862B22651B2300953634 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		414E6C242263A37D00EE02EE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4192862B22651B2300953634 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				414E6C1F2263A2D600EE02EE /* SwipingExtensionCollectionView.swift in Sources */,
 				414E6C212263A2D600EE02EE /* Page.swift in Sources */,
 				4192862922648D4200953634 /* HealthyProfileViewController.swift in Sources */,
+				4192862C22651B2300953634 /* User.swift in Sources */,
 				414E6C032263A27800EE02EE /* AppDelegate.swift in Sources */,
 				414E6C222263A2D600EE02EE /* PageCell.swift in Sources */,
 				414E6C1E2263A2D600EE02EE /* SwipingController.swift in Sources */,
