@@ -1,0 +1,21 @@
+PODS:
+  - AnimatedGradientView (1.1.1)
+
+DEPENDENCIES:
+  - AnimatedGradientView (from `https://github.com/rwbutler/AnimatedGradientView.git`)
+
+EXTERNAL SOURCES:
+  AnimatedGradientView:
+    :git: https://github.com/rwbutler/AnimatedGradientView.git
+
+CHECKOUT OPTIONS:
+  AnimatedGradientView:
+    :commit: b3638af3a1cf2108c542bae1300f26e047ab9871
+    :git: https://github.com/rwbutler/AnimatedGradientView.git
+
+SPEC CHECKSUMS:
+  AnimatedGradientView: e3d928407034be3e97ae62564a4071da4b10b0f2
+
+PODFILE CHECKSUM: f7da41457c4f9a5fa945f7583fc042f8ab7d5a01
+
+COCOAPODS: 1.5.3
