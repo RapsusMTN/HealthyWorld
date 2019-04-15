@@ -17,6 +17,8 @@
 		414E6C1F2263A2D600EE02EE /* SwipingExtensionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C192263A2D600EE02EE /* SwipingExtensionCollectionView.swift */; };
 		414E6C212263A2D600EE02EE /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C1B2263A2D600EE02EE /* Page.swift */; };
 		414E6C222263A2D600EE02EE /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C1C2263A2D600EE02EE /* PageCell.swift */; };
+		4192862922648D4200953634 /* HealthyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192862722648D4200953634 /* HealthyProfileViewController.swift */; };
+		4192862A22648D4200953634 /* HealthyProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4192862822648D4200953634 /* HealthyProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		414E6C192263A2D600EE02EE /* SwipingExtensionCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingExtensionCollectionView.swift; sourceTree = "<group>"; };
 		414E6C1B2263A2D600EE02EE /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		414E6C1C2263A2D600EE02EE /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		4192862722648D4200953634 /* HealthyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyProfileViewController.swift; sourceTree = "<group>"; };
+		4192862822648D4200953634 /* HealthyProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthyProfileViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 		414E6C232263A37400EE02EE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4192862622648CF600953634 /* HealthyProfile */,
 				414E6C262263A3C100EE02EE /* HealthySwipeIntro */,
 			);
 			path = Controllers;
@@ -109,6 +114,15 @@
 				414E6C192263A2D600EE02EE /* SwipingExtensionCollectionView.swift */,
 			);
 			path = HealthySwipeIntro;
+			sourceTree = "<group>";
+		};
+		4192862622648CF600953634 /* HealthyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				4192862722648D4200953634 /* HealthyProfileViewController.swift */,
+				4192862822648D4200953634 /* HealthyProfileViewController.xib */,
+			);
+			path = HealthyProfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4192862A22648D4200953634 /* HealthyProfileViewController.xib in Resources */,
 				414E6C102263A27900EE02EE /* LaunchScreen.storyboard in Resources */,
 				414E6C0D2263A27900EE02EE /* Assets.xcassets in Resources */,
 				414E6C082263A27800EE02EE /* Main.storyboard in Resources */,
@@ -186,6 +201,7 @@
 				414E6C0B2263A27800EE02EE /* HealthyWorld.xcdatamodeld in Sources */,
 				414E6C1F2263A2D600EE02EE /* SwipingExtensionCollectionView.swift in Sources */,
 				414E6C212263A2D600EE02EE /* Page.swift in Sources */,
+				4192862922648D4200953634 /* HealthyProfileViewController.swift in Sources */,
 				414E6C032263A27800EE02EE /* AppDelegate.swift in Sources */,
 				414E6C222263A2D600EE02EE /* PageCell.swift in Sources */,
 				414E6C1E2263A2D600EE02EE /* SwipingController.swift in Sources */,

@@ -46,6 +46,17 @@ class SwipingController: UICollectionViewController,UICollectionViewDelegateFlow
         let indexPath = IndexPath(item: nextIndex, section: 0)
         pageControl.currentPage = nextIndex
         collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        if nextIndex == pages.count - 1  {
+            if nextIndex == pages.count - 1  {
+                let profileController = HealthyProfileViewController()
+                //INSTANCIAMOS EL NAVIGATION CON EL VIEWCOTROLLER QUE QUIERES QUE SE MUESTRE A CONTINUACION
+                let navigationController = UINavigationController(rootViewController: profileController)
+                navigationController.isNavigationBarHidden = false
+                //PRESENTAMOS EL NAVIGATION, PARA QUE LOS SIGUIENTES VIEWCONTROLLERS TENGAN EN SU PROPIEDAD 'viewcontroller.navigationViewController' el navigation que acabamos de instanciar
+                self.present(navigationController, animated: true, completion: nil)
+                
+            }
+        }
     }
     
     
