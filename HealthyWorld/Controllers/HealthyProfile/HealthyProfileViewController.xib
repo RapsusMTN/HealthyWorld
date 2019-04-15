@@ -19,22 +19,8 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="q6X-F4-SN3">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                </imageView>
-            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q6X-F4-SN3" secondAttribute="trailing" id="Mjz-2l-0Q5"/>
-                <constraint firstItem="q6X-F4-SN3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="VN2-x9-YbL"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="q6X-F4-SN3" secondAttribute="bottom" id="Zuy-fB-bfE"/>
-                <constraint firstItem="q6X-F4-SN3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="id1-5b-ZQj"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
-    <resources>
-        <image name="launch" width="235" height="418"/>
-    </resources>
 </document>
