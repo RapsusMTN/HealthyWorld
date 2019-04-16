@@ -12,14 +12,30 @@ import AnimatedGradientView
 class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
   
    //Edades para el picker
-   public var ages:[Int] = []
+    public var stringAges:[String] = []
     
-   public var example = ["Jorge","Timoteo","Alvaro","Friki","Amigos","Mios","Vida"]
+    public var example = ["Jorge","Timoteo","Alvaro","Friki","Amigos","Mios","Vida"]
     
-   let picker: UIPickerView = {
-       let picker = UIPickerView()
-       return picker
+    let picker: UIPickerView = {
+           let picker = UIPickerView()
+           return picker
     }()
+    
+    let datePicker: UIDatePicker = {
+       let datepicker = UIDatePicker()
+       datepicker.datePickerMode = .date
+       datepicker.locale = Locale(identifier: "es")
+       datepicker.addTarget(self, action: #selector(HealthyProfileViewController.dateChanged(datePicker:)), for: .valueChanged )
+       return datepicker
+    }()
+    
+    @objc func dateChanged(datePicker: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "es")
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        self.fieldDate.text = dateFormatter.string(from: self.datePicker.date)
+        let edad = self.getAge(fecha: self.datePicker.date)
+    }
     
     //Right item of the NAvigationControllerBar
     let rightBarButtonItem: UIBarButtonItem = {
@@ -47,12 +63,12 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         return text
         
     }()
-    
+    //#colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
     let nameLabel: UILabel = {
        let label = UILabel()
        label.text = "Nombre"
        label.textAlignment = .center
-       label.backgroundColor = #colorLiteral(red: 0.3847625569, green: 0.8884835025, blue: 0.3051646185, alpha: 1)
+       label.backgroundColor = #colorLiteral(red: 0.7419506444, green: 0.6729607898, blue: 0.6081045203, alpha: 1)
        label.font = UIFont.systemFont(ofSize: 14)
        label.textColor = .white
        label.layer.masksToBounds = true
@@ -60,12 +76,51 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
        label.translatesAutoresizingMaskIntoConstraints = false
        return label
     }()
-    
-    let ageLabel: UILabel = {
+ 
+    let dateLabel: UILabel = {
         let label = UILabel()
-        label.text = "Edad"
+        label.text = "Nacimiento"
         label.textAlignment = .center
-        label.backgroundColor = #colorLiteral(red: 0.3847625569, green: 0.8884835025, blue: 0.3051646185, alpha: 1)
+        label.backgroundColor = #colorLiteral(red: 0.7419506444, green: 0.6729607898, blue: 0.6081045203, alpha: 1)
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = .white
+        label.layer.masksToBounds = true
+        label.layer.cornerRadius = 10
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let sexLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Sexo"
+        label.textAlignment = .center
+        label.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = .white
+        label.layer.masksToBounds = true
+        label.layer.cornerRadius = 10
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let weightLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Peso"
+        label.textAlignment = .center
+        label.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = .white
+        label.layer.masksToBounds = true
+        label.layer.cornerRadius = 10
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let heightLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Estatura"
+        label.textAlignment = .center
+        label.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .white
         label.layer.masksToBounds = true
@@ -76,27 +131,100 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
     
     let fieldName: UITextField = {
        let field = UITextField()
+       field.placeholder = "Introduce tu nombre..."
        field.translatesAutoresizingMaskIntoConstraints = false
        field.layer.masksToBounds = true
        field.layer.cornerRadius = 10
        field.backgroundColor = .white
+       field.textAlignment = .center
        field.tintColor = .black
        field.setIcon(#imageLiteral(resourceName: "iconName"))
        return field
     }()
     
-    let fieldAge: UITextField = {
+    let fieldDate: UITextField = {
         let field = UITextField()
+        field.placeholder = "Fecha de nacimiento..."
+        field.translatesAutoresizingMaskIntoConstraints = false
+        field.layer.masksToBounds = true
+        field.textAlignment = .center
+        field.layer.cornerRadius = 10
+        field.backgroundColor = .white
+        field.tintColor = .black
+        field.setIcon(#imageLiteral(resourceName: "iconAge"))
+        return field
+    }()
+    
+    let fieldWeight: UITextField = {
+        let field = UITextField()
+        field.placeholder = "Peso en Kilogramos..."
         field.translatesAutoresizingMaskIntoConstraints = false
         field.layer.masksToBounds = true
         field.layer.cornerRadius = 10
         field.backgroundColor = .white
+        field.textAlignment = .center
         field.tintColor = .black
         field.setIcon(#imageLiteral(resourceName: "iconPeso"))
         return field
     }()
     
+    let fieldHeight: UITextField = {
+        let field = UITextField()
+        field.placeholder = "Altura en metros..."
+        field.translatesAutoresizingMaskIntoConstraints = false
+        field.layer.masksToBounds = true
+        field.layer.cornerRadius = 10
+        field.backgroundColor = .white
+        field.textAlignment = .center
+        field.tintColor = .black
+        field.setIcon(#imageLiteral(resourceName: "iconEstatura"))
+        return field
+    }()
     
+    let segmentedSex: UISegmentedControl = {
+       let segmented = UISegmentedControl(items: ["Hombre","Mujer"])
+       segmented.selectedSegmentIndex = 0
+       segmented.translatesAutoresizingMaskIntoConstraints = false
+       segmented.addTarget(self, action: #selector(selectedIndex(_:)), for: .valueChanged )
+       segmented.layer.cornerRadius = 10
+       segmented.backgroundColor = .white
+       segmented.tintColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
+       return segmented
+    }()
+    
+    let buttonRegister: UIButton = {
+       let button = UIButton()
+       button.translatesAutoresizingMaskIntoConstraints = false
+       button.setTitle("Comenzar", for: .normal)
+       button.setTitleColor(.white, for: .normal)
+       button.layer.cornerRadius = 10
+       button.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
+       button.addTarget(self, action: #selector(tapRegister(_:)), for: .touchUpInside)
+       return button
+        
+        
+    }()
+    
+    @objc func tapRegister(_ sender: UIButton) {
+        
+        print("TOCADO!!")
+        
+        
+    }
+    
+    
+    @objc func selectedIndex(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+          print("Hombre")
+        case 1:
+          print("Mujer")
+        default:
+            return
+        }
+    
+    
+    }
     //Returns the specific viewController
     static func initAndLoad() -> UIViewController {
         let profileViewController: HealthyProfileViewController = HealthyProfileViewController(nibName: "HealthyProfileViewController", bundle: nil)
@@ -105,11 +233,23 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = true
+        registerTapGestureRecognizer()
         self.picker.delegate = self
         self.picker.dataSource = self
-        //fillPicker()
+        fillPicker()
         setNavigationItemsBar()
         setCustomProfileData()
+    }
+    
+    //añadir evento Tap a la vista para salir del picker cuando el usuario toca fuera de este
+    func registerTapGestureRecognizer() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(gestureRecognizer:)))
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
+        self.view.endEditing(true)
     }
     
     func setNavigationItemsBar() {
@@ -141,8 +281,8 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         //Añado el label del Name
         self.view.addSubview(nameLabel)
         self.nameLabel.topAnchor.constraint(equalTo: textView.bottomAnchor, constant: 20).isActive = true
-        self.nameLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 150).isActive = true
-        self.nameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -150).isActive = true
+        self.nameLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        self.nameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         self.nameLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
         self.nameLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
@@ -154,24 +294,82 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         self.fieldName.heightAnchor.constraint(equalToConstant: 40).isActive = true
         self.fieldName.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
-        //Añado el label edad
-        self.view.addSubview(ageLabel)
-        self.ageLabel.topAnchor.constraint(equalTo: fieldName.bottomAnchor, constant: 10).isActive = true
-        self.ageLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 150).isActive = true
-        self.ageLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -150).isActive = true
-        self.ageLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        self.ageLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        //Añado el datelabel
+        self.view.addSubview(dateLabel)
+        self.dateLabel.topAnchor.constraint(equalTo: fieldName.bottomAnchor, constant: 10).isActive = true
+        self.dateLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        self.dateLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        self.dateLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        self.dateLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
-        //Añado el field edad
-        self.view.addSubview(fieldAge)
-        self.fieldAge.topAnchor.constraint(equalTo: ageLabel.bottomAnchor, constant: 10).isActive = true
-        self.fieldAge.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
-        self.fieldAge.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
-        self.fieldAge.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        self.fieldAge.widthAnchor.constraint(equalToConstant: 20).isActive = true
-        self.fieldAge.inputView = self.picker
+        //Añado fieldDat
+        self.view.addSubview(fieldDate)
+        self.fieldDate.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: 10).isActive = true
+        self.fieldDate.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
+        self.fieldDate.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
+        self.fieldDate.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        self.fieldDate.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        self.fieldDate.inputView = self.datePicker
+        
+        //Añado el fieldLabel
+        self.view.addSubview(sexLabel)
+        self.sexLabel.topAnchor.constraint(equalTo: fieldDate.bottomAnchor, constant: 10).isActive = true
+        self.sexLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        self.sexLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        self.sexLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        self.sexLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        
+        //Añado el segmented del sexo
+        self.view.addSubview(segmentedSex)
+        self.segmentedSex.topAnchor.constraint(equalTo: sexLabel.bottomAnchor, constant: 10).isActive = true
+        self.segmentedSex.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
+        self.segmentedSex.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
+        self.segmentedSex.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        self.segmentedSex.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        
+        //Añado el label de Peso
+        self.view.addSubview(weightLabel)
+        self.weightLabel.topAnchor.constraint(equalTo: segmentedSex.bottomAnchor, constant: 10).isActive = true
+        self.weightLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        self.weightLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        self.weightLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        self.weightLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        
+        //Añado el field del peso
+        self.view.addSubview(fieldWeight)
+        self.fieldWeight.topAnchor.constraint(equalTo: weightLabel.bottomAnchor, constant: 10).isActive = true
+        self.fieldWeight.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
+        self.fieldWeight.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
+        self.fieldWeight.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        self.fieldWeight.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        
+        //añado el label de estatura
+        self.view.addSubview(heightLabel)
+        self.heightLabel.topAnchor.constraint(equalTo: fieldWeight.bottomAnchor, constant: 10).isActive = true
+        self.heightLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        self.heightLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        self.heightLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        self.heightLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        
+        //Añado el field de estatura
+        self.view.addSubview(fieldHeight)
+        self.fieldHeight.topAnchor.constraint(equalTo: heightLabel.bottomAnchor, constant: 10).isActive = true
+        self.fieldHeight.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
+        self.fieldHeight.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
+        self.fieldHeight.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        self.fieldHeight.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        
+        //Añado Boton de registro
+        self.view.addSubview(buttonRegister)
+        self.buttonRegister.topAnchor.constraint(equalTo: fieldHeight.bottomAnchor, constant: 30).isActive = true
+        self.buttonRegister.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        self.buttonRegister.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        self.buttonRegister.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        self.buttonRegister.widthAnchor.constraint(equalToConstant: 30).isActive = true
     }
     
+    
+    //Background animations
     func setAnimationBackground() {
         let animatedGradient = AnimatedGradientView()
         animatedGradient.translatesAutoresizingMaskIntoConstraints = false
@@ -191,11 +389,26 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
     
     //Fill the picker
     func fillPicker() {
+        var ages:[Int] = []
         for i in 1...100 {
-            self.ages.append(i)
+            ages.append(i)
         }
-        self.ages.debugDescription
+        //Aplico un map para castear el array a string
+        self.stringAges = ages.map { String($0)}
         
+    }
+    
+    //Returns the correct age for the Date introduced by parameter
+    func getAge(fecha:Date) -> Int {
+        let year = Calendar.current.component(.year, from: fecha)
+        
+        let currentDate = Date()
+        let currentYear = Calendar.current.component(.year, from: currentDate)
+        //Resto el año actual menos el introducido
+        let currentAge = currentYear - year
+        
+        //Edad actual
+        return currentAge
     }
 
     

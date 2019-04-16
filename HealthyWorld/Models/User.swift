@@ -8,13 +8,13 @@
 
 import Foundation
 
-class User: NSObject {
+class User {
     
     static var idUser:Int = 0
     
     private let username:String!
     
-    private let age:Int!
+    private var age:Int!
     
     private let weight:Double!
     
@@ -29,6 +29,17 @@ class User: NSObject {
         self.height = altura
         self.genre = sexo
         User.createUniqueId()
+       
+        
+    }
+    
+    init() {
+        self.username = nil
+        self.age = nil
+        self.weight = nil
+        self.height = nil
+        self.genre = nil
+        
     }
     
     static func createUniqueId() {
