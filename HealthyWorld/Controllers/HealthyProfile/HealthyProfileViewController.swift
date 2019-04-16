@@ -52,6 +52,7 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
     
     let textView: UITextView = {
         let text = UITextView()
+        text.backgroundColor = #colorLiteral(red: 0.4258117608, green: 0.9414469959, blue: 0.5609530896, alpha: 0)
         let attributed = NSMutableAttributedString(string: "Para comenzar tu nueva etapa saludable, necesitamos que nos proporciones tus datos.", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18)])
         text.attributedText = attributed
         text.textAlignment = .center
@@ -68,7 +69,7 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
        let label = UILabel()
        label.text = "Nombre"
        label.textAlignment = .center
-       label.backgroundColor = #colorLiteral(red: 0.7419506444, green: 0.6729607898, blue: 0.6081045203, alpha: 1)
+       label.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
        label.font = UIFont.systemFont(ofSize: 14)
        label.textColor = .white
        label.layer.masksToBounds = true
@@ -81,7 +82,7 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         let label = UILabel()
         label.text = "Nacimiento"
         label.textAlignment = .center
-        label.backgroundColor = #colorLiteral(red: 0.7419506444, green: 0.6729607898, blue: 0.6081045203, alpha: 1)
+        label.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .white
         label.layer.masksToBounds = true
@@ -103,31 +104,6 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         return label
     }()
     
-    let weightLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Peso"
-        label.textAlignment = .center
-        label.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.textColor = .white
-        label.layer.masksToBounds = true
-        label.layer.cornerRadius = 10
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
-    let heightLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Estatura"
-        label.textAlignment = .center
-        label.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.textColor = .white
-        label.layer.masksToBounds = true
-        label.layer.cornerRadius = 10
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
     
     let fieldName: UITextField = {
        let field = UITextField()
@@ -154,32 +130,7 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         field.setIcon(#imageLiteral(resourceName: "iconAge"))
         return field
     }()
-    
-    let fieldWeight: UITextField = {
-        let field = UITextField()
-        field.placeholder = "Peso en Kilogramos..."
-        field.translatesAutoresizingMaskIntoConstraints = false
-        field.layer.masksToBounds = true
-        field.layer.cornerRadius = 10
-        field.backgroundColor = .white
-        field.textAlignment = .center
-        field.tintColor = .black
-        field.setIcon(#imageLiteral(resourceName: "iconPeso"))
-        return field
-    }()
-    
-    let fieldHeight: UITextField = {
-        let field = UITextField()
-        field.placeholder = "Altura en metros..."
-        field.translatesAutoresizingMaskIntoConstraints = false
-        field.layer.masksToBounds = true
-        field.layer.cornerRadius = 10
-        field.backgroundColor = .white
-        field.textAlignment = .center
-        field.tintColor = .black
-        field.setIcon(#imageLiteral(resourceName: "iconEstatura"))
-        return field
-    }()
+
     
     let segmentedSex: UISegmentedControl = {
        let segmented = UISegmentedControl(items: ["Hombre","Mujer"])
@@ -195,8 +146,8 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
     let buttonRegister: UIButton = {
        let button = UIButton()
        button.translatesAutoresizingMaskIntoConstraints = false
-       button.setTitle("Comenzar", for: .normal)
-       button.setTitleColor(.white, for: .normal)
+       button.setImage(#imageLiteral(resourceName: "iconNext2"), for: .normal)
+       button.tintColor = .white
        button.layer.cornerRadius = 10
        button.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
        button.addTarget(self, action: #selector(tapRegister(_:)), for: .touchUpInside)
@@ -206,7 +157,9 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
     }()
     
     @objc func tapRegister(_ sender: UIButton) {
-        
+        let profile2controller: HealthyProfile2ViewController = HealthyProfile2ViewController()
+        profile2controller.modalTransitionStyle = .partialCurl
+        self.present(profile2controller, animated: true, completion: nil)
         print("TOCADO!!")
         
         
@@ -272,15 +225,15 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         setAnimationBackground()
         //Añado el textView a mi view principal
         self.view.addSubview(textView)
-        //self.textView.topAnchor.constraint(equalTo: (self.navigationController?.navigationBar.bottomAnchor)!, constant: 20).isActive = true
-        self.textView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
-        self.textView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        self.textView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        self.textView.heightAnchor.constraint(equalToConstant: 200)
+        self.textView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50).isActive = true
+        self.textView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100).isActive = true
+        self.textView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100).isActive = true
+        self.textView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        self.textView.widthAnchor.constraint(equalToConstant: 25).isActive = true
         
         //Añado el label del Name
         self.view.addSubview(nameLabel)
-        self.nameLabel.topAnchor.constraint(equalTo: textView.bottomAnchor, constant: 20).isActive = true
+        self.nameLabel.topAnchor.constraint(equalTo: textView.bottomAnchor, constant: 10).isActive = true
         self.nameLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         self.nameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         self.nameLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -296,7 +249,7 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         
         //Añado el datelabel
         self.view.addSubview(dateLabel)
-        self.dateLabel.topAnchor.constraint(equalTo: fieldName.bottomAnchor, constant: 10).isActive = true
+        self.dateLabel.topAnchor.constraint(equalTo: fieldName.bottomAnchor, constant: 50).isActive = true
         self.dateLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         self.dateLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         self.dateLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -313,7 +266,7 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         
         //Añado el fieldLabel
         self.view.addSubview(sexLabel)
-        self.sexLabel.topAnchor.constraint(equalTo: fieldDate.bottomAnchor, constant: 10).isActive = true
+        self.sexLabel.topAnchor.constraint(equalTo: fieldDate.bottomAnchor, constant: 50).isActive = true
         self.sexLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         self.sexLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         self.sexLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
@@ -327,45 +280,15 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         self.segmentedSex.heightAnchor.constraint(equalToConstant: 40).isActive = true
         self.segmentedSex.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
-        //Añado el label de Peso
-        self.view.addSubview(weightLabel)
-        self.weightLabel.topAnchor.constraint(equalTo: segmentedSex.bottomAnchor, constant: 10).isActive = true
-        self.weightLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        self.weightLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        self.weightLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        self.weightLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
-        
-        //Añado el field del peso
-        self.view.addSubview(fieldWeight)
-        self.fieldWeight.topAnchor.constraint(equalTo: weightLabel.bottomAnchor, constant: 10).isActive = true
-        self.fieldWeight.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
-        self.fieldWeight.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
-        self.fieldWeight.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        self.fieldWeight.widthAnchor.constraint(equalToConstant: 20).isActive = true
-        
-        //añado el label de estatura
-        self.view.addSubview(heightLabel)
-        self.heightLabel.topAnchor.constraint(equalTo: fieldWeight.bottomAnchor, constant: 10).isActive = true
-        self.heightLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        self.heightLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        self.heightLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        self.heightLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
-        
-        //Añado el field de estatura
-        self.view.addSubview(fieldHeight)
-        self.fieldHeight.topAnchor.constraint(equalTo: heightLabel.bottomAnchor, constant: 10).isActive = true
-        self.fieldHeight.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
-        self.fieldHeight.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
-        self.fieldHeight.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        self.fieldHeight.widthAnchor.constraint(equalToConstant: 20).isActive = true
-        
+      
         //Añado Boton de registro
         self.view.addSubview(buttonRegister)
-        self.buttonRegister.topAnchor.constraint(equalTo: fieldHeight.bottomAnchor, constant: 30).isActive = true
-        self.buttonRegister.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        //self.buttonRegister.topAnchor.constraint(equalTo: segmentedSex.bottomAnchor, constant: 40).isActive = true
+        self.buttonRegister.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 340).isActive = true
         self.buttonRegister.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        self.buttonRegister.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
         self.buttonRegister.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        self.buttonRegister.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        self.buttonRegister.widthAnchor.constraint(equalToConstant: 50).isActive = true
     }
     
     
