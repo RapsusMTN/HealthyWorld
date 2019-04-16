@@ -9,9 +9,19 @@
 import UIKit
 import AnimatedGradientView
 
-class HealthyProfileViewController: UIViewController {
+class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+  
+   //Edades para el picker
+   public var ages:[Int] = []
     
-    //Right item of the NAvigationControllerBaraaaa
+   public var example = ["Jorge","Timoteo","Alvaro","Friki","Amigos","Mios","Vida"]
+    
+   let picker: UIPickerView = {
+       let picker = UIPickerView()
+       return picker
+    }()
+    
+    //Right item of the NAvigationControllerBar
     let rightBarButtonItem: UIBarButtonItem = {
        let rightButton = UIBarButtonItem(title: "Siguiente", style: .plain, target: self, action: nil)
        rightButton.tintColor = .blue
@@ -51,16 +61,41 @@ class HealthyProfileViewController: UIViewController {
        return label
     }()
     
+    let ageLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Edad"
+        label.textAlignment = .center
+        label.backgroundColor = #colorLiteral(red: 0.3847625569, green: 0.8884835025, blue: 0.3051646185, alpha: 1)
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = .white
+        label.layer.masksToBounds = true
+        label.layer.cornerRadius = 10
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     let fieldName: UITextField = {
        let field = UITextField()
        field.translatesAutoresizingMaskIntoConstraints = false
        field.layer.masksToBounds = true
        field.layer.cornerRadius = 10
        field.backgroundColor = .white
-       field.tintColor = .lightGray
+       field.tintColor = .black
        field.setIcon(#imageLiteral(resourceName: "iconName"))
        return field
     }()
+    
+    let fieldAge: UITextField = {
+        let field = UITextField()
+        field.translatesAutoresizingMaskIntoConstraints = false
+        field.layer.masksToBounds = true
+        field.layer.cornerRadius = 10
+        field.backgroundColor = .white
+        field.tintColor = .black
+        field.setIcon(#imageLiteral(resourceName: "iconPeso"))
+        return field
+    }()
+    
     
     //Returns the specific viewController
     static func initAndLoad() -> UIViewController {
@@ -70,6 +105,9 @@ class HealthyProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.picker.delegate = self
+        self.picker.dataSource = self
+        //fillPicker()
         setNavigationItemsBar()
         setCustomProfileData()
     }
@@ -116,6 +154,22 @@ class HealthyProfileViewController: UIViewController {
         self.fieldName.heightAnchor.constraint(equalToConstant: 40).isActive = true
         self.fieldName.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
+        //Añado el label edad
+        self.view.addSubview(ageLabel)
+        self.ageLabel.topAnchor.constraint(equalTo: fieldName.bottomAnchor, constant: 10).isActive = true
+        self.ageLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 150).isActive = true
+        self.ageLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -150).isActive = true
+        self.ageLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        self.ageLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        
+        //Añado el field edad
+        self.view.addSubview(fieldAge)
+        self.fieldAge.topAnchor.constraint(equalTo: ageLabel.bottomAnchor, constant: 10).isActive = true
+        self.fieldAge.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
+        self.fieldAge.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
+        self.fieldAge.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        self.fieldAge.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        self.fieldAge.inputView = self.picker
     }
     
     func setAnimationBackground() {
@@ -132,6 +186,15 @@ class HealthyProfileViewController: UIViewController {
         animatedGradient.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
         animatedGradient.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
         
+        
+    }
+    
+    //Fill the picker
+    func fillPicker() {
+        for i in 1...100 {
+            self.ages.append(i)
+        }
+        self.ages.debugDescription
         
     }
 
