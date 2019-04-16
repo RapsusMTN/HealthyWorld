@@ -93,14 +93,23 @@ class HealthyProfile2ViewController: UIViewController {
         button.tintColor = .white
         button.layer.cornerRadius = 10
         button.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
-        button.addTarget(self, action: #selector(tapRegister(_:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(tapInit(_:)), for: .touchUpInside)
         return button
     }()
     
     
     @objc func tapRegister(_ sender: UIButton) {
-        //Empezar el menu
+        let profile1 = HealthyProfileViewController()
+        profile1.modalTransitionStyle = .partialCurl
+        self.present(profile1, animated: true, completion: nil)
         
+    }
+    
+    @objc func tapInit(_ sender:UIButton) {
+        //Navegacion al menu principal
+        let mainMenuController = HealthyMenuTabController()
+        mainMenuController.modalTransitionStyle = .flipHorizontal
+        self.present(mainMenuController, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
