@@ -14,24 +14,27 @@ class RutinaDetailCustomView: UIView {
     
     @IBOutlet var contentView: UIView!
     
+    @IBOutlet weak var labelDescription: UILabel!
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configureVideo()
+        configureVideowith(urlPath: (Bundle.main.url(forResource: "conejo", withExtension: "mp4")?.absoluteString)!)
         setup()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
-        configureVideo()
+        configureVideowith(urlPath: (Bundle.main.url(forResource: "conejo", withExtension: "mp4")?.absoluteString)!)
     }
     
-    func configureVideo() {
-        guard let url = Bundle.main.url(forResource: "video", withExtension: "mp4") else { return print("Video not found!!") }
-        self.videoView.configure(url: (url.absoluteString))
+    func configureVideowith(urlPath: String) {
+        self.videoView.configure(url: (urlPath))
         self.videoView.isLoop = true
         self.videoView.play()
         
+       
     }
     
     func setup()
