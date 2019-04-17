@@ -100,8 +100,10 @@ class HealthyProfile2ViewController: UIViewController {
     
     @objc func tapRegister(_ sender: UIButton) {
         let profile1 = HealthyProfileViewController()
-        profile1.modalTransitionStyle = .partialCurl
-        self.present(profile1, animated: true, completion: nil)
+        let navController = UINavigationController(rootViewController: profile1)
+        navController.modalTransitionStyle = .partialCurl
+        navController.navigationBar.isHidden = false
+        self.present(navController, animated: true, completion: nil)
         
     }
     

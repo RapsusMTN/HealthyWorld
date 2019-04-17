@@ -39,16 +39,11 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
     
     //Right item of the NAvigationControllerBar
     let rightBarButtonItem: UIBarButtonItem = {
-       let rightButton = UIBarButtonItem(title: "Siguiente", style: .plain, target: self, action: nil)
-       rightButton.tintColor = .blue
+        let rightButton = UIBarButtonItem(title: "Siguiente", style: .plain, target: self, action: #selector(tapped))
+        rightButton.tintColor = .blue
        return rightButton
     }()
     
-    let leftBarButtonItem: UIBarButtonItem = {
-        let leftButton = UIBarButtonItem(title: "Atras", style: .plain, target: self, action: nil)
-        leftButton.tintColor = .blue
-        return leftButton
-    }()
     
     let textView: UITextView = {
         let text = UITextView()
@@ -150,16 +145,17 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
        button.tintColor = .white
        button.layer.cornerRadius = 10
        button.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
-       button.addTarget(self, action: #selector(tapRegister(_:)), for: .touchUpInside)
+       button.isHidden = true
+       //button.addTarget(self, action: #selector(tapRegister), for: .touchUpInside)
        return button
         
         
     }()
     
-    @objc func tapRegister(_ sender: UIButton) {
+    @objc func tapped(_ sender: AnyObject) {
         let profile2controller: HealthyProfile2ViewController = HealthyProfile2ViewController()
         profile2controller.modalTransitionStyle = .partialCurl
-        self.present(profile2controller, animated: true, completion: nil)
+        self.navigationController?.pushViewController(profile2controller, animated: true)
         print("TOCADO!!")
         
         
@@ -186,7 +182,6 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = true
         registerTapGestureRecognizer()
         self.picker.delegate = self
         self.picker.dataSource = self
@@ -206,9 +201,7 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
     }
     
     func setNavigationItemsBar() {
-        self.navigationItem.rightBarButtonItem = rightBarButtonItem
-        self.navigationItem.leftBarButtonItem = leftBarButtonItem
-        self.navigationItem.leftBarButtonItem?.isEnabled = false
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Siguiente", style: .plain, target: self, action: #selector(HealthyProfileViewController.tapped(_:)))
         let image = UIImage(named: "nutricon")
         let imageView:UIImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         imageView.contentMode = .scaleAspectFit
@@ -225,7 +218,7 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         setAnimationBackground()
         //Añado el textView a mi view principal
         self.view.addSubview(textView)
-        self.textView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50).isActive = true
+        self.textView.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
         self.textView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100).isActive = true
         self.textView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100).isActive = true
         self.textView.heightAnchor.constraint(equalToConstant: 100).isActive = true

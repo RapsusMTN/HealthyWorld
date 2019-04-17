@@ -29,7 +29,7 @@ class User {
         self.height = altura
         self.genre = sexo
         User.createUniqueId()
-       
+        
         
     }
     

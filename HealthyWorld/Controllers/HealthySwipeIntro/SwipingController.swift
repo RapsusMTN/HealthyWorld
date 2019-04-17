@@ -51,10 +51,10 @@ class SwipingController: UICollectionViewController,UICollectionViewDelegateFlow
                 let profileController = HealthyProfileViewController()
                 //INSTANCIAMOS EL NAVIGATION CON EL VIEWCOTROLLER QUE QUIERES QUE SE MUESTRE A CONTINUACION
                 let navigationController = UINavigationController(rootViewController: profileController)
-                navigationController.isNavigationBarHidden = false
+                navigationController.navigationBar.isHidden = false
                 //PRESENTAMOS EL NAVIGATION, PARA QUE LOS SIGUIENTES VIEWCONTROLLERS TENGAN EN SU PROPIEDAD 'viewcontroller.navigationViewController' el navigation que acabamos de instanciar
                 self.present(navigationController, animated: true, completion: nil)
-                
+            
             }
         }
     }

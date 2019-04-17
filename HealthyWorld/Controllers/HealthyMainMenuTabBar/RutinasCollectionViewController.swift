@@ -31,6 +31,8 @@ class RutinasCollectionViewController: UICollectionViewController,UICollectionVi
         // Do any additional setup after loading the view.
     }
     
+    
+    
     //Background animations
     func setAnimationBackground() -> AnimatedGradientView {
         let animatedGradient = AnimatedGradientView()
@@ -50,94 +52,14 @@ class RutinasCollectionViewController: UICollectionViewController,UICollectionVi
     }
     
     func selectExerciseAt(indexCell: Int) {
-
         
-
+        let rutinaDetail0 = HealthyRutinaViewController()
+        rutinaDetail0.modalTransitionStyle = .coverVertical
+        let navController = UINavigationController(rootViewController: rutinaDetail0)
         //Depende la celda que seleccione entrara a un ViewController u otro
-        switch indexCell {
-        case 0:
-            let rutinaDetail0 = HealthyRutinaViewController()
-            let navigationController = UINavigationController(rootViewController: rutinaDetail0)
-            rutinaDetail0.modalTransitionStyle = .coverVertical
-            //rutinaDetail0.rutinaDetailView.configureVideowith(urlPath: videos[indexCell])
-            rutinaDetail0.texto = descripcionesRutina[indexCell]
-            rutinaDetail0.selectedIndex = indexCell
-            self.present(navigationController, animated: true, completion: nil)
-        case 1:
-            let rutinaDetail0 = HealthyRutinaViewController()
-             let navigationController = UINavigationController(rootViewController: rutinaDetail0)
-            rutinaDetail0.modalTransitionStyle = .coverVertical
-            //rutinaDetail0.rutinaDetailView.configureVideowith(urlPath: videos[indexCell])
-            rutinaDetail0.texto = descripcionesRutina[indexCell]
-            rutinaDetail0.selectedIndex = indexCell
-            self.present(navigationController, animated: true, completion: nil)
-        case 2:
-            let rutinaDetail0 = HealthyRutinaViewController()
-             let navigationController = UINavigationController(rootViewController: rutinaDetail0)
-            rutinaDetail0.modalTransitionStyle = .coverVertical
-            //rutinaDetail0.rutinaDetailView.configureVideowith(urlPath: videos[indexCell])
-            rutinaDetail0.texto = descripcionesRutina[indexCell]
-            rutinaDetail0.selectedIndex = indexCell
-            self.present(navigationController, animated: true, completion: nil)
-        case 3:
-            let rutinaDetail0 = HealthyRutinaViewController()
-             let navigationController = UINavigationController(rootViewController: rutinaDetail0)
-            rutinaDetail0.modalTransitionStyle = .coverVertical
-            //rutinaDetail0.rutinaDetailView.configureVideowith(urlPath: videos[indexCell])
-            rutinaDetail0.texto = descripcionesRutina[indexCell]
-            rutinaDetail0.selectedIndex = indexCell
-            self.present(navigationController, animated: true, completion: nil)
-        case 4:
-            let rutinaDetail0 = HealthyRutinaViewController()
-             let navigationController = UINavigationController(rootViewController: rutinaDetail0)
-            rutinaDetail0.modalTransitionStyle = .coverVertical
-            //rutinaDetail0.rutinaDetailView.configureVideowith(urlPath: videos[indexCell])
-            rutinaDetail0.texto = descripcionesRutina[indexCell]
-            rutinaDetail0.selectedIndex = indexCell
-            self.present(navigationController, animated: true, completion: nil)
-        case 5:
-            let rutinaDetail0 = HealthyRutinaViewController()
-             let navigationController = UINavigationController(rootViewController: rutinaDetail0)
-            rutinaDetail0.modalTransitionStyle = .coverVertical
-            //rutinaDetail0.rutinaDetailView.configureVideowith(urlPath: videos[indexCell])
-            rutinaDetail0.texto = descripcionesRutina[indexCell]
-            rutinaDetail0.selectedIndex = indexCell
-            self.present(navigationController, animated: true, completion: nil)
-        case 6:
-            let rutinaDetail0 = HealthyRutinaViewController()
-             let navigationController = UINavigationController(rootViewController: rutinaDetail0)
-            rutinaDetail0.modalTransitionStyle = .coverVertical
-            //rutinaDetail0.rutinaDetailView.configureVideowith(urlPath: videos[indexCell])
-            rutinaDetail0.texto = descripcionesRutina[indexCell]
-            rutinaDetail0.selectedIndex = indexCell
-            self.present(navigationController, animated: true, completion: nil)
-        case 7:
-            let rutinaDetail0 = HealthyRutinaViewController()
-             let navigationController = UINavigationController(rootViewController: rutinaDetail0)
-            rutinaDetail0.modalTransitionStyle = .coverVertical
-            //rutinaDetail0.rutinaDetailView.configureVideowith(urlPath: videos[indexCell])
-            rutinaDetail0.texto = descripcionesRutina[indexCell]
-            rutinaDetail0.selectedIndex = indexCell
-            self.present(navigationController, animated: true, completion: nil)
-        case 8:
-            let rutinaDetail0 = HealthyRutinaViewController()
-             let navigationController = UINavigationController(rootViewController: rutinaDetail0)
-            rutinaDetail0.modalTransitionStyle = .coverVertical
-            //rutinaDetail0.rutinaDetailView.configureVideowith(urlPath: videos[indexCell])
-            rutinaDetail0.texto = descripcionesRutina[indexCell]
-            rutinaDetail0.selectedIndex = indexCell
-            self.present(navigationController, animated: true, completion: nil)
-        case 9:
-            let rutinaDetail0 = HealthyRutinaViewController()
-             let navigationController = UINavigationController(rootViewController: rutinaDetail0)
-            rutinaDetail0.modalTransitionStyle = .coverVertical
-            //rutinaDetail0.rutinaDetailView.configureVideowith(urlPath: videos[indexCell])
-            rutinaDetail0.texto = descripcionesRutina[indexCell]
-            rutinaDetail0.selectedIndex = indexCell
-            self.present(rutinaDetail0, animated: true, completion: nil)
-        default:
-            return
-        }
+        rutinaDetail0.texto = descripcionesRutina[indexCell]
+        rutinaDetail0.selectedIndex = indexCell
+        self.present(navController, animated: true, completion: nil)
         
         
         

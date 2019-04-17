@@ -8,7 +8,8 @@
 
 import UIKit
 
-class RutinaDetailCustomView: UIView {
+class RutinaDetailCustomView: UIView{
+    
 
     @IBOutlet weak var videoView: VideoView!
     
@@ -37,6 +38,7 @@ class RutinaDetailCustomView: UIView {
        
     }
     
+    
     func setup()
     {
         contentView = loadViewFromNib()
@@ -59,5 +61,7 @@ class RutinaDetailCustomView: UIView {
         
         return view
     }
+    
+    
 
 }
