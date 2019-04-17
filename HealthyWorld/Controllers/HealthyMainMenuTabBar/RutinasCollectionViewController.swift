@@ -45,6 +45,40 @@ class RutinasCollectionViewController: UICollectionViewController,UICollectionVi
 //
         return animatedGradient
     }
+    
+    func selectExerciseAt(indexCell: Int) {
+        
+        //Depende la celda que seleccione entrara a un ViewController u otro
+        switch indexCell {
+        case 0:
+            let rutinaDetail0 = HealthyRutinaViewController()
+            rutinaDetail0.modalTransitionStyle = .coverVertical
+            self.present(rutinaDetail0, animated: true, completion: nil)
+        case 1:
+            print("Celda 1")
+        case 2:
+            print("Celda 2")
+        case 3:
+            print("Celda 3")
+        case 4:
+            print("Celda 4")
+        case 5:
+            print("Celda 5")
+        case 6:
+            print("Celda 6")
+        case 7:
+            print("Celda 7")
+        case 8:
+            print("Celda 8")
+        case 9:
+            print("Celda 9")
+        default:
+            return
+        }
+        
+        
+        
+    }
 
     // MARK: UICollectionViewDataSource
 
@@ -77,6 +111,11 @@ class RutinasCollectionViewController: UICollectionViewController,UICollectionVi
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("SELECCIONADO la celda = \(indexPath.item)")
+        selectExerciseAt(indexCell: indexPath.item)
     }
     
 
