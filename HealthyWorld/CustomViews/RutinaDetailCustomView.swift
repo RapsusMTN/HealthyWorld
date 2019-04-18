@@ -43,7 +43,7 @@ class RutinaDetailCustomView: UIView{
     {
         contentView = loadViewFromNib()
         contentView.translatesAutoresizingMaskIntoConstraints = false
-        
+    
         addSubview(contentView)
         
         contentView.topAnchor.constraint(equalTo: topAnchor).isActive = true

@@ -27,7 +27,8 @@ class HealthyRutinaViewController: UIViewController {
     }
     
     func setNavigationItemsBar() {
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Atras", style: .plain, target: self, action: #selector(HealthyRutinaViewController.dismissView(_:)))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Volver", style: .plain, target: self, action: #selector(HealthyRutinaViewController.dismissView(_:)))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Siguiente", style: .plain, target: self, action: #selector(HealthyRutinaViewController.tapNext(_:)))
         let image = UIImage(named: "nutricon")
         let imageView:UIImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         imageView.contentMode = .scaleAspectFit
@@ -43,14 +44,15 @@ class HealthyRutinaViewController: UIViewController {
         
     }
     
-    func setStackNavigation() {
+    @objc func tapNext(_ sender: AnyObject) {
         let detail = DetailRutinaPage1ViewController()
-        let profile = HealthyProfileViewController()
-        self.navigationController?.viewControllers = [detail,profile]
+        self.navigationController?.pushViewController(detail, animated: true)
+        
         
         
     }
-
+    
+ 
 
   
 

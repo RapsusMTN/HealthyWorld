@@ -11,9 +11,6 @@ import AVKit
 
 class VideoView: UIView {
 
-    
-   
-    
     var playerLayer: AVPlayerLayer?
     var player: AVPlayer?
     var isLoop: Bool = false
