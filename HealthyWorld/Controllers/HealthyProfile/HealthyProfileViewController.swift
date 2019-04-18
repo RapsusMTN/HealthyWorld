@@ -218,7 +218,7 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         setAnimationBackground()
         //Añado el textView a mi view principal
         self.view.addSubview(textView)
-        self.textView.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
+        self.textView.topAnchor.constraint(equalTo: view.topAnchor, constant:100).isActive = true
         self.textView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100).isActive = true
         self.textView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100).isActive = true
         self.textView.heightAnchor.constraint(equalToConstant: 100).isActive = true

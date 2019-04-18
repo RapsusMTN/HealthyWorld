@@ -15,7 +15,7 @@ class RutinasCollectionViewController: UICollectionViewController,UICollectionVi
     var ejercicios = ["Pectoral","Hombros","Pierna","Espalda","Biceps","Triceps","Cardio","Crossfit","Powerlifting","Definicion"]
     var images = ["pecho","hombro","pierna","espalda","biceps","triceps","cardio","crossfit","power","definicion"]
     var descripcionesRutina = ["Rutina de Pectorales","Rutina de Hombros","Rutina de Piernas","Rutina de Espalda","Rutina de Biceps","Rutina de Triceps","Rutina de Cardio","Rutina de Crossfit","Rutina de Powerlifting","Rutina de Definicion"]
-
+    var series = ["4 X 12","5 X 10","3 X 8","5 X 15","9 X 10","8 X 20","12 X 10","7 X 15","6 X 8","4 X 10",]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +59,7 @@ class RutinasCollectionViewController: UICollectionViewController,UICollectionVi
         //Depende la celda que seleccione entrara a un ViewController u otro
         rutinaDetail0.texto = descripcionesRutina[indexCell]
         rutinaDetail0.selectedIndex = indexCell
+        rutinaDetail0.seriesAndReps = series[indexCell]
         let appDelegate = UIApplication.shared.delegate as! AppDelegate//Guardola key de rutina en el delegate para mostrar la info de la tabla
         appDelegate.keyRutina = descripcionesRutina[indexCell]
         self.present(navController, animated: true, completion: nil)

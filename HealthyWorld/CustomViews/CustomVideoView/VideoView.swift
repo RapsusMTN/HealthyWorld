@@ -27,6 +27,8 @@ class VideoView: UIView {
     }
     
     func configure(url: String) {
+       
+        
         if let videoURL = URL(string: url) {
             player = AVPlayer(url: videoURL)
             playerLayer = AVPlayerLayer(player: player)

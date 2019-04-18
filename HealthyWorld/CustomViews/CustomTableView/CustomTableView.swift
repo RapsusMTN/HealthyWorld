@@ -64,11 +64,12 @@ class CustomTableView: UIView, UITableViewDelegate,UITableViewDataSource {
         cell.textLabel?.text = ejers![indexPath.item]
         cell.textLabel?.textAlignment = .center
         cell.imageView?.image = #imageLiteral(resourceName: "fitnesscon")
+        cell.detailTextLabel?.text = "Test"
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100.0
+        return 70.0
     }
     
     

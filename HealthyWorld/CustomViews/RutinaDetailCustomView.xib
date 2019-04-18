@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="pR3-ES-XjE"/>
                 <outlet property="labelDescription" destination="kaU-SS-Uua" id="Msb-h0-6GT"/>
+                <outlet property="labelSeries" destination="S6h-cR-17c" id="Mad-SK-328"/>
                 <outlet property="videoView" destination="I4c-aE-noq" id="Cnz-Bg-Ula"/>
             </connections>
         </placeholder>
@@ -30,26 +31,26 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rutinas View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaU-SS-Uua">
-                    <rect key="frame" x="0.0" y="182" width="375" height="80"/>
+                    <rect key="frame" x="0.0" y="182" width="375" height="50"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="80" id="tlA-VJ-fJT"/>
+                        <constraint firstAttribute="height" constant="50" id="tlA-VJ-fJT"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="27"/>
                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSJ-VV-FU0" customClass="CustomTableView" customModule="HealthyWorld" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="270" width="375" height="326"/>
+                    <rect key="frame" x="0.0" y="240" width="375" height="326"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="326" id="tfV-LJ-7BQ"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series&amp;Reps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6h-cR-17c">
-                    <rect key="frame" x="0.0" y="604" width="375" height="63"/>
+                    <rect key="frame" x="0.0" y="574" width="375" height="93"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="63" id="AQo-9A-lr1"/>
+                        <constraint firstAttribute="height" constant="93" id="3Ch-sl-dua"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -61,6 +62,7 @@
                 <constraint firstItem="bSJ-VV-FU0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3OK-FO-cxE"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="I4c-aE-noq" secondAttribute="trailing" id="4Pv-db-boi"/>
                 <constraint firstItem="kaU-SS-Uua" firstAttribute="top" secondItem="I4c-aE-noq" secondAttribute="bottom" id="4lB-5y-lfg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="S6h-cR-17c" secondAttribute="bottom" id="8yH-by-OSj"/>
                 <constraint firstItem="S6h-cR-17c" firstAttribute="top" secondItem="bSJ-VV-FU0" secondAttribute="bottom" constant="8" id="Axo-f4-NdC"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="S6h-cR-17c" secondAttribute="trailing" id="Dnk-YD-Rfk"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bSJ-VV-FU0" secondAttribute="trailing" id="GbH-gL-tix"/>

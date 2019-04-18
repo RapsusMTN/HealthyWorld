@@ -16,10 +16,12 @@ class HealthyRutinaViewController: UIViewController {
     
     public var texto:String!
     
+    public var seriesAndReps:String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationItemsBar()
-        self.rutinaDetailView.labelDescription.text = texto
+        configurateViews()
         //Lo mismo que en la otra vista y dissmis para ir atras
         //Controlar que celda se ha elegido para mostrar unos datos u otros
         
@@ -34,8 +36,15 @@ class HealthyRutinaViewController: UIViewController {
         imageView.contentMode = .scaleAspectFit
         imageView.image = image
         self.navigationItem.titleView = imageView
-        
-        
+      
+    }
+    
+    func configurateViews() {
+        self.rutinaDetailView.labelDescription.text = texto
+        self.rutinaDetailView.labelSeries.text = seriesAndReps
+        self.rutinaDetailView.labelSeries.font = .boldSystemFont(ofSize: 20)
+        self.rutinaDetailView.labelSeries.textColor = .white
+        self.rutinaDetailView.labelSeries.backgroundColor = .black
         
     }
     

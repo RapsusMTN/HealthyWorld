@@ -17,17 +17,18 @@ class RutinaDetailCustomView: UIView{
     
     @IBOutlet weak var labelDescription: UILabel!
     
+    @IBOutlet weak var labelSeries: UILabel!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configureVideowith(urlPath: (Bundle.main.url(forResource: "conejo", withExtension: "mp4")?.absoluteString)!)
+        configureVideowith(urlPath: (Bundle.main.url(forResource: "buendia", withExtension: "mp4")?.absoluteString)!)
         setup()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
-        configureVideowith(urlPath: (Bundle.main.url(forResource: "conejo", withExtension: "mp4")?.absoluteString)!)
+        configureVideowith(urlPath: (Bundle.main.url(forResource: "buendia", withExtension: "mp4")?.absoluteString)!)
     }
     
     func configureVideowith(urlPath: String) {
