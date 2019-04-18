@@ -1,21 +1,37 @@
 PODS:
   - AnimatedGradientView (1.1.1)
+  - SwiftConfettiView (0.1.0)
+  - SwiftSpinner (1.7.0)
 
 DEPENDENCIES:
   - AnimatedGradientView (from `https://github.com/rwbutler/AnimatedGradientView.git`)
+  - SwiftConfettiView (from `https://github.com/ugurethemaydin/SwiftConfettiView.git`)
+  - SwiftSpinner (from `https://github.com/icanzilb/SwiftSpinner.git`)
 
 EXTERNAL SOURCES:
   AnimatedGradientView:
     :git: https://github.com/rwbutler/AnimatedGradientView.git
+  SwiftConfettiView:
+    :git: https://github.com/ugurethemaydin/SwiftConfettiView.git
+  SwiftSpinner:
+    :git: https://github.com/icanzilb/SwiftSpinner.git
 
 CHECKOUT OPTIONS:
   AnimatedGradientView:
     :commit: b3638af3a1cf2108c542bae1300f26e047ab9871
     :git: https://github.com/rwbutler/AnimatedGradientView.git
+  SwiftConfettiView:
+    :commit: 7960337e53a9338760feda6b2262ec9206d75660
+    :git: https://github.com/ugurethemaydin/SwiftConfettiView.git
+  SwiftSpinner:
+    :commit: 269f372bf0f4530b0bdb276c144f6473f94e944c
+    :git: https://github.com/icanzilb/SwiftSpinner.git
 
 SPEC CHECKSUMS:
   AnimatedGradientView: e3d928407034be3e97ae62564a4071da4b10b0f2
+  SwiftConfettiView: 75f535e9f4ed5d54fa8e2c67640b17766a49d72e
+  SwiftSpinner: e7da6c9e2fab46442c02726d2e30105c1a84c59d
 
-PODFILE CHECKSUM: f7da41457c4f9a5fa945f7583fc042f8ab7d5a01
+PODFILE CHECKSUM: 6e1204ccc17d6dda0f79d66d7b087526b6bdc9fa
 
 COCOAPODS: 1.5.3

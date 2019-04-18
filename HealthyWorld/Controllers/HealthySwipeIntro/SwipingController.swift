@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SwiftSpinner
 
 class SwipingController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
@@ -53,6 +54,8 @@ class SwipingController: UICollectionViewController,UICollectionViewDelegateFlow
                 let navigationController = UINavigationController(rootViewController: profileController)
                 navigationController.navigationBar.isHidden = false
                 //PRESENTAMOS EL NAVIGATION, PARA QUE LOS SIGUIENTES VIEWCONTROLLERS TENGAN EN SU PROPIEDAD 'viewcontroller.navigationViewController' el navigation que acabamos de instanciar
+                //Muestro el spinner de carga
+                SwiftSpinner.show(duration: 4.0, title: "Bienvenido al mundo saludable..")
                 self.present(navigationController, animated: true, completion: nil)
             
             }

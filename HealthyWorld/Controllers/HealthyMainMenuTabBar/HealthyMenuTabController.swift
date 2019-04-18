@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SwiftSpinner
 
 class HealthyMenuTabController: UITabBarController {
     
@@ -15,6 +16,7 @@ class HealthyMenuTabController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Crea el menu de rutinas
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let rutinaController = RutinasCollectionViewController(collectionViewLayout: layout)
@@ -22,9 +24,15 @@ class HealthyMenuTabController: UITabBarController {
         rutinasNav.tabBarItem.title = "Rutinas"
         rutinasNav.tabBarItem.image = UIImage(named: "iconPeso")
         
-        viewControllers = [createNavController(title: "Mi Perfil", imageName: "iconName"),createNavController(title: "Dietas", imageName: "iconEstatura"),rutinasNav,createNavController(title: "AR Healthy", imageName: "iconAge")]
+        //Crea el menu perfil
+        let perfilController = MiPerfilViewController()
+        let perfilNavController = UINavigationController(rootViewController: perfilController)
+        perfilNavController.tabBarItem.title = "Mi Perfil"
+        perfilNavController.tabBarItem.image = UIImage(named: "iconName")
         
+        viewControllers = [perfilNavController,createNavController(title: "Dietas", imageName: "iconEstatura"),rutinasNav,createNavController(title: "AR Healthy", imageName: "iconAge")]
         
+       
         
     }
     

@@ -17,9 +17,40 @@
 		414E6C1F2263A2D600EE02EE /* SwipingExtensionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C192263A2D600EE02EE /* SwipingExtensionCollectionView.swift */; };
 		414E6C212263A2D600EE02EE /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C1B2263A2D600EE02EE /* Page.swift */; };
 		414E6C222263A2D600EE02EE /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C1C2263A2D600EE02EE /* PageCell.swift */; };
+		41783BD82268C78C00C9EAF6 /* HealthyDietaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41783BD62268C78C00C9EAF6 /* HealthyDietaTableViewController.swift */; };
+		41783BD92268C78C00C9EAF6 /* HealthyDietaTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41783BD72268C78C00C9EAF6 /* HealthyDietaTableViewController.xib */; };
+		41783BDD2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41783BDB2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.swift */; };
+		41783BDE2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41783BDC2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.xib */; };
+		41783BE32268C7CA00C9EAF6 /* HealthyMenuTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41783BE02268C7CA00C9EAF6 /* HealthyMenuTabController.swift */; };
+		41783BE42268C7CA00C9EAF6 /* RutinasCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41783BE12268C7CA00C9EAF6 /* RutinasCollectionViewController.swift */; };
+		41783BE52268C7CA00C9EAF6 /* RutinasCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41783BE22268C7CA00C9EAF6 /* RutinasCollectionViewController.xib */; };
+		41783BE92268C7EE00C9EAF6 /* HealthyRutinaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41783BE72268C7EE00C9EAF6 /* HealthyRutinaViewController.swift */; };
+		41783BEA2268C7EE00C9EAF6 /* HealthyRutinaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41783BE82268C7EE00C9EAF6 /* HealthyRutinaViewController.xib */; };
+		41783BED2268C80600C9EAF6 /* DataRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41783BEC2268C80500C9EAF6 /* DataRoutine.swift */; };
+		41783BF22268C81500C9EAF6 /* RutinaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41783BEE2268C81400C9EAF6 /* RutinaTableViewCell.xib */; };
+		41783BF32268C81500C9EAF6 /* RutinaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41783BEF2268C81400C9EAF6 /* RutinaCollectionViewCell.xib */; };
+		41783BF42268C81500C9EAF6 /* RutinaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41783BF02268C81500C9EAF6 /* RutinaTableViewCell.swift */; };
+		41783BF52268C81500C9EAF6 /* RutinaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41783BF12268C81500C9EAF6 /* RutinaCollectionViewCell.swift */; };
+		41783BFB2268C85600C9EAF6 /* RutinaDetailCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41783BF72268C85600C9EAF6 /* RutinaDetailCustomView.xib */; };
+		41783BFC2268C85600C9EAF6 /* RutinaDetailCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41783BF82268C85600C9EAF6 /* RutinaDetailCustomView.swift */; };
+		41783BFD2268C85600C9EAF6 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41783BF92268C85600C9EAF6 /* CustomTableView.swift */; };
+		41783BFE2268C85600C9EAF6 /* CustomTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41783BFA2268C85600C9EAF6 /* CustomTableView.xib */; };
+		41783C002268C87100C9EAF6 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41783BFF2268C87100C9EAF6 /* VideoView.swift */; };
+		41783C042268C8AF00C9EAF6 /* HealthyProfilePickerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41783C012268C8AF00C9EAF6 /* HealthyProfilePickerExtension.swift */; };
+		41783C052268C8AF00C9EAF6 /* HealthyProfile2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41783C022268C8AF00C9EAF6 /* HealthyProfile2ViewController.xib */; };
+		41783C062268C8AF00C9EAF6 /* HealthyProfile2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41783C032268C8AF00C9EAF6 /* HealthyProfile2ViewController.swift */; };
+		41783C082268C8D300C9EAF6 /* buendia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41783C072268C8D300C9EAF6 /* buendia.mp4 */; };
 		4192862922648D4200953634 /* HealthyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192862722648D4200953634 /* HealthyProfileViewController.swift */; };
 		4192862A22648D4200953634 /* HealthyProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4192862822648D4200953634 /* HealthyProfileViewController.xib */; };
 		4192862C22651B2300953634 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192862B22651B2300953634 /* User.swift */; };
+		41B7A5492268D021000BD78D /* pierna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5432268D020000BD78D /* pierna.jpg */; };
+		41B7A54A2268D021000BD78D /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5442268D020000BD78D /* video.mp4 */; };
+		41B7A54B2268D021000BD78D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5452268D020000BD78D /* Podfile */; };
+		41B7A54C2268D021000BD78D /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5462268D020000BD78D /* video2.mp4 */; };
+		41B7A54D2268D021000BD78D /* conejo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5472268D020000BD78D /* conejo.mp4 */; };
+		41B7A54E2268D021000BD78D /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5482268D021000BD78D /* Podfile.lock */; };
+		41B7A5512268D180000BD78D /* MiPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B7A54F2268D180000BD78D /* MiPerfilViewController.swift */; };
+		41B7A5522268D180000BD78D /* MiPerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5502268D180000BD78D /* MiPerfilViewController.xib */; };
 		E576CC475ADBA5764571FFDA /* Pods_HealthyWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4BBEB6D8D44836551323F9 /* Pods_HealthyWorld.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,9 +67,40 @@
 		414E6C192263A2D600EE02EE /* SwipingExtensionCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingExtensionCollectionView.swift; sourceTree = "<group>"; };
 		414E6C1B2263A2D600EE02EE /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		414E6C1C2263A2D600EE02EE /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		41783BD62268C78C00C9EAF6 /* HealthyDietaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthyDietaTableViewController.swift; path = HealthyWorld/Controllers/HealthyDietaController/HealthyDietaTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		41783BD72268C78C00C9EAF6 /* HealthyDietaTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HealthyDietaTableViewController.xib; path = HealthyWorld/Controllers/HealthyDietaController/HealthyDietaTableViewController.xib; sourceTree = SOURCE_ROOT; };
+		41783BDB2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailRutinaPage1ViewController.swift; path = HealthyWorld/Controllers/HealthyDescriptionRutina/DetailRutinaPage1ViewController.swift; sourceTree = SOURCE_ROOT; };
+		41783BDC2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailRutinaPage1ViewController.xib; path = HealthyWorld/Controllers/HealthyDescriptionRutina/DetailRutinaPage1ViewController.xib; sourceTree = SOURCE_ROOT; };
+		41783BE02268C7CA00C9EAF6 /* HealthyMenuTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthyMenuTabController.swift; path = HealthyWorld/Controllers/HealthyMainMenuTabBar/HealthyMenuTabController.swift; sourceTree = SOURCE_ROOT; };
+		41783BE12268C7CA00C9EAF6 /* RutinasCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RutinasCollectionViewController.swift; path = HealthyWorld/Controllers/HealthyMainMenuTabBar/RutinasCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
+		41783BE22268C7CA00C9EAF6 /* RutinasCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RutinasCollectionViewController.xib; path = HealthyWorld/Controllers/HealthyMainMenuTabBar/RutinasCollectionViewController.xib; sourceTree = SOURCE_ROOT; };
+		41783BE72268C7EE00C9EAF6 /* HealthyRutinaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthyRutinaViewController.swift; path = HealthyWorld/Controllers/HealthyRutinaViewController/HealthyRutinaViewController.swift; sourceTree = SOURCE_ROOT; };
+		41783BE82268C7EE00C9EAF6 /* HealthyRutinaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HealthyRutinaViewController.xib; path = HealthyWorld/Controllers/HealthyRutinaViewController/HealthyRutinaViewController.xib; sourceTree = SOURCE_ROOT; };
+		41783BEC2268C80500C9EAF6 /* DataRoutine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRoutine.swift; sourceTree = "<group>"; };
+		41783BEE2268C81400C9EAF6 /* RutinaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RutinaTableViewCell.xib; sourceTree = "<group>"; };
+		41783BEF2268C81400C9EAF6 /* RutinaCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RutinaCollectionViewCell.xib; sourceTree = "<group>"; };
+		41783BF02268C81500C9EAF6 /* RutinaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RutinaTableViewCell.swift; sourceTree = "<group>"; };
+		41783BF12268C81500C9EAF6 /* RutinaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RutinaCollectionViewCell.swift; sourceTree = "<group>"; };
+		41783BF72268C85600C9EAF6 /* RutinaDetailCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RutinaDetailCustomView.xib; path = HealthyWorld/CustomViews/RutinaDetailCustomView.xib; sourceTree = SOURCE_ROOT; };
+		41783BF82268C85600C9EAF6 /* RutinaDetailCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RutinaDetailCustomView.swift; path = HealthyWorld/CustomViews/RutinaDetailCustomView.swift; sourceTree = SOURCE_ROOT; };
+		41783BF92268C85600C9EAF6 /* CustomTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTableView.swift; path = HealthyWorld/CustomViews/CustomTableView/CustomTableView.swift; sourceTree = SOURCE_ROOT; };
+		41783BFA2268C85600C9EAF6 /* CustomTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomTableView.xib; path = HealthyWorld/CustomViews/CustomTableView/CustomTableView.xib; sourceTree = SOURCE_ROOT; };
+		41783BFF2268C87100C9EAF6 /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoView.swift; path = HealthyWorld/CustomViews/CustomVideoView/VideoView.swift; sourceTree = SOURCE_ROOT; };
+		41783C012268C8AF00C9EAF6 /* HealthyProfilePickerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthyProfilePickerExtension.swift; sourceTree = "<group>"; };
+		41783C022268C8AF00C9EAF6 /* HealthyProfile2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HealthyProfile2ViewController.xib; sourceTree = "<group>"; };
+		41783C032268C8AF00C9EAF6 /* HealthyProfile2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthyProfile2ViewController.swift; sourceTree = "<group>"; };
+		41783C072268C8D300C9EAF6 /* buendia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = buendia.mp4; sourceTree = "<group>"; };
 		4192862722648D4200953634 /* HealthyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyProfileViewController.swift; sourceTree = "<group>"; };
 		4192862822648D4200953634 /* HealthyProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthyProfileViewController.xib; sourceTree = "<group>"; };
 		4192862B22651B2300953634 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		41B7A5432268D020000BD78D /* pierna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pierna.jpg; sourceTree = "<group>"; };
+		41B7A5442268D020000BD78D /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		41B7A5452268D020000BD78D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		41B7A5462268D020000BD78D /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
+		41B7A5472268D020000BD78D /* conejo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = conejo.mp4; sourceTree = "<group>"; };
+		41B7A5482268D021000BD78D /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		41B7A54F2268D180000BD78D /* MiPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiPerfilViewController.swift; sourceTree = "<group>"; };
+		41B7A5502268D180000BD78D /* MiPerfilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiPerfilViewController.xib; sourceTree = "<group>"; };
 		4D4BBEB6D8D44836551323F9 /* Pods_HealthyWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5072670994DC8371C0A70B2D /* Pods-HealthyWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthyWorld/Pods-HealthyWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		73ACCFE52131E4116CBC0B42 /* Pods-HealthyWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthyWorld/Pods-HealthyWorld.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +129,13 @@
 		414E6BF62263A27800EE02EE = {
 			isa = PBXGroup;
 			children = (
+				41B7A5472268D020000BD78D /* conejo.mp4 */,
+				41B7A5432268D020000BD78D /* pierna.jpg */,
+				41B7A5452268D020000BD78D /* Podfile */,
+				41B7A5482268D021000BD78D /* Podfile.lock */,
+				41B7A5442268D020000BD78D /* video.mp4 */,
+				41B7A5462268D020000BD78D /* video2.mp4 */,
+				41783C072268C8D300C9EAF6 /* buendia.mp4 */,
 				414E6C012263A27800EE02EE /* HealthyWorld */,
 				414E6C002263A27800EE02EE /* Products */,
 				B80D077DB2C08AFC55E7CED9 /* Pods */,
@@ -85,6 +154,7 @@
 		414E6C012263A27800EE02EE /* HealthyWorld */ = {
 			isa = PBXGroup;
 			children = (
+				41783BF62268C82200C9EAF6 /* CustomViews */,
 				414E6C252263A3A000EE02EE /* CustomCells */,
 				414E6C242263A37D00EE02EE /* Models */,
 				414E6C232263A37400EE02EE /* Controllers */,
@@ -101,6 +171,10 @@
 		414E6C232263A37400EE02EE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				41783BE62268C7D800C9EAF6 /* HealthyRutinaViewController */,
+				41783BDF2268C7B200C9EAF6 /* HealthyMainMenuTabBar */,
+				41783BDA2268C79400C9EAF6 /* HealthyDescriptionRutina */,
+				41783BD52268C76E00C9EAF6 /* HealthyDietaController */,
 				4192862622648CF600953634 /* HealthyProfile */,
 				414E6C262263A3C100EE02EE /* HealthySwipeIntro */,
 			);
@@ -110,6 +184,7 @@
 		414E6C242263A37D00EE02EE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				41783BEC2268C80500C9EAF6 /* DataRoutine.swift */,
 				4192862B22651B2300953634 /* User.swift */,
 			);
 			path = Models;
@@ -118,6 +193,10 @@
 		414E6C252263A3A000EE02EE /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
+				41783BF12268C81500C9EAF6 /* RutinaCollectionViewCell.swift */,
+				41783BEF2268C81400C9EAF6 /* RutinaCollectionViewCell.xib */,
+				41783BF02268C81500C9EAF6 /* RutinaTableViewCell.swift */,
+				41783BEE2268C81400C9EAF6 /* RutinaTableViewCell.xib */,
 				414E6C1C2263A2D600EE02EE /* PageCell.swift */,
 			);
 			path = CustomCells;
@@ -134,9 +213,68 @@
 			path = HealthySwipeIntro;
 			sourceTree = "<group>";
 		};
+		41783BD52268C76E00C9EAF6 /* HealthyDietaController */ = {
+			isa = PBXGroup;
+			children = (
+				41783BD62268C78C00C9EAF6 /* HealthyDietaTableViewController.swift */,
+				41783BD72268C78C00C9EAF6 /* HealthyDietaTableViewController.xib */,
+			);
+			name = HealthyDietaController;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		41783BDA2268C79400C9EAF6 /* HealthyDescriptionRutina */ = {
+			isa = PBXGroup;
+			children = (
+				41783BDB2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.swift */,
+				41783BDC2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.xib */,
+			);
+			name = HealthyDescriptionRutina;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		41783BDF2268C7B200C9EAF6 /* HealthyMainMenuTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				41783BE02268C7CA00C9EAF6 /* HealthyMenuTabController.swift */,
+				41783BE12268C7CA00C9EAF6 /* RutinasCollectionViewController.swift */,
+				41783BE22268C7CA00C9EAF6 /* RutinasCollectionViewController.xib */,
+				41B7A54F2268D180000BD78D /* MiPerfilViewController.swift */,
+				41B7A5502268D180000BD78D /* MiPerfilViewController.xib */,
+			);
+			name = HealthyMainMenuTabBar;
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+		41783BE62268C7D800C9EAF6 /* HealthyRutinaViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41783BE72268C7EE00C9EAF6 /* HealthyRutinaViewController.swift */,
+				41783BE82268C7EE00C9EAF6 /* HealthyRutinaViewController.xib */,
+			);
+			name = HealthyRutinaViewController;
+			path = "New Group3";
+			sourceTree = "<group>";
+		};
+		41783BF62268C82200C9EAF6 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				41783BFF2268C87100C9EAF6 /* VideoView.swift */,
+				41783BF92268C85600C9EAF6 /* CustomTableView.swift */,
+				41783BFA2268C85600C9EAF6 /* CustomTableView.xib */,
+				41783BF82268C85600C9EAF6 /* RutinaDetailCustomView.swift */,
+				41783BF72268C85600C9EAF6 /* RutinaDetailCustomView.xib */,
+			);
+			name = CustomViews;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		4192862622648CF600953634 /* HealthyProfile */ = {
 			isa = PBXGroup;
 			children = (
+				41783C032268C8AF00C9EAF6 /* HealthyProfile2ViewController.swift */,
+				41783C022268C8AF00C9EAF6 /* HealthyProfile2ViewController.xib */,
+				41783C012268C8AF00C9EAF6 /* HealthyProfilePickerExtension.swift */,
 				4192862722648D4200953634 /* HealthyProfileViewController.swift */,
 				4192862822648D4200953634 /* HealthyProfileViewController.xib */,
 			);
@@ -212,10 +350,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B7A54B2268D021000BD78D /* Podfile in Resources */,
+				41783C052268C8AF00C9EAF6 /* HealthyProfile2ViewController.xib in Resources */,
+				41B7A54E2268D021000BD78D /* Podfile.lock in Resources */,
 				4192862A22648D4200953634 /* HealthyProfileViewController.xib in Resources */,
+				41783BEA2268C7EE00C9EAF6 /* HealthyRutinaViewController.xib in Resources */,
+				41783BE52268C7CA00C9EAF6 /* RutinasCollectionViewController.xib in Resources */,
 				414E6C102263A27900EE02EE /* LaunchScreen.storyboard in Resources */,
+				41B7A54D2268D021000BD78D /* conejo.mp4 in Resources */,
 				414E6C0D2263A27900EE02EE /* Assets.xcassets in Resources */,
+				41783BDE2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.xib in Resources */,
+				41783BFE2268C85600C9EAF6 /* CustomTableView.xib in Resources */,
+				41B7A5522268D180000BD78D /* MiPerfilViewController.xib in Resources */,
+				41783C082268C8D300C9EAF6 /* buendia.mp4 in Resources */,
+				41783BF22268C81500C9EAF6 /* RutinaTableViewCell.xib in Resources */,
+				41B7A5492268D021000BD78D /* pierna.jpg in Resources */,
+				41783BD92268C78C00C9EAF6 /* HealthyDietaTableViewController.xib in Resources */,
 				414E6C082263A27800EE02EE /* Main.storyboard in Resources */,
+				41B7A54C2268D021000BD78D /* video2.mp4 in Resources */,
+				41783BFB2268C85600C9EAF6 /* RutinaDetailCustomView.xib in Resources */,
+				41783BF32268C81500C9EAF6 /* RutinaCollectionViewCell.xib in Resources */,
+				41B7A54A2268D021000BD78D /* video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,10 +403,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HealthyWorld/Pods-HealthyWorld-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AnimatedGradientView/AnimatedGradientView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftConfettiView/SwiftConfettiView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnimatedGradientView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftConfettiView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -265,13 +424,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41783BE32268C7CA00C9EAF6 /* HealthyMenuTabController.swift in Sources */,
+				41783BFD2268C85600C9EAF6 /* CustomTableView.swift in Sources */,
 				414E6C1D2263A2D600EE02EE /* SwipingControllerExtension.swift in Sources */,
+				41783C062268C8AF00C9EAF6 /* HealthyProfile2ViewController.swift in Sources */,
+				41783BED2268C80600C9EAF6 /* DataRoutine.swift in Sources */,
+				41783BFC2268C85600C9EAF6 /* RutinaDetailCustomView.swift in Sources */,
+				41783BE42268C7CA00C9EAF6 /* RutinasCollectionViewController.swift in Sources */,
+				41783C042268C8AF00C9EAF6 /* HealthyProfilePickerExtension.swift in Sources */,
 				414E6C0B2263A27800EE02EE /* HealthyWorld.xcdatamodeld in Sources */,
 				414E6C1F2263A2D600EE02EE /* SwipingExtensionCollectionView.swift in Sources */,
+				41783BF52268C81500C9EAF6 /* RutinaCollectionViewCell.swift in Sources */,
+				41783BE92268C7EE00C9EAF6 /* HealthyRutinaViewController.swift in Sources */,
 				414E6C212263A2D600EE02EE /* Page.swift in Sources */,
 				4192862922648D4200953634 /* HealthyProfileViewController.swift in Sources */,
 				4192862C22651B2300953634 /* User.swift in Sources */,
+				41783BF42268C81500C9EAF6 /* RutinaTableViewCell.swift in Sources */,
+				41783BDD2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.swift in Sources */,
 				414E6C032263A27800EE02EE /* AppDelegate.swift in Sources */,
+				41783C002268C87100C9EAF6 /* VideoView.swift in Sources */,
+				41B7A5512268D180000BD78D /* MiPerfilViewController.swift in Sources */,
+				41783BD82268C78C00C9EAF6 /* HealthyDietaTableViewController.swift in Sources */,
 				414E6C222263A2D600EE02EE /* PageCell.swift in Sources */,
 				414E6C1E2263A2D600EE02EE /* SwipingController.swift in Sources */,
 			);

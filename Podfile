@@ -7,4 +7,6 @@ target 'HealthyWorld' do
 
   # Pods for HealthyWorld
   pod 'AnimatedGradientView', :git => 'https://github.com/rwbutler/AnimatedGradientView.git'
+  pod 'SwiftConfettiView', :git => 'https://github.com/ugurethemaydin/SwiftConfettiView.git'
+  pod 'SwiftSpinner', :git => 'https://github.com/icanzilb/SwiftSpinner.git'
 end

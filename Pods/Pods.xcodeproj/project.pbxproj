@@ -3,66 +3,141 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		107229E4745FBDC3D91C62CC31D4ECD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		151E64D193AB4032527B137A246B9021 /* RegularExpressionMatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533CE50B52B7E26349176E670415416F /* RegularExpressionMatchable.swift */; };
-		1D69123B5683FE4D17C4407697FD09F5 /* AnimatedGradientViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC766E8027749FC4E35C15C9C1750BC4 /* AnimatedGradientViewAnimation.swift */; };
-		2FEE5FF2E8FCFCDCAD89FF11BEEAC6E9 /* Collection+UniqueMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF02973B0A075CDF852BFBEEDDDB259 /* Collection+UniqueMap.swift */; };
-		3F771704D68D193E10C5D47B40639AD6 /* AnimatedGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD76BF6CEEC5B7CCED7F9B5D266BC6 /* AnimatedGradientView.swift */; };
-		5F9F9E21D0223D717839B5722B636BA4 /* Pods-HealthyWorld-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 708E70AC7F46381683BDE9797AAB8A89 /* Pods-HealthyWorld-dummy.m */; };
-		6C6E1AB94D5B5319FE9E3956E1DEE3E7 /* Pods-HealthyWorld-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F13C8EF1C0ABA091368AC08E2B81F0BB /* Pods-HealthyWorld-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7477CAFC7957A570471C64D7D5F5F33F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		8F61D8AD1CC52C47938D8D4E5AC2F734 /* AnimatedGradientView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F72CC12FC265FEA0B9E211303FE82A3F /* AnimatedGradientView-dummy.m */; };
-		B2FEBF0AF7565E13AAADB04FD736507B /* String+RegularExpressionMatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E037BCEE3C2E4F8CC0FE1CE620BB6818 /* String+RegularExpressionMatchable.swift */; };
-		C0F552CFF873CDFEA01872B8E14519DD /* AnimatedGradientViewColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BC6BAEBCB1D059B4BEFEA1769C866F /* AnimatedGradientViewColor.swift */; };
-		FA96D9A9BECE4E51C9032ACCDDFA9EBA /* AnimatedGradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3799EFDD1AA93EA6EB1FD723236739 /* AnimatedGradientDirection.swift */; };
-		FBFBD1EA81AE978783F531A8C72DEBC3 /* AnimatedGradientView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2C506EE0B2BD5FFFB03397507F366A /* AnimatedGradientView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BBAE104E2A70B02B0E7F6F88DB04397 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 743F5E1E382AB21022FEEEDD37BD774B /* diamond.png */; };
+		107229E4745FBDC3D91C62CC31D4ECD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
+		111FCF8F1EE9BB2A84673C0D0A7EAE9D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E839864EE09C8CE0528DE01FD9241A /* QuartzCore.framework */; };
+		1443EC053068446832521A46BF059148 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B507FBC5041EE86D66D4DD46208943 /* star.png */; };
+		151E64D193AB4032527B137A246B9021 /* RegularExpressionMatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8B24D1C501BBC4D25BEF15F8D0694 /* RegularExpressionMatchable.swift */; };
+		19F4849AAB8A54DE003E22D75351FFDE /* Pods-HealthyWorld-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 708E70AC7F46381683BDE9797AAB8A89 /* Pods-HealthyWorld-dummy.m */; };
+		1D69123B5683FE4D17C4407697FD09F5 /* AnimatedGradientViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5F67EC499A6EF4FC098D7AEB34E9B /* AnimatedGradientViewAnimation.swift */; };
+		2FEE5FF2E8FCFCDCAD89FF11BEEAC6E9 /* Collection+UniqueMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7DB8D50645FB6C3AE5F14DDAFC3F76 /* Collection+UniqueMap.swift */; };
+		3444FBF231B035DF77DCAAC3F147D4B8 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = F667E1F2F9E1E0DAB7231428E307FB05 /* triangle.png */; };
+		3652CD05098924938455A7AB200D0440 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 92FCAFCFC21E5702C4C53FB05224BB1C /* confetti.png */; };
+		3F771704D68D193E10C5D47B40639AD6 /* AnimatedGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A1705E94D9E8E8DD54CCC8E41C3DC2 /* AnimatedGradientView.swift */; };
+		4CADD46B9DE5CF8A34EF2BD452309C13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E826AE0196CB3540E72242664FBD3F32 /* UIKit.framework */; };
+		4D802917A8BD5815FF4EB966E912CB31 /* SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2105ADDEF107CD5352BA089526FBC5B /* SwiftSpinner-dummy.m */; };
+		63D0F9E7DE70F00CFE6E7C5C79383C3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
+		659FC03F6F3AE8F00563B604AF18325C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E826AE0196CB3540E72242664FBD3F32 /* UIKit.framework */; };
+		69D2591C6111DABE10E72945F0151F1B /* SwiftConfettiView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 270C5356A492C57DEA3FCEF27A426728 /* SwiftConfettiView.bundle */; };
+		76FA1EDB0CE09105FCF056A1E8CF5959 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
+		8F61D8AD1CC52C47938D8D4E5AC2F734 /* AnimatedGradientView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8034C7C57A1D8C7215BFB5DBA9B08194 /* AnimatedGradientView-dummy.m */; };
+		99B9D1BD3D1BD9BEAFE1144D92ADB53D /* SwiftSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD13AE974E6CEDC26D12D5E6EBC1526 /* SwiftSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C6CD178F80420169257C0F8DF8AFD05 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 92FCAFCFC21E5702C4C53FB05224BB1C /* confetti.png */; };
+		A5FFED16AD2D23460CB02407ED50CB28 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D8F41B1114C2663611E96F28DD2ECD /* SwiftSpinner.swift */; };
+		AA13447111C0D8E5833B82BCEF2199A9 /* SwiftConfettiView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA11DE8E160B4A064AD03800BE547DF /* SwiftConfettiView-dummy.m */; };
+		AF249F963D1A5E367C084170AB5545BF /* Pods-HealthyWorld-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F13C8EF1C0ABA091368AC08E2B81F0BB /* Pods-HealthyWorld-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2FEBF0AF7565E13AAADB04FD736507B /* String+RegularExpressionMatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC308CE0ED0716A14C0B0A53B68B8689 /* String+RegularExpressionMatchable.swift */; };
+		BE37C7AC50647869835228DECA667626 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 743F5E1E382AB21022FEEEDD37BD774B /* diamond.png */; };
+		C0F552CFF873CDFEA01872B8E14519DD /* AnimatedGradientViewColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4FA7CD3D985F8AF3C4C6ED98715D0 /* AnimatedGradientViewColor.swift */; };
+		C977A274A296F66487EB40559FF99708 /* SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 430F77BDAB2F35029C7525126BD17F24 /* SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB1E55C14F22C38C283432BA9D389FD0 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = F667E1F2F9E1E0DAB7231428E307FB05 /* triangle.png */; };
+		CF9F2231B5FE7816CC9666E0B710EDAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
+		D5EFE4D7D1AD89A895D9378AC1EE5BD5 /* SwiftConfettiView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC6269C5C45FD3FC1984B86F8E3B891 /* SwiftConfettiView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3FF4AD76181172028F9630FB49C3FC4 /* SwiftConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554526AA2219CBFD668570CD3E048B5E /* SwiftConfettiView.swift */; };
+		E7EE2CB7BE43E4E7AE31EFA8C93CBB17 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B507FBC5041EE86D66D4DD46208943 /* star.png */; };
+		FA96D9A9BECE4E51C9032ACCDDFA9EBA /* AnimatedGradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BC73DEA6F47F0A51C5BD937A8B1342 /* AnimatedGradientDirection.swift */; };
+		FBFBD1EA81AE978783F531A8C72DEBC3 /* AnimatedGradientView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F608099DFA2C32185CF267FC7C078F /* AnimatedGradientView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EA394C8875DDD5277ECFE012A42B0F10 /* PBXContainerItemProxy */ = {
+		3C752380EB58F1B999B9E90AE227F9EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CB4FD7495A3C0EC7B8B7CEBD1B4FCD2;
+			remoteInfo = "SwiftConfettiView-SwiftConfettiView";
+		};
+		835543C15D801E5E852B5BE03B6DE2DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CF208A5DCEC262DE51F5CCBA59198D35;
 			remoteInfo = AnimatedGradientView;
 		};
+		AA2760E810D6CD34223C2C6EF906B7AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 181839B63CCD9A3361D473B78A7E6AA7;
+			remoteInfo = SwiftSpinner;
+		};
+		F0D2F92ADAB0322DD3101C6ADA2E45B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 522EE8A789874F07D1FB51152C971B0E;
+			remoteInfo = SwiftConfettiView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0B4DBEE876C60EE0AEA0C18A38B6CFB2 /* Pods-HealthyWorld.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HealthyWorld.modulemap"; sourceTree = "<group>"; };
-		2E2C506EE0B2BD5FFFB03397507F366A /* AnimatedGradientView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedGradientView-umbrella.h"; sourceTree = "<group>"; };
-		3036442EF090B2D5D5E665777A0BE7E6 /* AnimatedGradientView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AnimatedGradientView.framework; path = AnimatedGradientView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		48FD76BF6CEEC5B7CCED7F9B5D266BC6 /* AnimatedGradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientView.swift; path = AnimatedGradientView/Classes/AnimatedGradientView.swift; sourceTree = "<group>"; };
-		4B3799EFDD1AA93EA6EB1FD723236739 /* AnimatedGradientDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientDirection.swift; path = AnimatedGradientView/Classes/AnimatedGradientDirection.swift; sourceTree = "<group>"; };
+		270C5356A492C57DEA3FCEF27A426728 /* SwiftConfettiView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftConfettiView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2737334E86A3A0468C2ED3B2A7F6ECB2 /* SwiftConfettiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftConfettiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3882C99B22457A4923EC923B2F21D83B /* AnimatedGradientView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnimatedGradientView.xcconfig; sourceTree = "<group>"; };
+		4256D3211BDFFBC662220E896D1723BF /* SwiftConfettiView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftConfettiView.xcconfig; sourceTree = "<group>"; };
+		430F77BDAB2F35029C7525126BD17F24 /* SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
 		510D64F36EE22CFAB94ADEF33B29542F /* Pods-HealthyWorld-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HealthyWorld-frameworks.sh"; sourceTree = "<group>"; };
-		533CE50B52B7E26349176E670415416F /* RegularExpressionMatchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegularExpressionMatchable.swift; path = AnimatedGradientView/Classes/Extensions/RegularExpressionMatchable.swift; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6620AEF1C510D1A806909E72831F40DA /* AnimatedGradientView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AnimatedGradientView.modulemap; sourceTree = "<group>"; };
+		554526AA2219CBFD668570CD3E048B5E /* SwiftConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftConfettiView.swift; path = SwiftConfettiView/Classes/SwiftConfettiView.swift; sourceTree = "<group>"; };
+		56B507FBC5041EE86D66D4DD46208943 /* star.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = star.png; path = SwiftConfettiView/Assets/star.png; sourceTree = "<group>"; };
+		5AA11DE8E160B4A064AD03800BE547DF /* SwiftConfettiView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftConfettiView-dummy.m"; sourceTree = "<group>"; };
+		5BDC4D0C75CBE3DFA813C8D75148BABE /* AnimatedGradientView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnimatedGradientView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F608099DFA2C32185CF267FC7C078F /* AnimatedGradientView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedGradientView-umbrella.h"; sourceTree = "<group>"; };
+		6E8405FFFC2286A95323111DB1B05AE7 /* SwiftConfettiView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftConfettiView-prefix.pch"; sourceTree = "<group>"; };
 		708E70AC7F46381683BDE9797AAB8A89 /* Pods-HealthyWorld-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthyWorld-dummy.m"; sourceTree = "<group>"; };
+		743F5E1E382AB21022FEEEDD37BD774B /* diamond.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = diamond.png; path = SwiftConfettiView/Assets/diamond.png; sourceTree = "<group>"; };
+		74D8B24D1C501BBC4D25BEF15F8D0694 /* RegularExpressionMatchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegularExpressionMatchable.swift; path = AnimatedGradientView/Classes/Extensions/RegularExpressionMatchable.swift; sourceTree = "<group>"; };
+		78F3C876FD82635633F5AEE2EA2E9256 /* Pods_HealthyWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8034C7C57A1D8C7215BFB5DBA9B08194 /* AnimatedGradientView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnimatedGradientView-dummy.m"; sourceTree = "<group>"; };
 		81B66502077E5E6F934D2CE7B4EA3EBC /* Pods-HealthyWorld-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthyWorld-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EF02973B0A075CDF852BFBEEDDDB259 /* Collection+UniqueMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+UniqueMap.swift"; path = "AnimatedGradientView/Classes/Extensions/Collection+UniqueMap.swift"; sourceTree = "<group>"; };
+		90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		92FCAFCFC21E5702C4C53FB05224BB1C /* confetti.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = confetti.png; path = SwiftConfettiView/Assets/confetti.png; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; };
+		97D8F41B1114C2663611E96F28DD2ECD /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSpinner.swift; path = SwiftSpinner/SwiftSpinner.swift; sourceTree = "<group>"; };
+		9E7DB8D50645FB6C3AE5F14DDAFC3F76 /* Collection+UniqueMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+UniqueMap.swift"; path = "AnimatedGradientView/Classes/Extensions/Collection+UniqueMap.swift"; sourceTree = "<group>"; };
 		A053261B4FCFA437DFC024D6B93DC876 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6366FFFE29382D561364FDA36328395 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2105ADDEF107CD5352BA089526FBC5B /* SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
 		A9BEF184C8BFEEB444C699D5B3D6AB63 /* Pods-HealthyWorld-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthyWorld-acknowledgements.plist"; sourceTree = "<group>"; };
-		BB40F904D25B370181DF9845126CA9DB /* AnimatedGradientView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedGradientView-prefix.pch"; sourceTree = "<group>"; };
-		C59ED841C754D1F9F1B0B6D7B6C1596C /* AnimatedGradientView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnimatedGradientView.xcconfig; sourceTree = "<group>"; };
-		C5D8959CCB0EBB9207316E8A6580544F /* Pods_HealthyWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HealthyWorld.framework; path = "Pods-HealthyWorld.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC766E8027749FC4E35C15C9C1750BC4 /* AnimatedGradientViewAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientViewAnimation.swift; path = AnimatedGradientView/Classes/AnimatedGradientViewAnimation.swift; sourceTree = "<group>"; };
+		AC308CE0ED0716A14C0B0A53B68B8689 /* String+RegularExpressionMatchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+RegularExpressionMatchable.swift"; path = "AnimatedGradientView/Classes/Extensions/String+RegularExpressionMatchable.swift"; sourceTree = "<group>"; };
+		AFEC830624A77C4477077D5EC41E27EF /* SwiftConfettiView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftConfettiView.modulemap; sourceTree = "<group>"; };
+		B2A5286D60285C6C00A510ACCEE429F3 /* SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpinner.xcconfig; sourceTree = "<group>"; };
+		BA6844E073CC1E4BBF865E9ADFE3C422 /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF387AD36829AEFB133F192D310AA1FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1C09E163AF9235AF51DDF56A02B4855 /* AnimatedGradientView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedGradientView-prefix.pch"; sourceTree = "<group>"; };
+		C2BC73DEA6F47F0A51C5BD937A8B1342 /* AnimatedGradientDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientDirection.swift; path = AnimatedGradientView/Classes/AnimatedGradientDirection.swift; sourceTree = "<group>"; };
+		C66929BCB6323E61EDC96608F9229824 /* ResourceBundle-SwiftConfettiView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SwiftConfettiView-Info.plist"; sourceTree = "<group>"; };
+		CCC6269C5C45FD3FC1984B86F8E3B891 /* SwiftConfettiView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftConfettiView-umbrella.h"; sourceTree = "<group>"; };
 		D21B74FCF819D2915EBEC5DB1C54BA2C /* Pods-HealthyWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthyWorld.release.xcconfig"; sourceTree = "<group>"; };
-		D7BC6BAEBCB1D059B4BEFEA1769C866F /* AnimatedGradientViewColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientViewColor.swift; path = AnimatedGradientView/Classes/AnimatedGradientViewColor.swift; sourceTree = "<group>"; };
+		D6E839864EE09C8CE0528DE01FD9241A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		D7EBDE00428727E69E75BFF5F5A56614 /* Pods-HealthyWorld-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HealthyWorld-resources.sh"; sourceTree = "<group>"; };
-		E037BCEE3C2E4F8CC0FE1CE620BB6818 /* String+RegularExpressionMatchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+RegularExpressionMatchable.swift"; path = "AnimatedGradientView/Classes/Extensions/String+RegularExpressionMatchable.swift"; sourceTree = "<group>"; };
+		DA85D96A1074D448A806B9074101F8B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4C5F67EC499A6EF4FC098D7AEB34E9B /* AnimatedGradientViewAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientViewAnimation.swift; path = AnimatedGradientView/Classes/AnimatedGradientViewAnimation.swift; sourceTree = "<group>"; };
+		E4D4FA7CD3D985F8AF3C4C6ED98715D0 /* AnimatedGradientViewColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientViewColor.swift; path = AnimatedGradientView/Classes/AnimatedGradientViewColor.swift; sourceTree = "<group>"; };
+		E57C292B8069E9A926CBE10B5B5BC08E /* AnimatedGradientView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AnimatedGradientView.modulemap; sourceTree = "<group>"; };
+		E826AE0196CB3540E72242664FBD3F32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F0D35119DDE4229C12AB47D382A199C4 /* SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSpinner.modulemap; sourceTree = "<group>"; };
 		F13C8EF1C0ABA091368AC08E2B81F0BB /* Pods-HealthyWorld-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthyWorld-umbrella.h"; sourceTree = "<group>"; };
-		F72CC12FC265FEA0B9E211303FE82A3F /* AnimatedGradientView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnimatedGradientView-dummy.m"; sourceTree = "<group>"; };
+		F667E1F2F9E1E0DAB7231428E307FB05 /* triangle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = triangle.png; path = SwiftConfettiView/Assets/triangle.png; sourceTree = "<group>"; };
+		F9A1705E94D9E8E8DD54CCC8E41C3DC2 /* AnimatedGradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientView.swift; path = AnimatedGradientView/Classes/AnimatedGradientView.swift; sourceTree = "<group>"; };
+		FAD13AE974E6CEDC26D12D5E6EBC1526 /* SwiftSpinner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftSpinner.h; path = SwiftSpinner/SwiftSpinner.h; sourceTree = "<group>"; };
+		FCD7541DA9AB979F252A16CEC96C3375 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDF171C0D0D20636A8715124002B024A /* Pods-HealthyWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthyWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		FEE9EED1CAFC8F3272B8EA212046F0F5 /* SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7438142048979EE92B5601C7CF0437F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D0F9E7DE70F00CFE6E7C5C79383C3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		843EF9E0C75FFA2CFB237335995B74D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,43 +146,113 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3089FB10760287C16C9F9101F2F70B8 /* Frameworks */ = {
+		E4D5290997792EFB568B76EF9FA4B0AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7477CAFC7957A570471C64D7D5F5F33F /* Foundation.framework in Frameworks */,
+				76FA1EDB0CE09105FCF056A1E8CF5959 /* Foundation.framework in Frameworks */,
+				111FCF8F1EE9BB2A84673C0D0A7EAE9D /* QuartzCore.framework in Frameworks */,
+				659FC03F6F3AE8F00563B604AF18325C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F033DD81CEA4270F5441080FFB365474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9F2231B5FE7816CC9666E0B710EDAE /* Foundation.framework in Frameworks */,
+				4CADD46B9DE5CF8A34EF2BD452309C13 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF8D345734C522F0D7CB067919ED761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		45C6F2166BC4EDA84341B1E225A6F08C /* Products */ = {
+		0068C584185ADE38DFC3D4E067E10695 /* SwiftSpinner */ = {
 			isa = PBXGroup;
 			children = (
-				3036442EF090B2D5D5E665777A0BE7E6 /* AnimatedGradientView.framework */,
-				C5D8959CCB0EBB9207316E8A6580544F /* Pods_HealthyWorld.framework */,
+				FAD13AE974E6CEDC26D12D5E6EBC1526 /* SwiftSpinner.h */,
+				97D8F41B1114C2663611E96F28DD2ECD /* SwiftSpinner.swift */,
+				E5C909CE06C0FA3F1C2B0389AD859F67 /* Support Files */,
 			);
-			name = Products;
+			path = SwiftSpinner;
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		0713A8C93D8CA0549DC82ECD8F084EB2 /* SwiftConfettiView */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				554526AA2219CBFD668570CD3E048B5E /* SwiftConfettiView.swift */,
+				94B39FCFF6C771EF93F82941A2F80750 /* Resources */,
+				4F23C4C19718105DE54F38E31DC24771 /* Support Files */,
 			);
-			name = iOS;
+			path = SwiftConfettiView;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EBF83A17FAAD0333B507DD3E1099181 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F23C4C19718105DE54F38E31DC24771 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7541DA9AB979F252A16CEC96C3375 /* Info.plist */,
+				C66929BCB6323E61EDC96608F9229824 /* ResourceBundle-SwiftConfettiView-Info.plist */,
+				AFEC830624A77C4477077D5EC41E27EF /* SwiftConfettiView.modulemap */,
+				4256D3211BDFFBC662220E896D1723BF /* SwiftConfettiView.xcconfig */,
+				5AA11DE8E160B4A064AD03800BE547DF /* SwiftConfettiView-dummy.m */,
+				6E8405FFFC2286A95323111DB1B05AE7 /* SwiftConfettiView-prefix.pch */,
+				CCC6269C5C45FD3FC1984B86F8E3B891 /* SwiftConfettiView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftConfettiView";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				9E1C596BEEB36C7406A34388A72A26A3 /* Pods */,
-				45C6F2166BC4EDA84341B1E225A6F08C /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				AEE0EE7BAD24D2AD2BE8ACD4DF9C6E24 /* Pods */,
+				AA56D3C05D8CA55DB2CC5D445DEA105A /* Products */,
 				95413A347652F2E9BB86401B1B7F8794 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8C484175372259A31B1C1E80C24EA634 /* AnimatedGradientView */ = {
+			isa = PBXGroup;
+			children = (
+				C2BC73DEA6F47F0A51C5BD937A8B1342 /* AnimatedGradientDirection.swift */,
+				F9A1705E94D9E8E8DD54CCC8E41C3DC2 /* AnimatedGradientView.swift */,
+				E4C5F67EC499A6EF4FC098D7AEB34E9B /* AnimatedGradientViewAnimation.swift */,
+				E4D4FA7CD3D985F8AF3C4C6ED98715D0 /* AnimatedGradientViewColor.swift */,
+				9E7DB8D50645FB6C3AE5F14DDAFC3F76 /* Collection+UniqueMap.swift */,
+				74D8B24D1C501BBC4D25BEF15F8D0694 /* RegularExpressionMatchable.swift */,
+				AC308CE0ED0716A14C0B0A53B68B8689 /* String+RegularExpressionMatchable.swift */,
+				9EB39AA19D8C160C09E305EEDE4EF4AD /* Support Files */,
+			);
+			path = AnimatedGradientView;
+			sourceTree = "<group>";
+		};
+		94B39FCFF6C771EF93F82941A2F80750 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92FCAFCFC21E5702C4C53FB05224BB1C /* confetti.png */,
+				743F5E1E382AB21022FEEEDD37BD774B /* diamond.png */,
+				56B507FBC5041EE86D66D4DD46208943 /* star.png */,
+				F667E1F2F9E1E0DAB7231428E307FB05 /* triangle.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		95413A347652F2E9BB86401B1B7F8794 /* Targets Support Files */ = {
@@ -118,50 +263,64 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9E1C596BEEB36C7406A34388A72A26A3 /* Pods */ = {
+		9EB39AA19D8C160C09E305EEDE4EF4AD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B61641644E356E00E7A5EC5223F2EDCE /* AnimatedGradientView */,
+				E57C292B8069E9A926CBE10B5B5BC08E /* AnimatedGradientView.modulemap */,
+				3882C99B22457A4923EC923B2F21D83B /* AnimatedGradientView.xcconfig */,
+				8034C7C57A1D8C7215BFB5DBA9B08194 /* AnimatedGradientView-dummy.m */,
+				C1C09E163AF9235AF51DDF56A02B4855 /* AnimatedGradientView-prefix.pch */,
+				66F608099DFA2C32185CF267FC7C078F /* AnimatedGradientView-umbrella.h */,
+				DA85D96A1074D448A806B9074101F8B1 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AnimatedGradientView";
+			sourceTree = "<group>";
+		};
+		9EBF83A17FAAD0333B507DD3E1099181 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */,
+				D6E839864EE09C8CE0528DE01FD9241A /* QuartzCore.framework */,
+				E826AE0196CB3540E72242664FBD3F32 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AA56D3C05D8CA55DB2CC5D445DEA105A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BDC4D0C75CBE3DFA813C8D75148BABE /* AnimatedGradientView.framework */,
+				78F3C876FD82635633F5AEE2EA2E9256 /* Pods_HealthyWorld.framework */,
+				270C5356A492C57DEA3FCEF27A426728 /* SwiftConfettiView.bundle */,
+				2737334E86A3A0468C2ED3B2A7F6ECB2 /* SwiftConfettiView.framework */,
+				BA6844E073CC1E4BBF865E9ADFE3C422 /* SwiftSpinner.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEE0EE7BAD24D2AD2BE8ACD4DF9C6E24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C484175372259A31B1C1E80C24EA634 /* AnimatedGradientView */,
+				0713A8C93D8CA0549DC82ECD8F084EB2 /* SwiftConfettiView */,
+				0068C584185ADE38DFC3D4E067E10695 /* SwiftSpinner */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B61641644E356E00E7A5EC5223F2EDCE /* AnimatedGradientView */ = {
+		E5C909CE06C0FA3F1C2B0389AD859F67 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4B3799EFDD1AA93EA6EB1FD723236739 /* AnimatedGradientDirection.swift */,
-				48FD76BF6CEEC5B7CCED7F9B5D266BC6 /* AnimatedGradientView.swift */,
-				CC766E8027749FC4E35C15C9C1750BC4 /* AnimatedGradientViewAnimation.swift */,
-				D7BC6BAEBCB1D059B4BEFEA1769C866F /* AnimatedGradientViewColor.swift */,
-				9EF02973B0A075CDF852BFBEEDDDB259 /* Collection+UniqueMap.swift */,
-				533CE50B52B7E26349176E670415416F /* RegularExpressionMatchable.swift */,
-				E037BCEE3C2E4F8CC0FE1CE620BB6818 /* String+RegularExpressionMatchable.swift */,
-				D7F032A76A21EE3047FB447A4558DD60 /* Support Files */,
-			);
-			name = AnimatedGradientView;
-			path = AnimatedGradientView;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D7F032A76A21EE3047FB447A4558DD60 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6620AEF1C510D1A806909E72831F40DA /* AnimatedGradientView.modulemap */,
-				C59ED841C754D1F9F1B0B6D7B6C1596C /* AnimatedGradientView.xcconfig */,
-				F72CC12FC265FEA0B9E211303FE82A3F /* AnimatedGradientView-dummy.m */,
-				BB40F904D25B370181DF9845126CA9DB /* AnimatedGradientView-prefix.pch */,
-				2E2C506EE0B2BD5FFFB03397507F366A /* AnimatedGradientView-umbrella.h */,
-				A6366FFFE29382D561364FDA36328395 /* Info.plist */,
+				BF387AD36829AEFB133F192D310AA1FD /* Info.plist */,
+				F0D35119DDE4229C12AB47D382A199C4 /* SwiftSpinner.modulemap */,
+				B2A5286D60285C6C00A510ACCEE429F3 /* SwiftSpinner.xcconfig */,
+				A2105ADDEF107CD5352BA089526FBC5B /* SwiftSpinner-dummy.m */,
+				FEE9EED1CAFC8F3272B8EA212046F0F5 /* SwiftSpinner-prefix.pch */,
+				430F77BDAB2F35029C7525126BD17F24 /* SwiftSpinner-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/AnimatedGradientView";
+			path = "../Target Support Files/SwiftSpinner";
 			sourceTree = "<group>";
 		};
 		FE10183B4EA756A194670AB130ED35EA /* Pods-HealthyWorld */ = {
@@ -185,6 +344,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		231D19C56AB88C3D9CEA820423FF3F2F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF249F963D1A5E367C084170AB5545BF /* Pods-HealthyWorld-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D5FDAF03CC03556B09634F4E2981F15 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C977A274A296F66487EB40559FF99708 /* SwiftSpinner-umbrella.h in Headers */,
+				99B9D1BD3D1BD9BEAFE1144D92ADB53D /* SwiftSpinner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		977B7FDEC290A89DBE09D458BB6D1AF2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,34 +369,89 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD5C04056BD915D2D9B7381647357350 /* Headers */ = {
+		C36969A763C86FA2C0272A6288DFDA22 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C6E1AB94D5B5319FE9E3956E1DEE3E7 /* Pods-HealthyWorld-umbrella.h in Headers */,
+				D5EFE4D7D1AD89A895D9378AC1EE5BD5 /* SwiftConfettiView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		93681D82430BB0EC68DD05B1A170E4B2 /* Pods-HealthyWorld */ = {
+		0D6B31B8893D97419DE0CA9E9543B15D /* Pods-HealthyWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADB2601B660C2A58D97F2979461E3B6B /* Build configuration list for PBXNativeTarget "Pods-HealthyWorld" */;
+			buildConfigurationList = C28556061C70E52DEA7EFDB71D5C20C8 /* Build configuration list for PBXNativeTarget "Pods-HealthyWorld" */;
 			buildPhases = (
-				A603A1997FCBF671BE3B2FC92CAE225F /* Sources */,
-				F3089FB10760287C16C9F9101F2F70B8 /* Frameworks */,
-				AD5C04056BD915D2D9B7381647357350 /* Headers */,
+				EC2BBDFC20B4D99D7A47EFEA22F0098B /* Sources */,
+				7438142048979EE92B5601C7CF0437F6 /* Frameworks */,
+				231D19C56AB88C3D9CEA820423FF3F2F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4D2FCCB6AA6C8AACC4FD3129D156025A /* PBXTargetDependency */,
+				C2C380181B00DD4B419D1EFD4191F75C /* PBXTargetDependency */,
+				C6004E7AEFCA6BF3A84C0EB66FA86613 /* PBXTargetDependency */,
+				833AA2971C53D2C1837AE568B32B9829 /* PBXTargetDependency */,
 			);
 			name = "Pods-HealthyWorld";
 			productName = "Pods-HealthyWorld";
-			productReference = C5D8959CCB0EBB9207316E8A6580544F /* Pods_HealthyWorld.framework */;
+			productReference = 78F3C876FD82635633F5AEE2EA2E9256 /* Pods_HealthyWorld.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		181839B63CCD9A3361D473B78A7E6AA7 /* SwiftSpinner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4B0FADEB40E298244A00E0726F44D69 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */;
+			buildPhases = (
+				CDEF7D04BB8E16F8CEB0CA12A47B468F /* Sources */,
+				F033DD81CEA4270F5441080FFB365474 /* Frameworks */,
+				6D5FDAF03CC03556B09634F4E2981F15 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSpinner;
+			productName = SwiftSpinner;
+			productReference = BA6844E073CC1E4BBF865E9ADFE3C422 /* SwiftSpinner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		522EE8A789874F07D1FB51152C971B0E /* SwiftConfettiView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CE908827401E97FF603D23D15D703B7 /* Build configuration list for PBXNativeTarget "SwiftConfettiView" */;
+			buildPhases = (
+				56AD585D45BEC35D695DB37D46898DD2 /* Sources */,
+				E4D5290997792EFB568B76EF9FA4B0AC /* Frameworks */,
+				4B1A8AF0DE565CECAAF0037286F11765 /* Resources */,
+				C36969A763C86FA2C0272A6288DFDA22 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9DE286E79020377A9FBF405B7EB272A /* PBXTargetDependency */,
+			);
+			name = SwiftConfettiView;
+			productName = SwiftConfettiView;
+			productReference = 2737334E86A3A0468C2ED3B2A7F6ECB2 /* SwiftConfettiView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8CB4FD7495A3C0EC7B8B7CEBD1B4FCD2 /* SwiftConfettiView-SwiftConfettiView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1090386C67404A44E1E9B7D39A24730A /* Build configuration list for PBXNativeTarget "SwiftConfettiView-SwiftConfettiView" */;
+			buildPhases = (
+				0496923DBD75062AE07A868F0726E915 /* Sources */,
+				FDF8D345734C522F0D7CB067919ED761 /* Frameworks */,
+				A96D34DB0307C2ACE361ABB0E0ADC968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftConfettiView-SwiftConfettiView";
+			productName = "SwiftConfettiView-SwiftConfettiView";
+			productReference = 270C5356A492C57DEA3FCEF27A426728 /* SwiftConfettiView.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		CF208A5DCEC262DE51F5CCBA59198D35 /* AnimatedGradientView */ = {
 			isa = PBXNativeTarget;
@@ -236,7 +467,7 @@
 			);
 			name = AnimatedGradientView;
 			productName = AnimatedGradientView;
-			productReference = 3036442EF090B2D5D5E665777A0BE7E6 /* AnimatedGradientView.framework */;
+			productReference = 5BDC4D0C75CBE3DFA813C8D75148BABE /* AnimatedGradientView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -256,17 +487,62 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 45C6F2166BC4EDA84341B1E225A6F08C /* Products */;
+			productRefGroup = AA56D3C05D8CA55DB2CC5D445DEA105A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CF208A5DCEC262DE51F5CCBA59198D35 /* AnimatedGradientView */,
-				93681D82430BB0EC68DD05B1A170E4B2 /* Pods-HealthyWorld */,
+				0D6B31B8893D97419DE0CA9E9543B15D /* Pods-HealthyWorld */,
+				522EE8A789874F07D1FB51152C971B0E /* SwiftConfettiView */,
+				8CB4FD7495A3C0EC7B8B7CEBD1B4FCD2 /* SwiftConfettiView-SwiftConfettiView */,
+				181839B63CCD9A3361D473B78A7E6AA7 /* SwiftSpinner */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		4B1A8AF0DE565CECAAF0037286F11765 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3652CD05098924938455A7AB200D0440 /* confetti.png in Resources */,
+				0BBAE104E2A70B02B0E7F6F88DB04397 /* diamond.png in Resources */,
+				E7EE2CB7BE43E4E7AE31EFA8C93CBB17 /* star.png in Resources */,
+				69D2591C6111DABE10E72945F0151F1B /* SwiftConfettiView.bundle in Resources */,
+				CB1E55C14F22C38C283432BA9D389FD0 /* triangle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96D34DB0307C2ACE361ABB0E0ADC968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C6CD178F80420169257C0F8DF8AFD05 /* confetti.png in Resources */,
+				BE37C7AC50647869835228DECA667626 /* diamond.png in Resources */,
+				1443EC053068446832521A46BF059148 /* star.png in Resources */,
+				3444FBF231B035DF77DCAAC3F147D4B8 /* triangle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		0496923DBD75062AE07A868F0726E915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56AD585D45BEC35D695DB37D46898DD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA13447111C0D8E5833B82BCEF2199A9 /* SwiftConfettiView-dummy.m in Sources */,
+				E3FF4AD76181172028F9630FB49C3FC4 /* SwiftConfettiView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A2A105A6C206DDD07B0D2ABD128F63D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,26 +558,85 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A603A1997FCBF671BE3B2FC92CAE225F /* Sources */ = {
+		CDEF7D04BB8E16F8CEB0CA12A47B468F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F9F9E21D0223D717839B5722B636BA4 /* Pods-HealthyWorld-dummy.m in Sources */,
+				4D802917A8BD5815FF4EB966E912CB31 /* SwiftSpinner-dummy.m in Sources */,
+				A5FFED16AD2D23460CB02407ED50CB28 /* SwiftSpinner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2BBDFC20B4D99D7A47EFEA22F0098B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F4849AAB8A54DE003E22D75351FFDE /* Pods-HealthyWorld-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4D2FCCB6AA6C8AACC4FD3129D156025A /* PBXTargetDependency */ = {
+		833AA2971C53D2C1837AE568B32B9829 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSpinner;
+			target = 181839B63CCD9A3361D473B78A7E6AA7 /* SwiftSpinner */;
+			targetProxy = AA2760E810D6CD34223C2C6EF906B7AC /* PBXContainerItemProxy */;
+		};
+		B9DE286E79020377A9FBF405B7EB272A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftConfettiView-SwiftConfettiView";
+			target = 8CB4FD7495A3C0EC7B8B7CEBD1B4FCD2 /* SwiftConfettiView-SwiftConfettiView */;
+			targetProxy = 3C752380EB58F1B999B9E90AE227F9EF /* PBXContainerItemProxy */;
+		};
+		C2C380181B00DD4B419D1EFD4191F75C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AnimatedGradientView;
 			target = CF208A5DCEC262DE51F5CCBA59198D35 /* AnimatedGradientView */;
-			targetProxy = EA394C8875DDD5277ECFE012A42B0F10 /* PBXContainerItemProxy */;
+			targetProxy = 835543C15D801E5E852B5BE03B6DE2DB /* PBXContainerItemProxy */;
+		};
+		C6004E7AEFCA6BF3A84C0EB66FA86613 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftConfettiView;
+			target = 522EE8A789874F07D1FB51152C971B0E /* SwiftConfettiView */;
+			targetProxy = F0D2F92ADAB0322DD3101C6ADA2E45B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0575761C4E225449DE048B4F95819046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2A5286D60285C6C00A510ACCEE429F3 /* SwiftSpinner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSpinner;
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		063198AB09B9CDB3A695432FC17AD8CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -360,7 +695,59 @@
 			};
 			name = Release;
 		};
-		2F723E060A3C9328587433A21292A1E1 /* Debug */ = {
+		067D069C7A0437326ABEA211A94720EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4256D3211BDFFBC662220E896D1723BF /* SwiftConfettiView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftConfettiView";
+				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/ResourceBundle-SwiftConfettiView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SwiftConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2238D20A068D47F6C9B4E6ECACF44714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D21B74FCF819D2915EBEC5DB1C54BA2C /* Pods-HealthyWorld.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HealthyWorld/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HealthyWorld/Pods-HealthyWorld.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D63134567B235EF73082C3A61E908E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FDF171C0D0D20636A8715124002B024A /* Pods-HealthyWorld.debug.xcconfig */;
 			buildSettings = {
@@ -378,11 +765,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-HealthyWorld/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HealthyWorld/Pods-HealthyWorld.modulemap";
 				OTHER_LDFLAGS = "";
@@ -399,6 +782,39 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		71C6687E21FD9F40AE90B0F7BA964229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4256D3211BDFFBC662220E896D1723BF /* SwiftConfettiView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftConfettiView/SwiftConfettiView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftConfettiView/SwiftConfettiView.modulemap";
+				PRODUCT_MODULE_NAME = SwiftConfettiView;
+				PRODUCT_NAME = SwiftConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		87EAC867385563488A6D8F1E74AC46B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -463,12 +879,10 @@
 			};
 			name = Debug;
 		};
-		D4AF3F1365BC992FD406547CAF600205 /* Release */ = {
+		ABD3A0FAB8736811259514823F407B55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D21B74FCF819D2915EBEC5DB1C54BA2C /* Pods-HealthyWorld.release.xcconfig */;
+			baseConfigurationReference = B2A5286D60285C6C00A510ACCEE429F3 /* SwiftSpinner.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -478,24 +892,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HealthyWorld/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HealthyWorld/Pods-HealthyWorld.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSpinner;
+				PRODUCT_NAME = SwiftSpinner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -503,9 +912,57 @@
 			};
 			name = Release;
 		};
+		BD2134AB56F9641A9A349014FEDAE008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4256D3211BDFFBC662220E896D1723BF /* SwiftConfettiView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftConfettiView";
+				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/ResourceBundle-SwiftConfettiView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SwiftConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C8CF27A915447C033948C07DFCA1EDB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4256D3211BDFFBC662220E896D1723BF /* SwiftConfettiView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftConfettiView/SwiftConfettiView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftConfettiView/SwiftConfettiView.modulemap";
+				PRODUCT_MODULE_NAME = SwiftConfettiView;
+				PRODUCT_NAME = SwiftConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		E9F5A3296BDA158142481BBFB2FFB85E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C59ED841C754D1F9F1B0B6D7B6C1596C /* AnimatedGradientView.xcconfig */;
+			baseConfigurationReference = 3882C99B22457A4923EC923B2F21D83B /* AnimatedGradientView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -520,11 +977,7 @@
 				INFOPLIST_FILE = "Target Support Files/AnimatedGradientView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AnimatedGradientView/AnimatedGradientView.modulemap";
 				PRODUCT_MODULE_NAME = AnimatedGradientView;
 				PRODUCT_NAME = AnimatedGradientView;
@@ -542,7 +995,7 @@
 		};
 		EA8E0A11AB12421256385A7A020D8BEB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C59ED841C754D1F9F1B0B6D7B6C1596C /* AnimatedGradientView.xcconfig */;
+			baseConfigurationReference = 3882C99B22457A4923EC923B2F21D83B /* AnimatedGradientView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -557,11 +1010,7 @@
 				INFOPLIST_FILE = "Target Support Files/AnimatedGradientView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AnimatedGradientView/AnimatedGradientView.modulemap";
 				PRODUCT_MODULE_NAME = AnimatedGradientView;
 				PRODUCT_NAME = AnimatedGradientView;
@@ -579,6 +1028,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1090386C67404A44E1E9B7D39A24730A /* Build configuration list for PBXNativeTarget "SwiftConfettiView-SwiftConfettiView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				067D069C7A0437326ABEA211A94720EE /* Debug */,
+				BD2134AB56F9641A9A349014FEDAE008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -588,11 +1046,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADB2601B660C2A58D97F2979461E3B6B /* Build configuration list for PBXNativeTarget "Pods-HealthyWorld" */ = {
+		7CE908827401E97FF603D23D15D703B7 /* Build configuration list for PBXNativeTarget "SwiftConfettiView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F723E060A3C9328587433A21292A1E1 /* Debug */,
-				D4AF3F1365BC992FD406547CAF600205 /* Release */,
+				C8CF27A915447C033948C07DFCA1EDB1 /* Debug */,
+				71C6687E21FD9F40AE90B0F7BA964229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -602,6 +1060,24 @@
 			buildConfigurations = (
 				EA8E0A11AB12421256385A7A020D8BEB /* Debug */,
 				E9F5A3296BDA158142481BBFB2FFB85E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C28556061C70E52DEA7EFDB71D5C20C8 /* Build configuration list for PBXNativeTarget "Pods-HealthyWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D63134567B235EF73082C3A61E908E2 /* Debug */,
+				2238D20A068D47F6C9B4E6ECACF44714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4B0FADEB40E298244A00E0726F44D69 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0575761C4E225449DE048B4F95819046 /* Debug */,
+				ABD3A0FAB8736811259514823F407B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

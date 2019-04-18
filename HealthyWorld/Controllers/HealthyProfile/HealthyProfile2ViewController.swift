@@ -8,6 +8,7 @@
 
 import UIKit
 import AnimatedGradientView
+import SwiftSpinner
 
 class HealthyProfile2ViewController: UIViewController {
     
@@ -109,6 +110,7 @@ class HealthyProfile2ViewController: UIViewController {
     
     @objc func tapInit(_ sender:UIButton) {
         //Navegacion al menu principal
+        SwiftSpinner.show(delay: 0.2, title: "Cargando los datos...")
         let mainMenuController = HealthyMenuTabController()
         mainMenuController.modalTransitionStyle = .flipHorizontal
         self.present(mainMenuController, animated: true, completion: nil)
