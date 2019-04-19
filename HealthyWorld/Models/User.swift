@@ -12,22 +12,25 @@ class User {
     
     static var idUser:Int = 0
     
-    private let username:String!
+    private let username:String?
     
-    private var age:Int!
+    private var age:Int?
     
-    private let weight:Double!
+    private let weight:Double?
     
-    private let genre:String!
+    private let genre:String?
     
-    private let height:Double!
+    private let height:Double?
     
-    init(_ nombre: String,_ edad:Int,_ peso:Double,_ altura:Double,_ sexo:String) {
+    private let objective:String?
+    
+    init(_ nombre: String,_ edad:Int,_ peso:Double,_ altura:Double,_ sexo:String,_ objetivo:String) {
         self.username = nombre
         self.age = edad
         self.weight = peso
         self.height = altura
         self.genre = sexo
+        self.objective = objetivo
         User.createUniqueId()
         
         
@@ -39,7 +42,7 @@ class User {
         self.weight = nil
         self.height = nil
         self.genre = nil
-        
+        self.objective = nil
     }
     
     static func createUniqueId() {

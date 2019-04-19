@@ -48,7 +48,7 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
     let textView: UITextView = {
         let text = UITextView()
         text.backgroundColor = #colorLiteral(red: 0.4258117608, green: 0.9414469959, blue: 0.5609530896, alpha: 0)
-        let attributed = NSMutableAttributedString(string: "Para comenzar tu nueva etapa saludable, necesitamos que nos proporciones tus datos.", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18)])
+        let attributed = NSMutableAttributedString(string: "Para comenzar tu nueva etapa saludable, necesitamos que nos proporciones la siguiente información.", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18)])
         text.attributedText = attributed
         text.textAlignment = .center
         text.layer.masksToBounds = true
@@ -138,25 +138,27 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
        return segmented
     }()
     
-    let buttonRegister: UIButton = {
-       let button = UIButton()
-       button.translatesAutoresizingMaskIntoConstraints = false
-       button.setImage(#imageLiteral(resourceName: "iconNext2"), for: .normal)
-       button.tintColor = .white
-       button.layer.cornerRadius = 10
-       button.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
-       button.isHidden = true
-       //button.addTarget(self, action: #selector(tapRegister), for: .touchUpInside)
-       return button
-        
+    let imageView:UIImageView = {
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "nutricon") )
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
         
     }()
     
+    
     @objc func tapped(_ sender: AnyObject) {
-        let profile2controller: HealthyProfile2ViewController = HealthyProfile2ViewController()
-        profile2controller.modalTransitionStyle = .partialCurl
-        self.navigationController?.pushViewController(profile2controller, animated: true)
-        print("TOCADO!!")
+        //Validation
+        if (self.fieldName.text?.isEmpty)! && (self.fieldDate.text?.isEmpty)! {
+            
+            
+        }else {
+            let profile2controller: HealthyProfile2ViewController = HealthyProfile2ViewController()
+            profile2controller.modalTransitionStyle = .partialCurl
+            self.navigationController?.pushViewController(profile2controller, animated: true)
+            
+        }
+        
         
         
     }
@@ -190,6 +192,13 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         setCustomProfileData()
     }
     
+    func saveDataUser() {
+        
+        
+        
+        
+    }
+    
     //añadir evento Tap a la vista para salir del picker cuando el usuario toca fuera de este
     func registerTapGestureRecognizer() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(gestureRecognizer:)))
@@ -197,7 +206,7 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
     }
     
     @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
-        self.view.endEditing(true)
+        self.view.endEditing(true)//al puslsar la pantalla desaparece el teclado o picker
     }
     
     func setNavigationItemsBar() {
@@ -217,16 +226,17 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         //Set animations
         setAnimationBackground()
         //Añado el textView a mi view principal
-        self.view.addSubview(textView)
-        self.textView.topAnchor.constraint(equalTo: view.topAnchor, constant:100).isActive = true
-        self.textView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100).isActive = true
-        self.textView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100).isActive = true
-        self.textView.heightAnchor.constraint(equalToConstant: 100).isActive = true
-        self.textView.widthAnchor.constraint(equalToConstant: 25).isActive = true
+        self.view.addSubview(imageView)
+        self.imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
+        self.imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100).isActive = true
+        self.imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100).isActive = true
+        self.imageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        self.imageView.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        
         
         //Añado el label del Name
         self.view.addSubview(nameLabel)
-        self.nameLabel.topAnchor.constraint(equalTo: textView.bottomAnchor, constant: 10).isActive = true
+        self.nameLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 50).isActive = true
         self.nameLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         self.nameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         self.nameLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -262,7 +272,7 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         self.sexLabel.topAnchor.constraint(equalTo: fieldDate.bottomAnchor, constant: 50).isActive = true
         self.sexLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         self.sexLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        self.sexLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        self.sexLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
         self.sexLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
         //Añado el segmented del sexo
@@ -273,17 +283,15 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
         self.segmentedSex.heightAnchor.constraint(equalToConstant: 40).isActive = true
         self.segmentedSex.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
-      
-        //Añado Boton de registro
-        self.view.addSubview(buttonRegister)
-        //self.buttonRegister.topAnchor.constraint(equalTo: segmentedSex.bottomAnchor, constant: 40).isActive = true
-        self.buttonRegister.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 340).isActive = true
-        self.buttonRegister.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        self.buttonRegister.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
-        self.buttonRegister.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        self.buttonRegister.widthAnchor.constraint(equalToConstant: 50).isActive = true
-    }
+//        self.view.addSubview(textView)
+//        self.textView.topAnchor.constraint(equalTo: self.segmentedSex.bottomAnchor, constant:50).isActive = true
+//        self.textView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100).isActive = true
+//        self.textView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100).isActive = true
+//        self.textView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+//        self.textView.widthAnchor.constraint(equalToConstant: 25).isActive = true
+  
     
+    }
     
     //Background animations
     func setAnimationBackground() {

@@ -40,6 +40,32 @@ class HealthyProfile2ViewController: UIViewController {
         return label
     }()
     
+    let objectiveLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Objetivo"
+        label.textAlignment = .center
+        label.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = .white
+        label.layer.masksToBounds = true
+        label.layer.cornerRadius = 10
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let fieldObjective: UITextField = {
+        let field = UITextField()
+        field.placeholder = "Seleccione su objetivo.."
+        field.translatesAutoresizingMaskIntoConstraints = false
+        field.layer.masksToBounds = true
+        field.layer.cornerRadius = 10
+        field.backgroundColor = .white
+        field.textAlignment = .center
+        field.tintColor = .black
+        field.setIcon(#imageLiteral(resourceName: "iconEstatura"))
+        return field
+    }()
+    
     let fieldWeight: UITextField = {
         let field = UITextField()
         field.placeholder = "Peso en Kilogramos..."
@@ -74,18 +100,6 @@ class HealthyProfile2ViewController: UIViewController {
         
     }()
     
-    let buttonPrev: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setImage(#imageLiteral(resourceName: "iconPrev"), for: .normal)
-        button.tintColor = .white
-        button.layer.cornerRadius = 10
-        button.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.7921568627, blue: 0.462745098, alpha: 1)
-        button.addTarget(self, action: #selector(tapRegister(_:)), for: .touchUpInside)
-        return button
-        
-        
-    }()
     
     let buttonInit: UIButton = {
         let button = UIButton()
@@ -99,16 +113,9 @@ class HealthyProfile2ViewController: UIViewController {
     }()
     
     
-    @objc func tapRegister(_ sender: UIButton) {
-        let profile1 = HealthyProfileViewController()
-        let navController = UINavigationController(rootViewController: profile1)
-        navController.modalTransitionStyle = .partialCurl
-        navController.navigationBar.isHidden = false
-        self.present(navController, animated: true, completion: nil)
-        
-    }
-    
     @objc func tapInit(_ sender:UIButton) {
+        //Controlar los datos
+        
         //Navegacion al menu principal
         //SwiftSpinner.show(delay: 0.2, title: "Cargando los datos...")
         let mainMenuController = HealthyMenuTabController()
@@ -120,7 +127,7 @@ class HealthyProfile2ViewController: UIViewController {
         super.viewDidLoad()
         backgroundAnimation()
         setCustomProfileData2()
-       
+        
         // Do any additional setup after loading the view.
     }
     
@@ -144,25 +151,25 @@ class HealthyProfile2ViewController: UIViewController {
         
         //Añado imagen
         self.view.addSubview(imageView)
+        
         self.imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
         self.imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100).isActive = true
         self.imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100).isActive = true
         self.imageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
         self.imageView.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        
-        
-        
-        
+    
         //Añado el label de Peso
         self.view.addSubview(weightLabel)
+        
         self.weightLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 50).isActive = true
         self.weightLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         self.weightLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        self.weightLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        self.weightLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
         self.weightLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
         //Añado el field del peso
         self.view.addSubview(fieldWeight)
+        
         self.fieldWeight.topAnchor.constraint(equalTo: weightLabel.bottomAnchor, constant: 10).isActive = true
         self.fieldWeight.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
         self.fieldWeight.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
@@ -171,36 +178,47 @@ class HealthyProfile2ViewController: UIViewController {
         
         //añado el label de estatura
         self.view.addSubview(heightLabel)
+        
         self.heightLabel.topAnchor.constraint(equalTo: fieldWeight.bottomAnchor, constant: 50).isActive = true
         self.heightLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         self.heightLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        self.heightLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        self.heightLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
         self.heightLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
         //Añado el field de estatura
         self.view.addSubview(fieldHeight)
+        
         self.fieldHeight.topAnchor.constraint(equalTo: heightLabel.bottomAnchor, constant: 10).isActive = true
         self.fieldHeight.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
         self.fieldHeight.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
         self.fieldHeight.heightAnchor.constraint(equalToConstant: 40).isActive = true
         self.fieldHeight.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
-        //Añado boton prev
-        self.view.addSubview(buttonPrev)
-        self.buttonPrev.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        self.buttonPrev.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
-        self.buttonPrev.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -340).isActive = true
-        self.buttonPrev.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        self.buttonPrev.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        //Añado label de objetivos
+        self.view.addSubview(objectiveLabel)
+        
+        self.objectiveLabel.topAnchor.constraint(equalTo: fieldHeight.bottomAnchor, constant: 50).isActive = true
+        self.objectiveLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        self.objectiveLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        self.objectiveLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        self.objectiveLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        
+        //Añado el field de objetivos
+        self.view.addSubview(fieldObjective)
+        self.fieldObjective.topAnchor.constraint(equalTo: objectiveLabel.bottomAnchor, constant: 10).isActive = true
+        self.fieldObjective.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
+        self.fieldObjective.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
+        self.fieldObjective.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        self.fieldObjective.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
         //Añado Boton de registro
         self.view.addSubview(buttonInit)
     
-        self.buttonInit.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 280).isActive = true
-        self.buttonInit.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        self.buttonInit.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
+        self.buttonInit.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10).isActive = true
         self.buttonInit.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
         self.buttonInit.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        self.buttonInit.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        self.buttonInit.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
     }
 
