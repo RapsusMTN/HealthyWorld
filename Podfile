@@ -2,8 +2,7 @@
 # platform :ios, '9.0'
 
 target 'HealthyWorld' do
-  source 'https://github.com/cocoapods/specs.git'
-  platform :ios, '9.0'
+
   use_frameworks!
 
   # Pods for HealthyWorld
@@ -12,5 +11,5 @@ target 'HealthyWorld' do
   pod 'SwiftSpinner', :git => 'https://github.com/icanzilb/SwiftSpinner.git'
   pod 'VACalendar', :git => 'https://github.com/Vodolazkyi/VACalendar.git'
   pod 'WBCollectionViewLayout', :git => 'https://github.com/mwaqasbhati/WBCollectionViewLayout.git'
-  pod 'SwiftEntryKit', '1.0.1'
-end
+  pod 'SCLAlertView', :git => 'https://github.com/vikmeup/SCLAlertView-Swift.git'
+ end

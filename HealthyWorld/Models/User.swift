@@ -12,19 +12,71 @@ class User {
     
     static var idUser:Int = 0
     
-    private let username:String?
+    private var _username:String?
     
-    private var age:Int?
+    var username:String {
+        set {
+            _username = newValue
+        }
+        get{
+            return _username!
+        }
+    }
     
-    private let weight:Double?
+    private var _age:String?
+    var age:String {
+        get{
+            return _age!
+        }
+        set{
+            _age = newValue
+        }
+    }
     
-    private let genre:String?
+    private var _weight:String?
+    var weight:String {
+        get{
+            return _weight!
+        }
+        set{
+            _weight = newValue
+        }
+    }
     
-    private let height:Double?
+    private var _genre:String?
+    var genre:String {
+        get{
+            return _genre!
+        }
+        set {
+            _genre = newValue
+        }
+        
+    }
     
-    private let objective:String?
+    private var _height:String?
+    var height:String {
+        get {
+            return _height!
+        }
+        set {
+            _height = newValue
+        }
+    }
     
-    init(_ nombre: String,_ edad:Int,_ peso:Double,_ altura:Double,_ sexo:String,_ objetivo:String) {
+    private var _objective:String?
+    var objective:String {
+        get {
+            return _objective!
+        }
+        set {
+            _objective = newValue
+        }
+        
+        
+    }
+    
+    init(_ nombre: String,_ edad:String,_ peso:String,_ altura:String,_ sexo:String,_ objetivo:String) {
         self.username = nombre
         self.age = edad
         self.weight = peso
@@ -37,12 +89,7 @@ class User {
     }
     
     init() {
-        self.username = nil
-        self.age = nil
-        self.weight = nil
-        self.height = nil
-        self.genre = nil
-        self.objective = nil
+        
     }
     
     static func createUniqueId() {

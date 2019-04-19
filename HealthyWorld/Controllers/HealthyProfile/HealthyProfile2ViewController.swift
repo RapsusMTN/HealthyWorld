@@ -10,9 +10,9 @@ import UIKit
 import AnimatedGradientView
 import SwiftSpinner
 
-class HealthyProfile2ViewController: UIViewController {
+class HealthyProfile2ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     
-    
+    public var objectives = ["Fuerza","Definición","Perdida de Peso","Mantenimiento"]
 
     let weightLabel: UILabel = {
         let label = UILabel()
@@ -115,22 +115,49 @@ class HealthyProfile2ViewController: UIViewController {
     
     @objc func tapInit(_ sender:UIButton) {
         //Controlar los datos
+        if (self.fieldHeight.text?.isEmpty)! || (self.fieldWeight.text?.isEmpty)! || (self.fieldObjective.text?.isEmpty)! {
+            let alert = UIAlertController(title: "Espera", message: "Debes introducir todos los datos", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+        }else {
+            saveDataUser()
+            let mainMenuController = HealthyMenuTabController()
+            mainMenuController.modalTransitionStyle = .flipHorizontal
+            self.present(mainMenuController, animated: true, completion: nil)
+        }
         
-        //Navegacion al menu principal
-        //SwiftSpinner.show(delay: 0.2, title: "Cargando los datos...")
-        let mainMenuController = HealthyMenuTabController()
-        mainMenuController.modalTransitionStyle = .flipHorizontal
-        self.present(mainMenuController, animated: true, completion: nil)
+     
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        registerTapGestureRecognizer()
         backgroundAnimation()
         setCustomProfileData2()
         
         // Do any additional setup after loading the view.
     }
     
+    func saveDataUser() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.usuario.height = self.fieldHeight.text!
+        appDelegate.usuario.weight = self.fieldWeight.text!
+        appDelegate.usuario.objective = self.fieldObjective.text!
+        
+        
+        
+    }
+    
+    //añadir evento Tap a la vista para salir del picker cuando el usuario toca fuera de este
+    func registerTapGestureRecognizer() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(gestureRecognizer:)))
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
+        self.view.endEditing(true)//al puslsar la pantalla desaparece el teclado o picker
+    }
     
     func backgroundAnimation() {
         let animatedGradient = AnimatedGradientView()
@@ -202,6 +229,7 @@ class HealthyProfile2ViewController: UIViewController {
         self.objectiveLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         self.objectiveLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
         self.objectiveLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
+       
         
         //Añado el field de objetivos
         self.view.addSubview(fieldObjective)
@@ -210,6 +238,9 @@ class HealthyProfile2ViewController: UIViewController {
         self.fieldObjective.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
         self.fieldObjective.heightAnchor.constraint(equalToConstant: 40).isActive = true
         self.fieldObjective.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        let picker = UIPickerView()
+        picker.delegate = self
+        self.fieldObjective.inputView = picker
         
         //Añado Boton de registro
         self.view.addSubview(buttonInit)
@@ -220,6 +251,24 @@ class HealthyProfile2ViewController: UIViewController {
         self.buttonInit.heightAnchor.constraint(equalToConstant: 50).isActive = true
         self.buttonInit.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
+    }
+    
+    //MARK: - PickerDelegate
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return objectives.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return objectives[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.fieldObjective.text = objectives[row]
     }
 
 

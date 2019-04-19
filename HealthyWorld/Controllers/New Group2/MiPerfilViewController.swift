@@ -19,21 +19,33 @@ class MiPerfilViewController: UIViewController {
     
     @IBOutlet weak var labelImage: UIImageView!
     
-    @IBOutlet weak var labelSexo: UILabel!
-    
     @IBOutlet weak var labelAltura: UILabel!
     
     @IBOutlet weak var labelPeso: UILabel!
     
+    @IBOutlet weak var labelObjetivo: UILabel!
+    
+    
+    @IBOutlet weak var labelSexo: UILabel!
+    
+    @IBOutlet weak var altura: UILabel!
+    
+    @IBOutlet weak var peso: UILabel!
+    
+    @IBOutlet weak var objetivo: UILabel!
+    
     @IBOutlet weak var labelBienvenida: UILabel!
     
     @IBOutlet weak var descriptionView: UITextView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         createConfetti()
         setStyleViews()
         setNavigationBarItems()
+        setDataInLabels()
         // Do any additional setup after loading the view.
     }
     
@@ -44,9 +56,14 @@ class MiPerfilViewController: UIViewController {
     
     
     func setDataInLabels() {
-        
-        
-        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        self.labelNombre.text = appDelegate.usuario.username
+        self.labelEdad.text = "\(appDelegate.usuario.age) años"
+        self.labelSexo.text = appDelegate.usuario.genre
+        self.labelAltura.text = "\(appDelegate.usuario.height) m"
+        self.labelPeso.text = "\(appDelegate.usuario.weight) Kg"
+        self.labelObjetivo.text = appDelegate.usuario.objective
+        self.labelBienvenida.text = "Bienvenid@ \(appDelegate.usuario.username)"
         
     }
     
@@ -70,14 +87,32 @@ class MiPerfilViewController: UIViewController {
     }
     
     func setStyleViews() {
+        //Set image circle
+        self.labelImage.layer.borderWidth = 2
+        self.labelImage.layer.masksToBounds = false
+        self.labelImage.layer.borderColor = UIColor.black.cgColor
+        self.labelImage.layer.cornerRadius = self.labelImage.frame.height/2
+        self.labelImage.clipsToBounds = true
+        self.labelImage.backgroundColor = #colorLiteral(red: 0.6941176471, green: 1, blue: 0.7098039216, alpha: 1)
+        
         self.labelEdad.layer.masksToBounds = true
         self.labelEdad.layer.cornerRadius = 10
         self.labelNombre.layer.masksToBounds = true
         self.labelNombre.layer.cornerRadius = 10
         self.labelSexo.layer.masksToBounds = true
         self.labelSexo.layer.cornerRadius = 10
-        
-        
+        self.labelObjetivo.layer.masksToBounds = true
+        self.labelObjetivo.layer.cornerRadius = 10
+        self.labelAltura.layer.masksToBounds = true
+        self.labelAltura.layer.cornerRadius = 10
+        self.labelPeso.layer.masksToBounds = true
+        self.labelPeso.layer.cornerRadius = 10
+        self.altura.layer.masksToBounds = true
+        self.altura.layer.cornerRadius = 10
+        self.peso.layer.masksToBounds = true
+        self.peso.layer.cornerRadius = 10
+        self.objetivo.layer.masksToBounds = true
+        self.objetivo.layer.cornerRadius = 10
     }
     
     func setNavigationBarItems() {

@@ -8,13 +8,13 @@
 
 import UIKit
 import AnimatedGradientView
+import SCLAlertView
 
-class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class HealthyProfileViewController: UIViewController {
   
    //Edades para el picker
     public var stringAges:[String] = []
-    
-    public var example = ["Jorge","Timoteo","Alvaro","Friki","Amigos","Mios","Vida"]
+
     
     let picker: UIPickerView = {
            let picker = UIPickerView()
@@ -29,12 +29,13 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
        return datepicker
     }()
     
+    
     @objc func dateChanged(datePicker: UIDatePicker) {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "es")
         dateFormatter.dateFormat = "dd/MM/yyyy"
         self.fieldDate.text = dateFormatter.string(from: self.datePicker.date)
-        let edad = self.getAge(fecha: self.datePicker.date)
+       
     }
     
     //Right item of the NAvigationControllerBar
@@ -149,27 +150,28 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
     
     @objc func tapped(_ sender: AnyObject) {
         //Validation
-        if (self.fieldName.text?.isEmpty)! && (self.fieldDate.text?.isEmpty)! {
-            
-            
+        if (self.fieldName.text?.isEmpty)! || (self.fieldDate.text?.isEmpty)! {
+            let alert = UIAlertController(title: "Espera", message: "Debes introducir todos los datos", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
         }else {
+            
+            saveDataUser()//Guardo datos en memoria
             let profile2controller: HealthyProfile2ViewController = HealthyProfile2ViewController()
             profile2controller.modalTransitionStyle = .partialCurl
             self.navigationController?.pushViewController(profile2controller, animated: true)
-            
         }
-        
-        
-        
+   
     }
     
     
     @objc func selectedIndex(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
-          print("Hombre")
+          self.sexLabel.text = "Hombre"
         case 1:
-          print("Mujer")
+          self.sexLabel.text = "Mujer"
         default:
             return
         }
@@ -185,17 +187,17 @@ class HealthyProfileViewController: UIViewController, UIPickerViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         registerTapGestureRecognizer()
-        self.picker.delegate = self
-        self.picker.dataSource = self
         fillPicker()
         setNavigationItemsBar()
         setCustomProfileData()
     }
     
     func saveDataUser() {
-        
-        
-        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.usuario.username = self.fieldName.text!
+        let edad = self.getAge(fecha: self.datePicker.date)
+        appDelegate.usuario.age = String(edad)
+        appDelegate.usuario.genre = self.sexLabel.text!
         
     }
     
