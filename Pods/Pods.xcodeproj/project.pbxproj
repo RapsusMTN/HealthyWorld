@@ -7,249 +7,282 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0386EFCF0A81C578785AF76CCF824988 /* SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62DF75DFA56C0EF08D2381B8AD325F16 /* SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		03BA3CFC833B8FD210CAE2D74EB4E885 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
-		0C0CEA368A3FD8B0CBD4D4AA37F05E35 /* SwiftConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D613B05419B2209D1898D42747C075DE /* SwiftConfettiView.swift */; };
+		0625CFF1529415885BA078903EF080BD /* VACalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FD039FF8AC5B6B3573AAC959F42B6 /* VACalendar-dummy.m */; };
+		07D90230FDC646057B5CBFB6A263908D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E826AE0196CB3540E72242664FBD3F32 /* UIKit.framework */; };
+		0D9B63E6410B40164B75EDA8A60F6A31 /* SwiftConfettiView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 344170AEE867EA15ABE1D2A52050B61A /* SwiftConfettiView.bundle */; };
+		0DBDE452F03020274DFA5C2F80A045F8 /* VAFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8F5567E5D9AF1FD8BC23DCF84CDF8 /* VAFormatters.swift */; };
+		0E2B0E22416BEBA71F3EE07BE7A76434 /* VACalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC1DE44A642FF60AC2FC52E5DE54165F /* VACalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		107229E4745FBDC3D91C62CC31D4ECD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
-		13B7577DBCBAD1C4D46FCD64111A91FE /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = D57888734103F43CF460E1EE06B6AE18 /* triangle.png */; };
-		151E64D193AB4032527B137A246B9021 /* RegularExpressionMatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A61D54BA1AA8A4FEF009EAF07640E4 /* RegularExpressionMatchable.swift */; };
-		15A1368A675F10A77943E1D9C2C41CE4 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 46658CFE630155F926470D2CCA952A55 /* star.png */; };
-		1D69123B5683FE4D17C4407697FD09F5 /* AnimatedGradientViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA373DA6AEA6E6F4C68754686D94D8 /* AnimatedGradientViewAnimation.swift */; };
-		2F315A97DDB3C45699227087F7200C00 /* VACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C858951651D27C8C61AE55A1B2F3D37 /* VACalendar.swift */; };
-		2FEE5FF2E8FCFCDCAD89FF11BEEAC6E9 /* Collection+UniqueMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5076FD1DE92C6A01D7C6DFCE75CFC2 /* Collection+UniqueMap.swift */; };
-		31A998124A9C4D81C615599F3AC4B079 /* WBGridViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C94E09CE7358FE618F13669638F48B /* WBGridViewLayout.swift */; };
-		3963EB5AA782996DD6D54BC0D7287BDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E826AE0196CB3540E72242664FBD3F32 /* UIKit.framework */; };
-		39A30AC3E980A5CA0CE527534062FE32 /* VADay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC5F521CC1218C7614F4EF547E9A73A /* VADay.swift */; };
-		3F771704D68D193E10C5D47B40639AD6 /* AnimatedGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7815E2152013B941550359C73A8BE2C /* AnimatedGradientView.swift */; };
-		40539619A96970349ECC67D0A74AB51E /* VADayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C6B318E4A660280A8652DA7AF565D /* VADayView.swift */; };
-		49F341106744E0AAF69DE73E43F25629 /* VACalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA47E1C6414A24E4066247A7B566242 /* VACalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C414A91C2F893FAFD4E3A523E4545A3 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 46658CFE630155F926470D2CCA952A55 /* star.png */; };
-		4DC08D18FA0A0ABF02582AD299D2CB97 /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B59F54B3CCB189C1A0BC39FD91D3D82E /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56F2154667191801055D2B0B906601F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
-		57C7328CBA0D8D033097A2DAF47571D3 /* VAMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB1F22465830192A4FAC4FCFE27572 /* VAMonth.swift */; };
-		58EB994015DD3D924364CE94D6697E09 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = DE3C09D9F525414BF653886A7CABD0A5 /* confetti.png */; };
-		6285B4DA669F633374F67F0CBDC46514 /* VADotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CB615DADA24AC008118A06CB52D47 /* VADotView.swift */; };
-		70BC24761A66AC6C165EAD3257D384DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
-		717F75815E3BA7CED6FEB0292DB34B36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
-		75D1235CA2CC25841B13E207584F0263 /* VAFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2E43278D5A7694F0B8C6A4DFD4B54C /* VAFormatters.swift */; };
-		7F81775A3BF3FA3C3E62576CEEF2A079 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = D57888734103F43CF460E1EE06B6AE18 /* triangle.png */; };
-		81D7751DDDD4B45A6C6B2BB59428AA90 /* VAWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8A2581DF413662E0D3275F8871E233 /* VAWeek.swift */; };
-		8E0AB936C027AE7F1627DF4DE63DB03F /* Pods-HealthyWorld-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F13C8EF1C0ABA091368AC08E2B81F0BB /* Pods-HealthyWorld-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F61D8AD1CC52C47938D8D4E5AC2F734 /* AnimatedGradientView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 877579D7A1CF3ABBE3DB16E74014C7DF /* AnimatedGradientView-dummy.m */; };
-		95196CBC9F02EF05C8A1A19B210AFB1E /* SwiftConfettiView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5282B39B9E21CF3859EF7A2B7B4EB043 /* SwiftConfettiView-dummy.m */; };
-		9AD45CF9A63AD3184B74D2E94143DF94 /* WBCollectionViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F931996E822CA7770AE1971C22B9BE21 /* WBCollectionViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BE3F5F6EE5C1B99125FE5C30A2019DB /* VACalendarMonthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E3C4F2BDE5AE325F735F0D7F77FB7 /* VACalendarMonthDelegate.swift */; };
-		9C33416878E70BF64A364455CD34DE84 /* VAWeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1599A4BE89463390C5B9744532F14551 /* VAWeekDaysView.swift */; };
-		A91FEB399C375D86931865F0DC862A0C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E839864EE09C8CE0528DE01FD9241A /* QuartzCore.framework */; };
-		AF2DEBAC01A07A7A65066ABC695C8B15 /* VAWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74411F1E947F4EE4DA65867578D5357B /* VAWeekView.swift */; };
-		B2FEBF0AF7565E13AAADB04FD736507B /* String+RegularExpressionMatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45430F3A20FAA4B7EC8C393B78DC7BCB /* String+RegularExpressionMatchable.swift */; };
-		B3C8C14F1089071E8BBFE1700411C61C /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEC8D4DB0112A40AC24BE32E10D8103 /* diamond.png */; };
-		B47F079D781788D7F429CAD0CEB12E20 /* SwiftConfettiView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91802C508912F5F5AAF8418AD9EC06AB /* SwiftConfettiView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE48130952F0BFB00D5C0A448E263F26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E826AE0196CB3540E72242664FBD3F32 /* UIKit.framework */; };
-		C0F552CFF873CDFEA01872B8E14519DD /* AnimatedGradientViewColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CD4F2FCDAA314D810AE1254F72F4BF /* AnimatedGradientViewColor.swift */; };
-		C365AFE4DD80CF22CB98CEC886DC3A15 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = DE3C09D9F525414BF653886A7CABD0A5 /* confetti.png */; };
-		C84D017EE97C0AECCF6B4AC8DCA0D8C4 /* SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDD0C3E4B6529864B5432DCDAAEAA05 /* SwiftSpinner-dummy.m */; };
-		C8CC68735C08EF16C9CF2ABA72BC68E1 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622D97C5E77BE43E429F9F60CBAEEB09 /* SCLAlertView.swift */; };
-		C93C22E30C6D3B2A508F59D8C75130F5 /* Pods-HealthyWorld-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 708E70AC7F46381683BDE9797AAB8A89 /* Pods-HealthyWorld-dummy.m */; };
-		C985A554978E868EC57916C322C3409D /* VAMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610BC573CD08CFCB92E93C62D697E20 /* VAMonthView.swift */; };
-		CA78878F313F7C81764248B354BEBEFA /* VACalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6554ACE4613336BD546E54430D101992 /* VACalendar-dummy.m */; };
-		CC4F1B50802C7D84C4921406878F6362 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917F3FF82147AC9BCF107D29005166E1 /* SCLExtensions.swift */; };
-		D253DB7EAF62AEA6BD6B680B0D0DAC7C /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AD295D71C7519AFA4759F99CCAC1DE /* SCLAlertView-dummy.m */; };
-		D7548245904B41EC876805F8299B465D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
-		DBC5F69D1105FF9AC6E2DF1F9E74CDF0 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D6D9F209EE2482FEFC0C7450D561D8 /* SwiftSpinner.swift */; };
-		E13F099FD1FE78556C9518CFAF220A89 /* VAMonthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1436EE9F175C6180CC829694E377AD0 /* VAMonthHeaderView.swift */; };
-		EC5AAC43E5D40B8D9F0927589D182C14 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEC8D4DB0112A40AC24BE32E10D8103 /* diamond.png */; };
-		F0F096FD50FD525C8C9D91D2DE95F34D /* VACalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49B54A1DAF6D29411A24358C457B9C /* VACalendarView.swift */; };
-		F8F0A81FFBE94A274C7E24A6B04CD126 /* SwiftSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D1B0C407620E4998638E5D229F96F3D /* SwiftSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8FF501E383FB698213443DA9FB61955 /* WBCollectionViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C28F72731A389693480400ECB803CB1 /* WBCollectionViewLayout-dummy.m */; };
-		F9ECEF0EFD708BA0A669742BB8C46BA2 /* SwiftConfettiView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 756BC6D6A50B5D1BB85A5ADF6183D909 /* SwiftConfettiView.bundle */; };
-		FA96D9A9BECE4E51C9032ACCDDFA9EBA /* AnimatedGradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19F09E711006B268B59E5C7D3D5B38 /* AnimatedGradientDirection.swift */; };
-		FB4FCF04B56990D15EEAB43CCDCEEE86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
-		FBFBD1EA81AE978783F531A8C72DEBC3 /* AnimatedGradientView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BABC91CA45FE7C77E17CE821FD6149C7 /* AnimatedGradientView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12FC322B80F363692BBF1510D2A55935 /* Pods-HealthyWorld-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F13C8EF1C0ABA091368AC08E2B81F0BB /* Pods-HealthyWorld-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		151E64D193AB4032527B137A246B9021 /* RegularExpressionMatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C930559179D4ED02F8A9B2EB1AB816C /* RegularExpressionMatchable.swift */; };
+		1C09CB9E500DE3303B589BCB37BC42FB /* SwiftSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = 748B8D504CE035D5740C050442D4A544 /* SwiftSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D69123B5683FE4D17C4407697FD09F5 /* AnimatedGradientViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6848A3F06EC3217697B17B4AA020EC3 /* AnimatedGradientViewAnimation.swift */; };
+		20978302DB64FE6936BB78BFAFBD0C45 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 30114108337E59C358E04A5678DF46B0 /* triangle.png */; };
+		212CBD2F96E06CFBB779192DB3710DA8 /* VAMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9955FFAC8D88296E5B0655DB79948387 /* VAMonthView.swift */; };
+		25FF2409FE73E31D2112BA1CEE4067D7 /* SwiftConfettiView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD02EA0296B4F5965D09041DFCA18AE /* SwiftConfettiView-dummy.m */; };
+		288DAA494FF5937C5655F19BDFD99513 /* SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1014B3E9EC0E6B6C9BDCFE4C15387B7 /* SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FEE5FF2E8FCFCDCAD89FF11BEEAC6E9 /* Collection+UniqueMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E14FD4A451F88092B7D7646E81B002 /* Collection+UniqueMap.swift */; };
+		3230CC701843D835D5F68C02604BB67E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E826AE0196CB3540E72242664FBD3F32 /* UIKit.framework */; };
+		34DAC588C085B3151D680C4AA7E41E88 /* SwiftConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463BE1FC3868906BD6CA12710E21C3A /* SwiftConfettiView.swift */; };
+		36495BE1D82618C56113354CD0EDC087 /* SwiftConfettiView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9749025FFDB9A15810AF4E44DDD08E /* SwiftConfettiView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D747B31444EE96FD14835440875F0F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
+		3EDCD6AD9EE1DAED63BE6FE2C514FA4C /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D744728B22C82F90B57A24697C89E53 /* SCLExtensions.swift */; };
+		3F34F30B9C73FF31E2C08CE3797D8690 /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 419AEEDB31BEDAD852979DAD46FCAD46 /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F771704D68D193E10C5D47B40639AD6 /* AnimatedGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06928346E29205C6285C0A1A5462F2 /* AnimatedGradientView.swift */; };
+		3FDCBBDDCD327E6402DB7B3AA7E2A25F /* VACalendarMonthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04B6FBF9EA240CE03FB302C9DDD2993 /* VACalendarMonthDelegate.swift */; };
+		45F0610FCC553E0AA08079AC5CA22577 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 8852CB64C39FF4BD1E003D3932A43D81 /* confetti.png */; };
+		4B5DD9E65E618299AC7A35F0184FB089 /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B1CB150B0C6A395983B3038348633 /* SCLAlertView-dummy.m */; };
+		52EA897EDCD1A1F8A9BDBDB2A30BFC1E /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 8852CB64C39FF4BD1E003D3932A43D81 /* confetti.png */; };
+		570BC98C8ABF02C7A4D144268ECA284D /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 30114108337E59C358E04A5678DF46B0 /* triangle.png */; };
+		60AD9705C79C6BCE9C648189EBB3065A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
+		61962570C6A1951E4F1FBA5278F3ACFE /* VADay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841159A2A5E65CEB2880626C8CB69770 /* VADay.swift */; };
+		61D89FD37BF0C436FAA436CB778443DF /* VACalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16528AC9BE59E3B57AA833EF5757A26B /* VACalendarView.swift */; };
+		63C497287A11EA4465D203C128C0780F /* RKPieChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C41E967BCAC8A36DD51F3CE8DABE88 /* RKPieChartItem.swift */; };
+		676962198F19E4B56FC7FFA754BDD306 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
+		6E84775A0C1DAEC416A17D0A0794390C /* VAWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956D3ED0A0C7F487D4B83466658BE2B /* VAWeek.swift */; };
+		731A0982D1AC1E161B0F094F6135D518 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FDAD9F54CE36D59B920414AB995B37 /* star.png */; };
+		777AE6900019ABAB357545BD30EB48A4 /* VADayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCCBA963B4184160B8A8825FA48DA17 /* VADayView.swift */; };
+		785E68F2F74CEC4C64B8390FD042EC63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
+		7DD02C9686A04A405F8D651BF6C0462D /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FDAD9F54CE36D59B920414AB995B37 /* star.png */; };
+		81D8167A7E980D9E079871B512F9AB02 /* RKPieChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9BBA182ED675753664E1E8C2A83BBC1 /* RKPieChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83E8D93B1A0B80F0FC7B39E72DF9ACF9 /* SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65047E4C8FFC6DC5D2C645F1CAF00333 /* SwiftSpinner-dummy.m */; };
+		8C1B22591272616015FEE79717FDDF95 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E839864EE09C8CE0528DE01FD9241A /* QuartzCore.framework */; };
+		8C1C8ED60AEF24B0C5B2E7FE829E96F9 /* VAWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01DE2D9DB16C0FED1CA473771CDD32 /* VAWeekView.swift */; };
+		8D65ACBE4753266A59807AE28BAAC217 /* RKPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8506FDD9BEBACB37F50C0A84122226EF /* RKPieChartView.swift */; };
+		8DB28EED1ED3BEAF3047831E9D4A534A /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 32F4069AA41F5BA60FDAA15FF15FCBF4 /* diamond.png */; };
+		8F61D8AD1CC52C47938D8D4E5AC2F734 /* AnimatedGradientView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7D61B7A419EDD8280D44E9D8E751A4 /* AnimatedGradientView-dummy.m */; };
+		92B53BC4AC4BB9F71BE97F3E6B16EB79 /* VAMonthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350DEF766943845DD88B7349C15884BF /* VAMonthHeaderView.swift */; };
+		93FD0CBC0F61DF640770F62C86AE081D /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 32F4069AA41F5BA60FDAA15FF15FCBF4 /* diamond.png */; };
+		946826FA37A3DC19F054C45CF6001418 /* WBCollectionViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E4089B4FD8B4D8FEFFB3D63C5039E0 /* WBCollectionViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95151EF86F3E8E6CF0845440C36FE157 /* WBGridViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D1B2BDE0BC16791C749DC8B242B34F /* WBGridViewLayout.swift */; };
+		96FBC94EF0B1F5989E4D43A63ABAC93A /* VADotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F77EE015527624647B1A6B6D322F053 /* VADotView.swift */; };
+		B2D4504A7006FB21815F0897219EB8FF /* RKPieChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5064D0DE47FF615CA6501C915554687A /* RKPieChart-dummy.m */; };
+		B2FEBF0AF7565E13AAADB04FD736507B /* String+RegularExpressionMatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947168942BCCD9BBA70F05FA9894FB19 /* String+RegularExpressionMatchable.swift */; };
+		C0F552CFF873CDFEA01872B8E14519DD /* AnimatedGradientViewColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB44772E4AEA4975E0DF05C25A744AC /* AnimatedGradientViewColor.swift */; };
+		C3C5B686089E84088DC6422C788BA8C5 /* VAWeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647778627003D9C6EF17F1CD7BA25F69 /* VAWeekDaysView.swift */; };
+		CA057FD962657FE7165FDC3E05CC47A6 /* WBCollectionViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90634B841D79CD73CF02491883C2DF07 /* WBCollectionViewLayout-dummy.m */; };
+		D25ADF9724913D5B04010F8FC5C91A1D /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDF566EC37ADEA65D3AFB52300ED37D /* SCLAlertView.swift */; };
+		D74E16B915632C29249E6EA40BE50387 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
+		D9DB2520ECD77FF2E63A5149C04E703B /* VAMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778A87508250E2449E8A6CCCEA6C3276 /* VAMonth.swift */; };
+		E922B28B3738AEED6984DE5164267576 /* Pods-HealthyWorld-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 708E70AC7F46381683BDE9797AAB8A89 /* Pods-HealthyWorld-dummy.m */; };
+		F5CBFC21FFA21ECD973D674E2020D9CC /* RKChartTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167D0CE33B65E0B0B48B74F556CD994 /* RKChartTitleView.swift */; };
+		F973ECBF22852A2DD4CEEF674523B1DA /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D5E5606D3909BF6B0935B43F4443F /* SwiftSpinner.swift */; };
+		FA019EB1B181AF79495E7DCCE050B978 /* VACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296E20A9AD72F0F42C158BC4B4577524 /* VACalendar.swift */; };
+		FA96D9A9BECE4E51C9032ACCDDFA9EBA /* AnimatedGradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430F168899F760151E042AE5B8705AE /* AnimatedGradientDirection.swift */; };
+		FBBB2BCA0D8307B095959B35EDBFA70C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
+		FBFBD1EA81AE978783F531A8C72DEBC3 /* AnimatedGradientView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4A68F1FF8992B41409D1DD225A99F63 /* AnimatedGradientView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCBA5719DAE6A57C1CE40D64FD4B2B58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		14D611B1250A3E6EB6B5D1289965185A /* PBXContainerItemProxy */ = {
+		07593695FB3F2F9F3C821080DCD11B51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 96EE57DBC8AD79E5B6F95C1081D7DCE1;
-			remoteInfo = "SwiftConfettiView-SwiftConfettiView";
-		};
-		1DE6D0E300544B76C4EC85BDE73FA930 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5EB63FBA4EC1AB45A2281CF9978A2D08;
-			remoteInfo = WBCollectionViewLayout;
-		};
-		7ABB64D53E1C0741E0550BFFFB669EA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2E5784FE264F2257356E8184E4774052;
-			remoteInfo = SwiftConfettiView;
-		};
-		A46C8AE4BFEA6214C71B74DA97515AD4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C78588A39E8599A52D2DF127D8E170BA;
+			remoteGlobalIDString = 31AE3A36802F756E55F2725871F2CBED;
 			remoteInfo = SwiftSpinner;
 		};
-		ADA8FE8620D7E4F77BBDF29A7F00732F /* PBXContainerItemProxy */ = {
+		0C5F84033644DDF260E26AB833576208 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AC23D0C9F69DE822352CA60D983975C;
+			remoteInfo = "SwiftConfettiView-SwiftConfettiView";
+		};
+		1FC3CE3F06A23016AF13FBEE35A28D31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58A784C945515B2D7626F7479DC058AB;
+			remoteInfo = SCLAlertView;
+		};
+		2F1ED7DA92007E274239FDD0532A7DF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CF208A5DCEC262DE51F5CCBA59198D35;
 			remoteInfo = AnimatedGradientView;
 		};
-		D13354B81D0A81B2B1292E5A6233915F /* PBXContainerItemProxy */ = {
+		391F9998E9E70BCDB49A081E3D16CCDA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6443E82400EC176A454BA277CB1875D8;
-			remoteInfo = VACalendar;
+			remoteGlobalIDString = 292641873658A0A25E0F81ADFDA536B4;
+			remoteInfo = RKPieChart;
 		};
-		D87BACFB98BCEEF377D0A54554D96E4A /* PBXContainerItemProxy */ = {
+		79DDC5329D6B6AB5945696582FCE4BBD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 522C6B5D4E05915C5DCAEDD8F03C0F62;
-			remoteInfo = SCLAlertView;
+			remoteGlobalIDString = 98629FB93D05B148C10CB448D4D5CE12;
+			remoteInfo = SwiftConfettiView;
+		};
+		BE6365658CCCE2051C20BA32A6C0DC3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B9432491254EA7494BB2B1058987737;
+			remoteInfo = WBCollectionViewLayout;
+		};
+		F1E70BBC57210C778C2BABD0E89FBE10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C73DAFFDCACE06B2F2D7F18AD99F384;
+			remoteInfo = VACalendar;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02889BA78AD0BD3662253E229464013E /* WBCollectionViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WBCollectionViewLayout.modulemap; sourceTree = "<group>"; };
-		05ACF6AD178EA93A77E5484A02150928 /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		007725E34AD43EA5691D1E85D43BFB97 /* Pods_HealthyWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HealthyWorld.framework; path = "Pods-HealthyWorld.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4DBEE876C60EE0AEA0C18A38B6CFB2 /* Pods-HealthyWorld.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HealthyWorld.modulemap"; sourceTree = "<group>"; };
-		1291BFCB2A7EA73DC36A36589DE674B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12937ACBCB96BF6197D0992134085368 /* VACalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VACalendar.xcconfig; sourceTree = "<group>"; };
-		131FF0F586BEAE922D4D1614CA39BE59 /* SwiftConfettiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftConfettiView.framework; path = SwiftConfettiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1599A4BE89463390C5B9744532F14551 /* VAWeekDaysView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAWeekDaysView.swift; path = VACalendar/VAWeekDaysView.swift; sourceTree = "<group>"; };
-		186144AE603F6E2F36B121C81086D8A4 /* VACalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VACalendar.framework; path = VACalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		18CB1F22465830192A4FAC4FCFE27572 /* VAMonth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAMonth.swift; path = VACalendar/VAMonth.swift; sourceTree = "<group>"; };
-		21157BB2A0A53613B0A518B32C9BEAA1 /* AnimatedGradientView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnimatedGradientView.xcconfig; sourceTree = "<group>"; };
-		216F96D65F415AE5D8CEC894A1DF39C9 /* AnimatedGradientView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AnimatedGradientView.framework; path = AnimatedGradientView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28BC2E88AB2B5D872BAE00A228CD2110 /* WBCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WBCollectionViewLayout.framework; path = WBCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A19F09E711006B268B59E5C7D3D5B38 /* AnimatedGradientDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientDirection.swift; path = AnimatedGradientView/Classes/AnimatedGradientDirection.swift; sourceTree = "<group>"; };
-		2DA47E1C6414A24E4066247A7B566242 /* VACalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VACalendar-umbrella.h"; sourceTree = "<group>"; };
-		36C843BE9A84AFFECE8A07E8F5E098FB /* VACalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VACalendar.modulemap; sourceTree = "<group>"; };
-		3A8A2581DF413662E0D3275F8871E233 /* VAWeek.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAWeek.swift; path = VACalendar/VAWeek.swift; sourceTree = "<group>"; };
-		3C858951651D27C8C61AE55A1B2F3D37 /* VACalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VACalendar.swift; path = VACalendar/VACalendar.swift; sourceTree = "<group>"; };
-		3D1B0C407620E4998638E5D229F96F3D /* SwiftSpinner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftSpinner.h; path = SwiftSpinner/SwiftSpinner.h; sourceTree = "<group>"; };
-		3E49B54A1DAF6D29411A24358C457B9C /* VACalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VACalendarView.swift; path = VACalendar/VACalendarView.swift; sourceTree = "<group>"; };
-		3E5076FD1DE92C6A01D7C6DFCE75CFC2 /* Collection+UniqueMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+UniqueMap.swift"; path = "AnimatedGradientView/Classes/Extensions/Collection+UniqueMap.swift"; sourceTree = "<group>"; };
-		42AD295D71C7519AFA4759F99CCAC1DE /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
-		45430F3A20FAA4B7EC8C393B78DC7BCB /* String+RegularExpressionMatchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+RegularExpressionMatchable.swift"; path = "AnimatedGradientView/Classes/Extensions/String+RegularExpressionMatchable.swift"; sourceTree = "<group>"; };
-		46658CFE630155F926470D2CCA952A55 /* star.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = star.png; path = SwiftConfettiView/Assets/star.png; sourceTree = "<group>"; };
-		480C6B318E4A660280A8652DA7AF565D /* VADayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VADayView.swift; path = VACalendar/VADayView.swift; sourceTree = "<group>"; };
-		4FA0C20F5426B2993090B3A7602E3592 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C930559179D4ED02F8A9B2EB1AB816C /* RegularExpressionMatchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegularExpressionMatchable.swift; path = AnimatedGradientView/Classes/Extensions/RegularExpressionMatchable.swift; sourceTree = "<group>"; };
+		0FB44772E4AEA4975E0DF05C25A744AC /* AnimatedGradientViewColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientViewColor.swift; path = AnimatedGradientView/Classes/AnimatedGradientViewColor.swift; sourceTree = "<group>"; };
+		16528AC9BE59E3B57AA833EF5757A26B /* VACalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VACalendarView.swift; path = VACalendar/VACalendarView.swift; sourceTree = "<group>"; };
+		1B26345F2109D0B69BCBCDE9AAEA9DC3 /* SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSpinner.modulemap; sourceTree = "<group>"; };
+		1D55FB40A0FE4D85235FB7E086D63089 /* AnimatedGradientView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnimatedGradientView.xcconfig; sourceTree = "<group>"; };
+		1F01DE2D9DB16C0FED1CA473771CDD32 /* VAWeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAWeekView.swift; path = VACalendar/VAWeekView.swift; sourceTree = "<group>"; };
+		20A8717E20BDBABDB38F070368FB880E /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2591C819F9B32709D3CCB3366ACCC0C3 /* AnimatedGradientView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AnimatedGradientView.modulemap; sourceTree = "<group>"; };
+		296E20A9AD72F0F42C158BC4B4577524 /* VACalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VACalendar.swift; path = VACalendar/VACalendar.swift; sourceTree = "<group>"; };
+		2E4E70747DEC64858955E994027AA589 /* RKPieChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RKPieChart.framework; path = RKPieChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30114108337E59C358E04A5678DF46B0 /* triangle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = triangle.png; path = SwiftConfettiView/Assets/triangle.png; sourceTree = "<group>"; };
+		30E4089B4FD8B4D8FEFFB3D63C5039E0 /* WBCollectionViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBCollectionViewLayout-umbrella.h"; sourceTree = "<group>"; };
+		32F4069AA41F5BA60FDAA15FF15FCBF4 /* diamond.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = diamond.png; path = SwiftConfettiView/Assets/diamond.png; sourceTree = "<group>"; };
+		344170AEE867EA15ABE1D2A52050B61A /* SwiftConfettiView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SwiftConfettiView.bundle; path = "SwiftConfettiView-SwiftConfettiView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		350DEF766943845DD88B7349C15884BF /* VAMonthHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAMonthHeaderView.swift; path = VACalendar/VAMonthHeaderView.swift; sourceTree = "<group>"; };
+		37C41E967BCAC8A36DD51F3CE8DABE88 /* RKPieChartItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RKPieChartItem.swift; path = RKPieChart/Classes/RKPieChartItem.swift; sourceTree = "<group>"; };
+		390B1CB150B0C6A395983B3038348633 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
+		3B7FD039FF8AC5B6B3573AAC959F42B6 /* VACalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VACalendar-dummy.m"; sourceTree = "<group>"; };
+		3BEC95C945813AD69E154522EF39033A /* WBCollectionViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WBCollectionViewLayout.modulemap; sourceTree = "<group>"; };
+		3CCCBA963B4184160B8A8825FA48DA17 /* VADayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VADayView.swift; path = VACalendar/VADayView.swift; sourceTree = "<group>"; };
+		419AEEDB31BEDAD852979DAD46FCAD46 /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
+		4AD02EA0296B4F5965D09041DFCA18AE /* SwiftConfettiView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftConfettiView-dummy.m"; sourceTree = "<group>"; };
+		4B7D61B7A419EDD8280D44E9D8E751A4 /* AnimatedGradientView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnimatedGradientView-dummy.m"; sourceTree = "<group>"; };
+		5064D0DE47FF615CA6501C915554687A /* RKPieChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RKPieChart-dummy.m"; sourceTree = "<group>"; };
 		510D64F36EE22CFAB94ADEF33B29542F /* Pods-HealthyWorld-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HealthyWorld-frameworks.sh"; sourceTree = "<group>"; };
-		5282B39B9E21CF3859EF7A2B7B4EB043 /* SwiftConfettiView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftConfettiView-dummy.m"; sourceTree = "<group>"; };
-		539DDC5A971D558DBC54152961F5CD52 /* Pods_HealthyWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HealthyWorld.framework; path = "Pods-HealthyWorld.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		622D97C5E77BE43E429F9F60CBAEEB09 /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
-		62DF75DFA56C0EF08D2381B8AD325F16 /* SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
-		6554ACE4613336BD546E54430D101992 /* VACalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VACalendar-dummy.m"; sourceTree = "<group>"; };
-		6B29CF287D045D3243695B8BF0D3D7AC /* WBCollectionViewLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WBCollectionViewLayout.xcconfig; sourceTree = "<group>"; };
-		6C28F72731A389693480400ECB803CB1 /* WBCollectionViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WBCollectionViewLayout-dummy.m"; sourceTree = "<group>"; };
-		6C2E43278D5A7694F0B8C6A4DFD4B54C /* VAFormatters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAFormatters.swift; path = VACalendar/VAFormatters.swift; sourceTree = "<group>"; };
+		5463BE1FC3868906BD6CA12710E21C3A /* SwiftConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftConfettiView.swift; path = SwiftConfettiView/Classes/SwiftConfettiView.swift; sourceTree = "<group>"; };
+		59324B4700556EC9DAE6CF3497D105C9 /* AnimatedGradientView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedGradientView-prefix.pch"; sourceTree = "<group>"; };
+		5A8D7F17965FE72016525C54E57A5D53 /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSpinner.framework; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B3D7652177D86270EF4A19121F7A1C5 /* SwiftConfettiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftConfettiView.framework; path = SwiftConfettiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D744728B22C82F90B57A24697C89E53 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
+		5D935CCD1992E6F8D492823D04BF5BFD /* WBCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WBCollectionViewLayout.framework; path = WBCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63FDAD9F54CE36D59B920414AB995B37 /* star.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = star.png; path = SwiftConfettiView/Assets/star.png; sourceTree = "<group>"; };
+		64122DF24AA1EE58F984E6DFD4CFDCD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		647778627003D9C6EF17F1CD7BA25F69 /* VAWeekDaysView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAWeekDaysView.swift; path = VACalendar/VAWeekDaysView.swift; sourceTree = "<group>"; };
+		65047E4C8FFC6DC5D2C645F1CAF00333 /* SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
+		66E14FD4A451F88092B7D7646E81B002 /* Collection+UniqueMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+UniqueMap.swift"; path = "AnimatedGradientView/Classes/Extensions/Collection+UniqueMap.swift"; sourceTree = "<group>"; };
+		692B33C8ED8FF37EFB33DDE22DE3D687 /* VACalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VACalendar.xcconfig; sourceTree = "<group>"; };
 		708E70AC7F46381683BDE9797AAB8A89 /* Pods-HealthyWorld-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthyWorld-dummy.m"; sourceTree = "<group>"; };
-		71B2BCFC31D006672830499B1267C793 /* VACalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VACalendar-prefix.pch"; sourceTree = "<group>"; };
-		74411F1E947F4EE4DA65867578D5357B /* VAWeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAWeekView.swift; path = VACalendar/VAWeekView.swift; sourceTree = "<group>"; };
-		756BC6D6A50B5D1BB85A5ADF6183D909 /* SwiftConfettiView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SwiftConfettiView.bundle; path = "SwiftConfettiView-SwiftConfettiView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		77D6D9F209EE2482FEFC0C7450D561D8 /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSpinner.swift; path = SwiftSpinner/SwiftSpinner.swift; sourceTree = "<group>"; };
-		78A61D54BA1AA8A4FEF009EAF07640E4 /* RegularExpressionMatchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegularExpressionMatchable.swift; path = AnimatedGradientView/Classes/Extensions/RegularExpressionMatchable.swift; sourceTree = "<group>"; };
+		719ED49754F02AFC246D9ECB9509D789 /* SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpinner.xcconfig; sourceTree = "<group>"; };
+		7430F168899F760151E042AE5B8705AE /* AnimatedGradientDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientDirection.swift; path = AnimatedGradientView/Classes/AnimatedGradientDirection.swift; sourceTree = "<group>"; };
+		748B8D504CE035D5740C050442D4A544 /* SwiftSpinner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftSpinner.h; path = SwiftSpinner/SwiftSpinner.h; sourceTree = "<group>"; };
+		75994D42E428D0F96D544A473C3F79B4 /* SwiftConfettiView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftConfettiView.xcconfig; sourceTree = "<group>"; };
+		778A87508250E2449E8A6CCCEA6C3276 /* VAMonth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAMonth.swift; path = VACalendar/VAMonth.swift; sourceTree = "<group>"; };
+		7B00DA3C7614C5F68E65F9A768699935 /* SwiftConfettiView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftConfettiView-prefix.pch"; sourceTree = "<group>"; };
+		7E486B7A16FAE63E070B5D0CA8B9522D /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		7EE3D2861D147CBFA94CDAC0343DC471 /* SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
+		7F77EE015527624647B1A6B6D322F053 /* VADotView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VADotView.swift; path = VACalendar/VADotView.swift; sourceTree = "<group>"; };
+		8167D0CE33B65E0B0B48B74F556CD994 /* RKChartTitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RKChartTitleView.swift; path = RKPieChart/Classes/RKChartTitleView.swift; sourceTree = "<group>"; };
 		81B66502077E5E6F934D2CE7B4EA3EBC /* Pods-HealthyWorld-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthyWorld-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8610BC573CD08CFCB92E93C62D697E20 /* VAMonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAMonthView.swift; path = VACalendar/VAMonthView.swift; sourceTree = "<group>"; };
-		877579D7A1CF3ABBE3DB16E74014C7DF /* AnimatedGradientView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnimatedGradientView-dummy.m"; sourceTree = "<group>"; };
-		89A8AB3C9A63B93AD6177F8908A8E52D /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
+		841159A2A5E65CEB2880626C8CB69770 /* VADay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VADay.swift; path = VACalendar/VADay.swift; sourceTree = "<group>"; };
+		8506FDD9BEBACB37F50C0A84122226EF /* RKPieChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RKPieChartView.swift; path = RKPieChart/Classes/RKPieChartView.swift; sourceTree = "<group>"; };
+		88264DBCE84234FBBBBDE97DD4CF73EC /* AnimatedGradientView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AnimatedGradientView.framework; path = AnimatedGradientView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		883B8EF8DF318746632075496A754243 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
+		8852CB64C39FF4BD1E003D3932A43D81 /* confetti.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = confetti.png; path = SwiftConfettiView/Assets/confetti.png; sourceTree = "<group>"; };
+		8E63D6AE1E0EC1644524AC7E31F9D265 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90634B841D79CD73CF02491883C2DF07 /* WBCollectionViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WBCollectionViewLayout-dummy.m"; sourceTree = "<group>"; };
 		90C7A160ABE5DAC85DC33E762CF55AE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		917F3FF82147AC9BCF107D29005166E1 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
-		91802C508912F5F5AAF8418AD9EC06AB /* SwiftConfettiView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftConfettiView-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		953861BA147BCAA8882175FD5BE7563D /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSpinner.framework; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		99EF94F5989F92B6458BD1BF43CA57EE /* SwiftConfettiView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftConfettiView.modulemap; sourceTree = "<group>"; };
+		947168942BCCD9BBA70F05FA9894FB19 /* String+RegularExpressionMatchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+RegularExpressionMatchable.swift"; path = "AnimatedGradientView/Classes/Extensions/String+RegularExpressionMatchable.swift"; sourceTree = "<group>"; };
+		984CF442658B65AF68A2B8C78519EAF0 /* VACalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VACalendar.framework; path = VACalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9955FFAC8D88296E5B0655DB79948387 /* VAMonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAMonthView.swift; path = VACalendar/VAMonthView.swift; sourceTree = "<group>"; };
 		A053261B4FCFA437DFC024D6B93DC876 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5C9334765007CD5F4E5906F84865E33 /* WBCollectionViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBCollectionViewLayout-prefix.pch"; sourceTree = "<group>"; };
+		A3369577D174C9D7542F9BFA116618C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A37234DF09DDBADBD011BACDDF01A5E2 /* RKPieChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RKPieChart-prefix.pch"; sourceTree = "<group>"; };
+		A4A68F1FF8992B41409D1DD225A99F63 /* AnimatedGradientView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedGradientView-umbrella.h"; sourceTree = "<group>"; };
+		A64D5A231CF2D220058EB15A4B1BBDBB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9BEF184C8BFEEB444C699D5B3D6AB63 /* Pods-HealthyWorld-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthyWorld-acknowledgements.plist"; sourceTree = "<group>"; };
-		ADDD0C3E4B6529864B5432DCDAAEAA05 /* SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
-		B1CD4F2FCDAA314D810AE1254F72F4BF /* AnimatedGradientViewColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientViewColor.swift; path = AnimatedGradientView/Classes/AnimatedGradientViewColor.swift; sourceTree = "<group>"; };
-		B2B623A03837FB93B17F0A0FDFDF05D6 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
-		B2B88B9CA4B831AE0FD7DDF6CEF8FD34 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B59F54B3CCB189C1A0BC39FD91D3D82E /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
-		B7815E2152013B941550359C73A8BE2C /* AnimatedGradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientView.swift; path = AnimatedGradientView/Classes/AnimatedGradientView.swift; sourceTree = "<group>"; };
-		B9171D76B87E0BC35090E465CCB05FAF /* SwiftConfettiView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftConfettiView.xcconfig; sourceTree = "<group>"; };
-		B9E4D0D49B7F34FEE01E2C69215EC54F /* SwiftConfettiView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftConfettiView-prefix.pch"; sourceTree = "<group>"; };
-		BABC91CA45FE7C77E17CE821FD6149C7 /* AnimatedGradientView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedGradientView-umbrella.h"; sourceTree = "<group>"; };
-		BADF5702754BA86A0BD09C5A696BE25B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3C94E09CE7358FE618F13669638F48B /* WBGridViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WBGridViewLayout.swift; path = WBCollectionViewLayout/Classes/WBGridViewLayout.swift; sourceTree = "<group>"; };
-		C4839E6E40E30A17BB2B90200BBEF34B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C718D13B8884FE4C0174A1F366FBFD58 /* SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpinner.xcconfig; sourceTree = "<group>"; };
-		CB6CE1DBE71750AB2A2EFE5FCBC62FD2 /* SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSpinner.modulemap; sourceTree = "<group>"; };
-		CE63061A316B67B2E6C34D068182058D /* AnimatedGradientView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedGradientView-prefix.pch"; sourceTree = "<group>"; };
+		B1DB991F9B7E15C493815BAE71AC983E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA3526EE762F6F63AF9CAC325A4CCB87 /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
+		BD06928346E29205C6285C0A1A5462F2 /* AnimatedGradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientView.swift; path = AnimatedGradientView/Classes/AnimatedGradientView.swift; sourceTree = "<group>"; };
+		C0CC12C9BE486CB7797CAF06678C6AD1 /* RKPieChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RKPieChart.modulemap; sourceTree = "<group>"; };
+		C3E5D38E2B7CE7A29DADA78B792CDE32 /* VACalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VACalendar.modulemap; sourceTree = "<group>"; };
+		C5CBD2BF8175CCE625EF986870DC1A0C /* VACalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VACalendar-prefix.pch"; sourceTree = "<group>"; };
+		CDE8F5567E5D9AF1FD8BC23DCF84CDF8 /* VAFormatters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAFormatters.swift; path = VACalendar/VAFormatters.swift; sourceTree = "<group>"; };
+		D04B6FBF9EA240CE03FB302C9DDD2993 /* VACalendarMonthDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VACalendarMonthDelegate.swift; path = VACalendar/VACalendarMonthDelegate.swift; sourceTree = "<group>"; };
+		D1014B3E9EC0E6B6C9BDCFE4C15387B7 /* SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
 		D21B74FCF819D2915EBEC5DB1C54BA2C /* Pods-HealthyWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthyWorld.release.xcconfig"; sourceTree = "<group>"; };
-		D38DD18C9F17A219102CAAF6726E07D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3AA373DA6AEA6E6F4C68754686D94D8 /* AnimatedGradientViewAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientViewAnimation.swift; path = AnimatedGradientView/Classes/AnimatedGradientViewAnimation.swift; sourceTree = "<group>"; };
-		D57888734103F43CF460E1EE06B6AE18 /* triangle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = triangle.png; path = SwiftConfettiView/Assets/triangle.png; sourceTree = "<group>"; };
-		D613B05419B2209D1898D42747C075DE /* SwiftConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftConfettiView.swift; path = SwiftConfettiView/Classes/SwiftConfettiView.swift; sourceTree = "<group>"; };
+		D6848A3F06EC3217697B17B4AA020EC3 /* AnimatedGradientViewAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedGradientViewAnimation.swift; path = AnimatedGradientView/Classes/AnimatedGradientViewAnimation.swift; sourceTree = "<group>"; };
 		D6E839864EE09C8CE0528DE01FD9241A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		D7EBDE00428727E69E75BFF5F5A56614 /* Pods-HealthyWorld-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HealthyWorld-resources.sh"; sourceTree = "<group>"; };
-		DC6E4D9AFEA055916EFC7E4F3CFB4448 /* SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
-		DE3C09D9F525414BF653886A7CABD0A5 /* confetti.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = confetti.png; path = SwiftConfettiView/Assets/confetti.png; sourceTree = "<group>"; };
-		E0497A8F2D7B10574499D66FC88FB952 /* AnimatedGradientView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AnimatedGradientView.modulemap; sourceTree = "<group>"; };
+		DD88C9504580ECD8A8660013E4418746 /* WBCollectionViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBCollectionViewLayout-prefix.pch"; sourceTree = "<group>"; };
+		E4DC244047B4A50363454F6B97791BF6 /* SwiftConfettiView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftConfettiView.modulemap; sourceTree = "<group>"; };
 		E826AE0196CB3540E72242664FBD3F32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		E83CB615DADA24AC008118A06CB52D47 /* VADotView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VADotView.swift; path = VACalendar/VADotView.swift; sourceTree = "<group>"; };
-		EBEC8D4DB0112A40AC24BE32E10D8103 /* diamond.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = diamond.png; path = SwiftConfettiView/Assets/diamond.png; sourceTree = "<group>"; };
-		ED46DD080D197A0E434C39FD99CE8EA8 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
-		EDC5F521CC1218C7614F4EF547E9A73A /* VADay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VADay.swift; path = VACalendar/VADay.swift; sourceTree = "<group>"; };
-		F13C125311512FCB3DED85D1C16CA170 /* ResourceBundle-SwiftConfettiView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SwiftConfettiView-Info.plist"; sourceTree = "<group>"; };
+		E8D1B2BDE0BC16791C749DC8B242B34F /* WBGridViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WBGridViewLayout.swift; path = WBCollectionViewLayout/Classes/WBGridViewLayout.swift; sourceTree = "<group>"; };
+		E956D3ED0A0C7F487D4B83466658BE2B /* VAWeek.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAWeek.swift; path = VACalendar/VAWeek.swift; sourceTree = "<group>"; };
+		EC1DE44A642FF60AC2FC52E5DE54165F /* VACalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VACalendar-umbrella.h"; sourceTree = "<group>"; };
 		F13C8EF1C0ABA091368AC08E2B81F0BB /* Pods-HealthyWorld-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthyWorld-umbrella.h"; sourceTree = "<group>"; };
-		F1436EE9F175C6180CC829694E377AD0 /* VAMonthHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAMonthHeaderView.swift; path = VACalendar/VAMonthHeaderView.swift; sourceTree = "<group>"; };
-		F39E3C4F2BDE5AE325F735F0D7F77FB7 /* VACalendarMonthDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VACalendarMonthDelegate.swift; path = VACalendar/VACalendarMonthDelegate.swift; sourceTree = "<group>"; };
-		F931996E822CA7770AE1971C22B9BE21 /* WBCollectionViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBCollectionViewLayout-umbrella.h"; sourceTree = "<group>"; };
+		F25D5E5606D3909BF6B0935B43F4443F /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSpinner.swift; path = SwiftSpinner/SwiftSpinner.swift; sourceTree = "<group>"; };
+		F48BFC33196ADE94B82810BC10F084A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9205889FB4140DE37EBB9B38C94C68C /* RKPieChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RKPieChart.xcconfig; sourceTree = "<group>"; };
+		F9BBA182ED675753664E1E8C2A83BBC1 /* RKPieChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RKPieChart-umbrella.h"; sourceTree = "<group>"; };
+		FC9749025FFDB9A15810AF4E44DDD08E /* SwiftConfettiView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftConfettiView-umbrella.h"; sourceTree = "<group>"; };
+		FD02CDF35A72E29E506E63F11F6B7A98 /* WBCollectionViewLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WBCollectionViewLayout.xcconfig; sourceTree = "<group>"; };
+		FDE498D41F8734A94401966041B7DB44 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDF171C0D0D20636A8715124002B024A /* Pods-HealthyWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthyWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		FED72FE940680C427D0399256E5999BE /* ResourceBundle-SwiftConfettiView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SwiftConfettiView-Info.plist"; sourceTree = "<group>"; };
+		FFDF566EC37ADEA65D3AFB52300ED37D /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		11DF3675EAFD434D1F5CCE5713491D7F /* Frameworks */ = {
+		17B574C19E261C93C1F77191FFCF915A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBA5719DAE6A57C1CE40D64FD4B2B58 /* Foundation.framework in Frameworks */,
+				07D90230FDC646057B5CBFB6A263908D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1841985B2E063EC0E2CBE56DBB803B93 /* Frameworks */ = {
+		1B64B6E777367D9ACFC5A4367CD034A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56F2154667191801055D2B0B906601F6 /* Foundation.framework in Frameworks */,
-				BE48130952F0BFB00D5C0A448E263F26 /* UIKit.framework in Frameworks */,
+				D74E16B915632C29249E6EA40BE50387 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		276740C65B9E36C9EB0506AC3B7A582F /* Frameworks */ = {
+		620B813307B9F2D10C56CC66A30AFB33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70BC24761A66AC6C165EAD3257D384DD /* Foundation.framework in Frameworks */,
+				FBBB2BCA0D8307B095959B35EDBFA70C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2DE1F5373507174D53FEA87CB9363A42 /* Frameworks */ = {
+		65FDFF966324AD5A8D849F85E395F645 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03BA3CFC833B8FD210CAE2D74EB4E885 /* Foundation.framework in Frameworks */,
+				676962198F19E4B56FC7FFA754BDD306 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D3E691B272026A742A2D4E43FE8E7C1 /* Frameworks */ = {
+		670EA6786C046A6DD2F6DEE30EC228E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB4FCF04B56990D15EEAB43CCDCEEE86 /* Foundation.framework in Frameworks */,
+				3D747B31444EE96FD14835440875F0F4 /* Foundation.framework in Frameworks */,
+				8C1B22591272616015FEE79717FDDF95 /* QuartzCore.framework in Frameworks */,
+				3230CC701843D835D5F68C02604BB67E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71968710D9240995ECA86BBEED45B91D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,36 +294,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BDBF5FA7946ECB61CEBCD12013766336 /* Frameworks */ = {
+		95E080914309C8417500AC56DCC55CD7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				717F75815E3BA7CED6FEB0292DB34B36 /* Foundation.framework in Frameworks */,
-				A91FEB399C375D86931865F0DC862A0C /* QuartzCore.framework in Frameworks */,
-				3963EB5AA782996DD6D54BC0D7287BDF /* UIKit.framework in Frameworks */,
+				785E68F2F74CEC4C64B8390FD042EC63 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FABE19E76ACB85FD669EECDA57B06C9F /* Frameworks */ = {
+		C9112C09FF32066D2AB2E401F3E099F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7548245904B41EC876805F8299B465D /* Foundation.framework in Frameworks */,
+				60AD9705C79C6BCE9C648189EBB3065A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07EBF0733131EA13AA45DD3208CF3C1F /* Resources */ = {
+		001493ACD98882454EEFB75AC195C598 /* SwiftSpinner */ = {
 			isa = PBXGroup;
 			children = (
-				DE3C09D9F525414BF653886A7CABD0A5 /* confetti.png */,
-				EBEC8D4DB0112A40AC24BE32E10D8103 /* diamond.png */,
-				46658CFE630155F926470D2CCA952A55 /* star.png */,
-				D57888734103F43CF460E1EE06B6AE18 /* triangle.png */,
+				748B8D504CE035D5740C050442D4A544 /* SwiftSpinner.h */,
+				F25D5E5606D3909BF6B0935B43F4443F /* SwiftSpinner.swift */,
+				0071D8969383697329273D3B26000196 /* Support Files */,
 			);
-			name = Resources;
+			name = SwiftSpinner;
+			path = SwiftSpinner;
+			sourceTree = "<group>";
+		};
+		0071D8969383697329273D3B26000196 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A64D5A231CF2D220058EB15A4B1BBDBB /* Info.plist */,
+				1B26345F2109D0B69BCBCDE9AAEA9DC3 /* SwiftSpinner.modulemap */,
+				719ED49754F02AFC246D9ECB9509D789 /* SwiftSpinner.xcconfig */,
+				65047E4C8FFC6DC5D2C645F1CAF00333 /* SwiftSpinner-dummy.m */,
+				7EE3D2861D147CBFA94CDAC0343DC471 /* SwiftSpinner-prefix.pch */,
+				D1014B3E9EC0E6B6C9BDCFE4C15387B7 /* SwiftSpinner-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSpinner";
+			sourceTree = "<group>";
+		};
+		01ABC9B201B5E2951483E0B814498284 /* RKPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				8167D0CE33B65E0B0B48B74F556CD994 /* RKChartTitleView.swift */,
+				37C41E967BCAC8A36DD51F3CE8DABE88 /* RKPieChartItem.swift */,
+				8506FDD9BEBACB37F50C0A84122226EF /* RKPieChartView.swift */,
+				7D723B92D2A073C4DFECF38E12415D9D /* Support Files */,
+			);
+			name = RKPieChart;
+			path = RKPieChart;
+			sourceTree = "<group>";
+		};
+		026786C9F9B108880F5B0054EDFCE401 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E63D6AE1E0EC1644524AC7E31F9D265 /* Info.plist */,
+				C3E5D38E2B7CE7A29DADA78B792CDE32 /* VACalendar.modulemap */,
+				692B33C8ED8FF37EFB33DDE22DE3D687 /* VACalendar.xcconfig */,
+				3B7FD039FF8AC5B6B3573AAC959F42B6 /* VACalendar-dummy.m */,
+				C5CBD2BF8175CCE625EF986870DC1A0C /* VACalendar-prefix.pch */,
+				EC1DE44A642FF60AC2FC52E5DE54165F /* VACalendar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VACalendar";
 			sourceTree = "<group>";
 		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
@@ -301,82 +372,84 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		13D36246D2E8C4B91B97E83636097FFF /* SwiftSpinner */ = {
+		205D9249B6512D96A3FFCE996E68A5DD /* SCLAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				3D1B0C407620E4998638E5D229F96F3D /* SwiftSpinner.h */,
-				77D6D9F209EE2482FEFC0C7450D561D8 /* SwiftSpinner.swift */,
-				426214FA74D1D05D01BB4268364E7B86 /* Support Files */,
+				FFDF566EC37ADEA65D3AFB52300ED37D /* SCLAlertView.swift */,
+				5D744728B22C82F90B57A24697C89E53 /* SCLExtensions.swift */,
+				96848338B06DB71446D84D831DCCBFD3 /* Support Files */,
 			);
-			name = SwiftSpinner;
-			path = SwiftSpinner;
+			name = SCLAlertView;
+			path = SCLAlertView;
 			sourceTree = "<group>";
 		};
-		2C22D764DBE817066989F608E89FE1FD /* Support Files */ = {
+		22893F8A31D4017D6DF71DC75191CE39 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D38DD18C9F17A219102CAAF6726E07D0 /* Info.plist */,
-				02889BA78AD0BD3662253E229464013E /* WBCollectionViewLayout.modulemap */,
-				6B29CF287D045D3243695B8BF0D3D7AC /* WBCollectionViewLayout.xcconfig */,
-				6C28F72731A389693480400ECB803CB1 /* WBCollectionViewLayout-dummy.m */,
-				A5C9334765007CD5F4E5906F84865E33 /* WBCollectionViewLayout-prefix.pch */,
-				F931996E822CA7770AE1971C22B9BE21 /* WBCollectionViewLayout-umbrella.h */,
+				8852CB64C39FF4BD1E003D3932A43D81 /* confetti.png */,
+				32F4069AA41F5BA60FDAA15FF15FCBF4 /* diamond.png */,
+				63FDAD9F54CE36D59B920414AB995B37 /* star.png */,
+				30114108337E59C358E04A5678DF46B0 /* triangle.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3E99BA5FE31A807460B653D95168553E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7709352D48D70C08FFC55B3690B3D804 /* AnimatedGradientView */,
+				01ABC9B201B5E2951483E0B814498284 /* RKPieChart */,
+				205D9249B6512D96A3FFCE996E68A5DD /* SCLAlertView */,
+				DBC7643AC0E008DA3EBE19FDAEF6DF01 /* SwiftConfettiView */,
+				001493ACD98882454EEFB75AC195C598 /* SwiftSpinner */,
+				E6806CAAE6B90841BA979C5B31959ED7 /* VACalendar */,
+				EE1C1E25390C894B4ED4BEBC9D8B014B /* WBCollectionViewLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		66BBE77B7E4EC8B099A63924BFEED3C2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F48BFC33196ADE94B82810BC10F084A8 /* Info.plist */,
+				3BEC95C945813AD69E154522EF39033A /* WBCollectionViewLayout.modulemap */,
+				FD02CDF35A72E29E506E63F11F6B7A98 /* WBCollectionViewLayout.xcconfig */,
+				90634B841D79CD73CF02491883C2DF07 /* WBCollectionViewLayout-dummy.m */,
+				DD88C9504580ECD8A8660013E4418746 /* WBCollectionViewLayout-prefix.pch */,
+				30E4089B4FD8B4D8FEFFB3D63C5039E0 /* WBCollectionViewLayout-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/WBCollectionViewLayout";
 			sourceTree = "<group>";
 		};
-		3C8CE542FAD1242B2DBA840223ED2908 /* Support Files */ = {
+		7709352D48D70C08FFC55B3690B3D804 /* AnimatedGradientView */ = {
 			isa = PBXGroup;
 			children = (
-				1291BFCB2A7EA73DC36A36589DE674B8 /* Info.plist */,
-				89A8AB3C9A63B93AD6177F8908A8E52D /* SCLAlertView.modulemap */,
-				ED46DD080D197A0E434C39FD99CE8EA8 /* SCLAlertView.xcconfig */,
-				42AD295D71C7519AFA4759F99CCAC1DE /* SCLAlertView-dummy.m */,
-				B2B623A03837FB93B17F0A0FDFDF05D6 /* SCLAlertView-prefix.pch */,
-				B59F54B3CCB189C1A0BC39FD91D3D82E /* SCLAlertView-umbrella.h */,
+				7430F168899F760151E042AE5B8705AE /* AnimatedGradientDirection.swift */,
+				BD06928346E29205C6285C0A1A5462F2 /* AnimatedGradientView.swift */,
+				D6848A3F06EC3217697B17B4AA020EC3 /* AnimatedGradientViewAnimation.swift */,
+				0FB44772E4AEA4975E0DF05C25A744AC /* AnimatedGradientViewColor.swift */,
+				66E14FD4A451F88092B7D7646E81B002 /* Collection+UniqueMap.swift */,
+				0C930559179D4ED02F8A9B2EB1AB816C /* RegularExpressionMatchable.swift */,
+				947168942BCCD9BBA70F05FA9894FB19 /* String+RegularExpressionMatchable.swift */,
+				D745B4FB75267C519BB46A4FC755644A /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SCLAlertView";
+			name = AnimatedGradientView;
+			path = AnimatedGradientView;
 			sourceTree = "<group>";
 		};
-		426214FA74D1D05D01BB4268364E7B86 /* Support Files */ = {
+		7D723B92D2A073C4DFECF38E12415D9D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4FA0C20F5426B2993090B3A7602E3592 /* Info.plist */,
-				CB6CE1DBE71750AB2A2EFE5FCBC62FD2 /* SwiftSpinner.modulemap */,
-				C718D13B8884FE4C0174A1F366FBFD58 /* SwiftSpinner.xcconfig */,
-				ADDD0C3E4B6529864B5432DCDAAEAA05 /* SwiftSpinner-dummy.m */,
-				DC6E4D9AFEA055916EFC7E4F3CFB4448 /* SwiftSpinner-prefix.pch */,
-				62DF75DFA56C0EF08D2381B8AD325F16 /* SwiftSpinner-umbrella.h */,
+				B1DB991F9B7E15C493815BAE71AC983E /* Info.plist */,
+				C0CC12C9BE486CB7797CAF06678C6AD1 /* RKPieChart.modulemap */,
+				F9205889FB4140DE37EBB9B38C94C68C /* RKPieChart.xcconfig */,
+				5064D0DE47FF615CA6501C915554687A /* RKPieChart-dummy.m */,
+				A37234DF09DDBADBD011BACDDF01A5E2 /* RKPieChart-prefix.pch */,
+				F9BBA182ED675753664E1E8C2A83BBC1 /* RKPieChart-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftSpinner";
-			sourceTree = "<group>";
-		};
-		62A5767D1AA9636F165095AA17EAC711 /* WBCollectionViewLayout */ = {
-			isa = PBXGroup;
-			children = (
-				C3C94E09CE7358FE618F13669638F48B /* WBGridViewLayout.swift */,
-				2C22D764DBE817066989F608E89FE1FD /* Support Files */,
-			);
-			name = WBCollectionViewLayout;
-			path = WBCollectionViewLayout;
-			sourceTree = "<group>";
-		};
-		7CC3F7095F1483738998470D2373F282 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B2B88B9CA4B831AE0FD7DDF6CEF8FD34 /* Info.plist */,
-				F13C125311512FCB3DED85D1C16CA170 /* ResourceBundle-SwiftConfettiView-Info.plist */,
-				99EF94F5989F92B6458BD1BF43CA57EE /* SwiftConfettiView.modulemap */,
-				B9171D76B87E0BC35090E465CCB05FAF /* SwiftConfettiView.xcconfig */,
-				5282B39B9E21CF3859EF7A2B7B4EB043 /* SwiftConfettiView-dummy.m */,
-				B9E4D0D49B7F34FEE01E2C69215EC54F /* SwiftConfettiView-prefix.pch */,
-				91802C508912F5F5AAF8418AD9EC06AB /* SwiftConfettiView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftConfettiView";
+			path = "../Target Support Files/RKPieChart";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -384,32 +457,10 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				FF3F2E224D0F99C5696C83AB7500CA8E /* Pods */,
-				DCF542808146EAD9544F9EDCF42D3F70 /* Products */,
+				3E99BA5FE31A807460B653D95168553E /* Pods */,
+				FE1035B4BD165A4383115C0295F9AC9E /* Products */,
 				95413A347652F2E9BB86401B1B7F8794 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		818A31CA8D1B10DFC5D1E643AAED65D3 /* VACalendar */ = {
-			isa = PBXGroup;
-			children = (
-				3C858951651D27C8C61AE55A1B2F3D37 /* VACalendar.swift */,
-				F39E3C4F2BDE5AE325F735F0D7F77FB7 /* VACalendarMonthDelegate.swift */,
-				3E49B54A1DAF6D29411A24358C457B9C /* VACalendarView.swift */,
-				EDC5F521CC1218C7614F4EF547E9A73A /* VADay.swift */,
-				480C6B318E4A660280A8652DA7AF565D /* VADayView.swift */,
-				E83CB615DADA24AC008118A06CB52D47 /* VADotView.swift */,
-				6C2E43278D5A7694F0B8C6A4DFD4B54C /* VAFormatters.swift */,
-				18CB1F22465830192A4FAC4FCFE27572 /* VAMonth.swift */,
-				F1436EE9F175C6180CC829694E377AD0 /* VAMonthHeaderView.swift */,
-				8610BC573CD08CFCB92E93C62D697E20 /* VAMonthView.swift */,
-				3A8A2581DF413662E0D3275F8871E233 /* VAWeek.swift */,
-				1599A4BE89463390C5B9744532F14551 /* VAWeekDaysView.swift */,
-				74411F1E947F4EE4DA65867578D5357B /* VAWeekView.swift */,
-				D8EC11698495D45328517E5E693E9F4A /* Support Files */,
-			);
-			name = VACalendar;
-			path = VACalendar;
 			sourceTree = "<group>";
 		};
 		95413A347652F2E9BB86401B1B7F8794 /* Targets Support Files */ = {
@@ -418,6 +469,35 @@
 				FE10183B4EA756A194670AB130ED35EA /* Pods-HealthyWorld */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		96848338B06DB71446D84D831DCCBFD3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				64122DF24AA1EE58F984E6DFD4CFDCD1 /* Info.plist */,
+				BA3526EE762F6F63AF9CAC325A4CCB87 /* SCLAlertView.modulemap */,
+				883B8EF8DF318746632075496A754243 /* SCLAlertView.xcconfig */,
+				390B1CB150B0C6A395983B3038348633 /* SCLAlertView-dummy.m */,
+				7E486B7A16FAE63E070B5D0CA8B9522D /* SCLAlertView-prefix.pch */,
+				419AEEDB31BEDAD852979DAD46FCAD46 /* SCLAlertView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SCLAlertView";
+			sourceTree = "<group>";
+		};
+		99CD9259C2D4960C49347E413475B9A7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDE498D41F8734A94401966041B7DB44 /* Info.plist */,
+				FED72FE940680C427D0399256E5999BE /* ResourceBundle-SwiftConfettiView-Info.plist */,
+				E4DC244047B4A50363454F6B97791BF6 /* SwiftConfettiView.modulemap */,
+				75994D42E428D0F96D544A473C3F79B4 /* SwiftConfettiView.xcconfig */,
+				4AD02EA0296B4F5965D09041DFCA18AE /* SwiftConfettiView-dummy.m */,
+				7B00DA3C7614C5F68E65F9A768699935 /* SwiftConfettiView-prefix.pch */,
+				FC9749025FFDB9A15810AF4E44DDD08E /* SwiftConfettiView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftConfettiView";
 			sourceTree = "<group>";
 		};
 		9EBF83A17FAAD0333B507DD3E1099181 /* iOS */ = {
@@ -430,85 +510,61 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		AF76B36CC7941FB761D4C69F331612C9 /* AnimatedGradientView */ = {
+		D745B4FB75267C519BB46A4FC755644A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2A19F09E711006B268B59E5C7D3D5B38 /* AnimatedGradientDirection.swift */,
-				B7815E2152013B941550359C73A8BE2C /* AnimatedGradientView.swift */,
-				D3AA373DA6AEA6E6F4C68754686D94D8 /* AnimatedGradientViewAnimation.swift */,
-				B1CD4F2FCDAA314D810AE1254F72F4BF /* AnimatedGradientViewColor.swift */,
-				3E5076FD1DE92C6A01D7C6DFCE75CFC2 /* Collection+UniqueMap.swift */,
-				78A61D54BA1AA8A4FEF009EAF07640E4 /* RegularExpressionMatchable.swift */,
-				45430F3A20FAA4B7EC8C393B78DC7BCB /* String+RegularExpressionMatchable.swift */,
-				E22BF15590D257F5A4050109D7C8E1E8 /* Support Files */,
-			);
-			name = AnimatedGradientView;
-			path = AnimatedGradientView;
-			sourceTree = "<group>";
-		};
-		D8EC11698495D45328517E5E693E9F4A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BADF5702754BA86A0BD09C5A696BE25B /* Info.plist */,
-				36C843BE9A84AFFECE8A07E8F5E098FB /* VACalendar.modulemap */,
-				12937ACBCB96BF6197D0992134085368 /* VACalendar.xcconfig */,
-				6554ACE4613336BD546E54430D101992 /* VACalendar-dummy.m */,
-				71B2BCFC31D006672830499B1267C793 /* VACalendar-prefix.pch */,
-				2DA47E1C6414A24E4066247A7B566242 /* VACalendar-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/VACalendar";
-			sourceTree = "<group>";
-		};
-		DCF542808146EAD9544F9EDCF42D3F70 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				216F96D65F415AE5D8CEC894A1DF39C9 /* AnimatedGradientView.framework */,
-				539DDC5A971D558DBC54152961F5CD52 /* Pods_HealthyWorld.framework */,
-				05ACF6AD178EA93A77E5484A02150928 /* SCLAlertView.framework */,
-				756BC6D6A50B5D1BB85A5ADF6183D909 /* SwiftConfettiView.bundle */,
-				131FF0F586BEAE922D4D1614CA39BE59 /* SwiftConfettiView.framework */,
-				953861BA147BCAA8882175FD5BE7563D /* SwiftSpinner.framework */,
-				186144AE603F6E2F36B121C81086D8A4 /* VACalendar.framework */,
-				28BC2E88AB2B5D872BAE00A228CD2110 /* WBCollectionViewLayout.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E04BD6D5ECB21C683AAE8D6A7A4C01F5 /* SCLAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				622D97C5E77BE43E429F9F60CBAEEB09 /* SCLAlertView.swift */,
-				917F3FF82147AC9BCF107D29005166E1 /* SCLExtensions.swift */,
-				3C8CE542FAD1242B2DBA840223ED2908 /* Support Files */,
-			);
-			name = SCLAlertView;
-			path = SCLAlertView;
-			sourceTree = "<group>";
-		};
-		E22BF15590D257F5A4050109D7C8E1E8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E0497A8F2D7B10574499D66FC88FB952 /* AnimatedGradientView.modulemap */,
-				21157BB2A0A53613B0A518B32C9BEAA1 /* AnimatedGradientView.xcconfig */,
-				877579D7A1CF3ABBE3DB16E74014C7DF /* AnimatedGradientView-dummy.m */,
-				CE63061A316B67B2E6C34D068182058D /* AnimatedGradientView-prefix.pch */,
-				BABC91CA45FE7C77E17CE821FD6149C7 /* AnimatedGradientView-umbrella.h */,
-				C4839E6E40E30A17BB2B90200BBEF34B /* Info.plist */,
+				2591C819F9B32709D3CCB3366ACCC0C3 /* AnimatedGradientView.modulemap */,
+				1D55FB40A0FE4D85235FB7E086D63089 /* AnimatedGradientView.xcconfig */,
+				4B7D61B7A419EDD8280D44E9D8E751A4 /* AnimatedGradientView-dummy.m */,
+				59324B4700556EC9DAE6CF3497D105C9 /* AnimatedGradientView-prefix.pch */,
+				A4A68F1FF8992B41409D1DD225A99F63 /* AnimatedGradientView-umbrella.h */,
+				A3369577D174C9D7542F9BFA116618C6 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AnimatedGradientView";
 			sourceTree = "<group>";
 		};
-		ECAAAB52C1B8FD956D39E5B58621C48F /* SwiftConfettiView */ = {
+		DBC7643AC0E008DA3EBE19FDAEF6DF01 /* SwiftConfettiView */ = {
 			isa = PBXGroup;
 			children = (
-				D613B05419B2209D1898D42747C075DE /* SwiftConfettiView.swift */,
-				07EBF0733131EA13AA45DD3208CF3C1F /* Resources */,
-				7CC3F7095F1483738998470D2373F282 /* Support Files */,
+				5463BE1FC3868906BD6CA12710E21C3A /* SwiftConfettiView.swift */,
+				22893F8A31D4017D6DF71DC75191CE39 /* Resources */,
+				99CD9259C2D4960C49347E413475B9A7 /* Support Files */,
 			);
 			name = SwiftConfettiView;
 			path = SwiftConfettiView;
+			sourceTree = "<group>";
+		};
+		E6806CAAE6B90841BA979C5B31959ED7 /* VACalendar */ = {
+			isa = PBXGroup;
+			children = (
+				296E20A9AD72F0F42C158BC4B4577524 /* VACalendar.swift */,
+				D04B6FBF9EA240CE03FB302C9DDD2993 /* VACalendarMonthDelegate.swift */,
+				16528AC9BE59E3B57AA833EF5757A26B /* VACalendarView.swift */,
+				841159A2A5E65CEB2880626C8CB69770 /* VADay.swift */,
+				3CCCBA963B4184160B8A8825FA48DA17 /* VADayView.swift */,
+				7F77EE015527624647B1A6B6D322F053 /* VADotView.swift */,
+				CDE8F5567E5D9AF1FD8BC23DCF84CDF8 /* VAFormatters.swift */,
+				778A87508250E2449E8A6CCCEA6C3276 /* VAMonth.swift */,
+				350DEF766943845DD88B7349C15884BF /* VAMonthHeaderView.swift */,
+				9955FFAC8D88296E5B0655DB79948387 /* VAMonthView.swift */,
+				E956D3ED0A0C7F487D4B83466658BE2B /* VAWeek.swift */,
+				647778627003D9C6EF17F1CD7BA25F69 /* VAWeekDaysView.swift */,
+				1F01DE2D9DB16C0FED1CA473771CDD32 /* VAWeekView.swift */,
+				026786C9F9B108880F5B0054EDFCE401 /* Support Files */,
+			);
+			name = VACalendar;
+			path = VACalendar;
+			sourceTree = "<group>";
+		};
+		EE1C1E25390C894B4ED4BEBC9D8B014B /* WBCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E8D1B2BDE0BC16791C749DC8B242B34F /* WBGridViewLayout.swift */,
+				66BBE77B7E4EC8B099A63924BFEED3C2 /* Support Files */,
+			);
+			name = WBCollectionViewLayout;
+			path = WBCollectionViewLayout;
 			sourceTree = "<group>";
 		};
 		FE10183B4EA756A194670AB130ED35EA /* Pods-HealthyWorld */ = {
@@ -529,52 +585,47 @@
 			path = "Target Support Files/Pods-HealthyWorld";
 			sourceTree = "<group>";
 		};
-		FF3F2E224D0F99C5696C83AB7500CA8E /* Pods */ = {
+		FE1035B4BD165A4383115C0295F9AC9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF76B36CC7941FB761D4C69F331612C9 /* AnimatedGradientView */,
-				E04BD6D5ECB21C683AAE8D6A7A4C01F5 /* SCLAlertView */,
-				ECAAAB52C1B8FD956D39E5B58621C48F /* SwiftConfettiView */,
-				13D36246D2E8C4B91B97E83636097FFF /* SwiftSpinner */,
-				818A31CA8D1B10DFC5D1E643AAED65D3 /* VACalendar */,
-				62A5767D1AA9636F165095AA17EAC711 /* WBCollectionViewLayout */,
+				88264DBCE84234FBBBBDE97DD4CF73EC /* AnimatedGradientView.framework */,
+				007725E34AD43EA5691D1E85D43BFB97 /* Pods_HealthyWorld.framework */,
+				2E4E70747DEC64858955E994027AA589 /* RKPieChart.framework */,
+				20A8717E20BDBABDB38F070368FB880E /* SCLAlertView.framework */,
+				344170AEE867EA15ABE1D2A52050B61A /* SwiftConfettiView.bundle */,
+				5B3D7652177D86270EF4A19121F7A1C5 /* SwiftConfettiView.framework */,
+				5A8D7F17965FE72016525C54E57A5D53 /* SwiftSpinner.framework */,
+				984CF442658B65AF68A2B8C78519EAF0 /* VACalendar.framework */,
+				5D935CCD1992E6F8D492823D04BF5BFD /* WBCollectionViewLayout.framework */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		247C44B4F8D690DF1DB9324401AC93E9 /* Headers */ = {
+		21BD6EA55BBEB387DAFB4D79C5D97993 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0386EFCF0A81C578785AF76CCF824988 /* SwiftSpinner-umbrella.h in Headers */,
-				F8F0A81FFBE94A274C7E24A6B04CD126 /* SwiftSpinner.h in Headers */,
+				288DAA494FF5937C5655F19BDFD99513 /* SwiftSpinner-umbrella.h in Headers */,
+				1C09CB9E500DE3303B589BCB37BC42FB /* SwiftSpinner.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		446BDEC4C5A90D4B11D25ECBFB17A76B /* Headers */ = {
+		47916E46421BC729C59708D25C070852 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B47F079D781788D7F429CAD0CEB12E20 /* SwiftConfettiView-umbrella.h in Headers */,
+				3F34F30B9C73FF31E2C08CE3797D8690 /* SCLAlertView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84F575C85790B79AE1E2C5B3E2A95A2D /* Headers */ = {
+		72DEC5FE011A7105C27BAD4CDD2B16CC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DC08D18FA0A0ABF02582AD299D2CB97 /* SCLAlertView-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88AC6FA54E8468F55C3B31CD3CF4D730 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9AD45CF9A63AD3184B74D2E94143DF94 /* WBCollectionViewLayout-umbrella.h in Headers */,
+				36495BE1D82618C56113354CD0EDC087 /* SwiftConfettiView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,142 +637,65 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98882B4CE7A95CD361A75BB3FA5D5D38 /* Headers */ = {
+		A88BDFC19D820E34C41BBED6F966C0D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49F341106744E0AAF69DE73E43F25629 /* VACalendar-umbrella.h in Headers */,
+				81D8167A7E980D9E079871B512F9AB02 /* RKPieChart-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A436753A021D053FAD34631E8996C3EE /* Headers */ = {
+		A8AAEE412E0BF25C88BB017332F494E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E0AB936C027AE7F1627DF4DE63DB03F /* Pods-HealthyWorld-umbrella.h in Headers */,
+				946826FA37A3DC19F054C45CF6001418 /* WBCollectionViewLayout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB3242BC378921E5D9970A6601614DCA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2B0E22416BEBA71F3EE07BE7A76434 /* VACalendar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5949F4FFF23BEC61561E305FED169C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12FC322B80F363692BBF1510D2A55935 /* Pods-HealthyWorld-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2E5784FE264F2257356E8184E4774052 /* SwiftConfettiView */ = {
+		292641873658A0A25E0F81ADFDA536B4 /* RKPieChart */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C370AD2FCC70B477E3962BD1898A863E /* Build configuration list for PBXNativeTarget "SwiftConfettiView" */;
+			buildConfigurationList = 0ECF6BB493991CBDDBE6396949F34E61 /* Build configuration list for PBXNativeTarget "RKPieChart" */;
 			buildPhases = (
-				8F8F0C14CD54F6F12FAB29501C481BD9 /* Sources */,
-				BDBF5FA7946ECB61CEBCD12013766336 /* Frameworks */,
-				B5DBBBE926E4A37D926F8F76AE30EC97 /* Resources */,
-				446BDEC4C5A90D4B11D25ECBFB17A76B /* Headers */,
+				4B4D22B9BDE0B6DB7384419750842202 /* Sources */,
+				1B64B6E777367D9ACFC5A4367CD034A1 /* Frameworks */,
+				A88BDFC19D820E34C41BBED6F966C0D1 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6AAAF359140F0B745A341594E251C9B2 /* PBXTargetDependency */,
 			);
-			name = SwiftConfettiView;
-			productName = SwiftConfettiView;
-			productReference = 131FF0F586BEAE922D4D1614CA39BE59 /* SwiftConfettiView.framework */;
+			name = RKPieChart;
+			productName = RKPieChart;
+			productReference = 2E4E70747DEC64858955E994027AA589 /* RKPieChart.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		522C6B5D4E05915C5DCAEDD8F03C0F62 /* SCLAlertView */ = {
+		31AE3A36802F756E55F2725871F2CBED /* SwiftSpinner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A326E469F87B98FCB1F8D3958B41F7CF /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildConfigurationList = E3568A76AF01F9321F4805C6A558D512 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */;
 			buildPhases = (
-				5386423AC20AD9DA5CB743B4D5BD8FB5 /* Sources */,
-				2DE1F5373507174D53FEA87CB9363A42 /* Frameworks */,
-				84F575C85790B79AE1E2C5B3E2A95A2D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SCLAlertView;
-			productName = SCLAlertView;
-			productReference = 05ACF6AD178EA93A77E5484A02150928 /* SCLAlertView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5EB63FBA4EC1AB45A2281CF9978A2D08 /* WBCollectionViewLayout */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6F42ED40F2C8B167B63994F05F9F669E /* Build configuration list for PBXNativeTarget "WBCollectionViewLayout" */;
-			buildPhases = (
-				E2C0E0212CA1C05BF43594294A9349E4 /* Sources */,
-				276740C65B9E36C9EB0506AC3B7A582F /* Frameworks */,
-				88AC6FA54E8468F55C3B31CD3CF4D730 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WBCollectionViewLayout;
-			productName = WBCollectionViewLayout;
-			productReference = 28BC2E88AB2B5D872BAE00A228CD2110 /* WBCollectionViewLayout.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		606378774D3A09A1AFEE411481486FB5 /* Pods-HealthyWorld */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 665699F210617E8DD84A71F499D6C010 /* Build configuration list for PBXNativeTarget "Pods-HealthyWorld" */;
-			buildPhases = (
-				7F67C9273F302E537C0823DD09309FE1 /* Sources */,
-				FABE19E76ACB85FD669EECDA57B06C9F /* Frameworks */,
-				A436753A021D053FAD34631E8996C3EE /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EFBA36F35CFF53CF22FE7EE7B5D41C0F /* PBXTargetDependency */,
-				8BF937C26C85E8697850EF944FF1552E /* PBXTargetDependency */,
-				7066F42D527B269CB7FF73FDE65727F5 /* PBXTargetDependency */,
-				E8B5E6B9BC4239B64DE0CD66B170C2E1 /* PBXTargetDependency */,
-				48409E4B97B05F63894926F133AC42DA /* PBXTargetDependency */,
-				39B7900219AC19A843574A6DA5059154 /* PBXTargetDependency */,
-			);
-			name = "Pods-HealthyWorld";
-			productName = "Pods-HealthyWorld";
-			productReference = 539DDC5A971D558DBC54152961F5CD52 /* Pods_HealthyWorld.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6443E82400EC176A454BA277CB1875D8 /* VACalendar */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 57F0ECA898D6E1DBE436BC8C5404BEBD /* Build configuration list for PBXNativeTarget "VACalendar" */;
-			buildPhases = (
-				5217FED6F8FD51583F550F385F34943F /* Sources */,
-				6D3E691B272026A742A2D4E43FE8E7C1 /* Frameworks */,
-				98882B4CE7A95CD361A75BB3FA5D5D38 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = VACalendar;
-			productName = VACalendar;
-			productReference = 186144AE603F6E2F36B121C81086D8A4 /* VACalendar.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		96EE57DBC8AD79E5B6F95C1081D7DCE1 /* SwiftConfettiView-SwiftConfettiView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EDF049959024FCC79D87AE1D4EAFDDB5 /* Build configuration list for PBXNativeTarget "SwiftConfettiView-SwiftConfettiView" */;
-			buildPhases = (
-				F12B12635E6F00132DFE0F4763DB1622 /* Sources */,
-				11DF3675EAFD434D1F5CCE5713491D7F /* Frameworks */,
-				B07E14AB30DBEC5987E4E1681FC443E7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "SwiftConfettiView-SwiftConfettiView";
-			productName = "SwiftConfettiView-SwiftConfettiView";
-			productReference = 756BC6D6A50B5D1BB85A5ADF6183D909 /* SwiftConfettiView.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		C78588A39E8599A52D2DF127D8E170BA /* SwiftSpinner */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1E19170255D6002A90CFB1F4180129A5 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */;
-			buildPhases = (
-				DC5D1CEF0CB8FBB87964D1AFA978813A /* Sources */,
-				1841985B2E063EC0E2CBE56DBB803B93 /* Frameworks */,
-				247C44B4F8D690DF1DB9324401AC93E9 /* Headers */,
+				07A117465366B9507E5C362CC8B3F748 /* Sources */,
+				17B574C19E261C93C1F77191FFCF915A /* Frameworks */,
+				21BD6EA55BBEB387DAFB4D79C5D97993 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -729,7 +703,118 @@
 			);
 			name = SwiftSpinner;
 			productName = SwiftSpinner;
-			productReference = 953861BA147BCAA8882175FD5BE7563D /* SwiftSpinner.framework */;
+			productReference = 5A8D7F17965FE72016525C54E57A5D53 /* SwiftSpinner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3C73DAFFDCACE06B2F2D7F18AD99F384 /* VACalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEEDD620E30F692C4C083BC65B40DA3C /* Build configuration list for PBXNativeTarget "VACalendar" */;
+			buildPhases = (
+				FBD5E039AEEF42F390E065809BC36582 /* Sources */,
+				620B813307B9F2D10C56CC66A30AFB33 /* Frameworks */,
+				BB3242BC378921E5D9970A6601614DCA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VACalendar;
+			productName = VACalendar;
+			productReference = 984CF442658B65AF68A2B8C78519EAF0 /* VACalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		58A784C945515B2D7626F7479DC058AB /* SCLAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D5ACFD5B4AEAB78D000228C0D0E4E1D /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildPhases = (
+				B86118DF989E797C32C08EA634C1D076 /* Sources */,
+				65FDFF966324AD5A8D849F85E395F645 /* Frameworks */,
+				47916E46421BC729C59708D25C070852 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCLAlertView;
+			productName = SCLAlertView;
+			productReference = 20A8717E20BDBABDB38F070368FB880E /* SCLAlertView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		59815F66BBBE745534C8DB03794541BB /* Pods-HealthyWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A2DB209791026CE1CB01FFD318BBC60 /* Build configuration list for PBXNativeTarget "Pods-HealthyWorld" */;
+			buildPhases = (
+				0AC22EA97E0D9851426FB6180E5E9394 /* Sources */,
+				95E080914309C8417500AC56DCC55CD7 /* Frameworks */,
+				CF5949F4FFF23BEC61561E305FED169C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56A719B8708E4E34336BEB20C47E0533 /* PBXTargetDependency */,
+				3E7E913CD8F75BC3B478B733CA87FC0F /* PBXTargetDependency */,
+				8CC2E66EB4FE6C394DCC0E92467947FE /* PBXTargetDependency */,
+				A908089528F0F90211320E15BFF861FC /* PBXTargetDependency */,
+				7564A2E81C590CA957FA4F972C566AD0 /* PBXTargetDependency */,
+				4199692F85045D21F0B69A2B849937F0 /* PBXTargetDependency */,
+				94435623839590C6B171D44B3E208F55 /* PBXTargetDependency */,
+			);
+			name = "Pods-HealthyWorld";
+			productName = "Pods-HealthyWorld";
+			productReference = 007725E34AD43EA5691D1E85D43BFB97 /* Pods_HealthyWorld.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5AC23D0C9F69DE822352CA60D983975C /* SwiftConfettiView-SwiftConfettiView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E872AA5128E2743E765BAFD6CD87FA74 /* Build configuration list for PBXNativeTarget "SwiftConfettiView-SwiftConfettiView" */;
+			buildPhases = (
+				C74F86EE2860D926E0369AB4E3673AA2 /* Sources */,
+				71968710D9240995ECA86BBEED45B91D /* Frameworks */,
+				629A1B60001B9E1B69E15FBE5F68FD67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftConfettiView-SwiftConfettiView";
+			productName = "SwiftConfettiView-SwiftConfettiView";
+			productReference = 344170AEE867EA15ABE1D2A52050B61A /* SwiftConfettiView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		98629FB93D05B148C10CB448D4D5CE12 /* SwiftConfettiView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 548FBF16DAA6C723FA45F0776E7F5DB1 /* Build configuration list for PBXNativeTarget "SwiftConfettiView" */;
+			buildPhases = (
+				6253CD424B1C6953A88D7C660349D0FF /* Sources */,
+				670EA6786C046A6DD2F6DEE30EC228E7 /* Frameworks */,
+				5A7ECFE3E4F06F8795D3C10B6C4957C6 /* Resources */,
+				72DEC5FE011A7105C27BAD4CDD2B16CC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C31985E3E94018AD9D42C3181775EEE0 /* PBXTargetDependency */,
+			);
+			name = SwiftConfettiView;
+			productName = SwiftConfettiView;
+			productReference = 5B3D7652177D86270EF4A19121F7A1C5 /* SwiftConfettiView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B9432491254EA7494BB2B1058987737 /* WBCollectionViewLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9660D874E9797DECC73111732613974D /* Build configuration list for PBXNativeTarget "WBCollectionViewLayout" */;
+			buildPhases = (
+				79F1B62296B47FE319F4C4E9C5E41697 /* Sources */,
+				C9112C09FF32066D2AB2E401F3E099F0 /* Frameworks */,
+				A8AAEE412E0BF25C88BB017332F494E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WBCollectionViewLayout;
+			productName = WBCollectionViewLayout;
+			productReference = 5D935CCD1992E6F8D492823D04BF5BFD /* WBCollectionViewLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CF208A5DCEC262DE51F5CCBA59198D35 /* AnimatedGradientView */ = {
@@ -746,7 +831,7 @@
 			);
 			name = AnimatedGradientView;
 			productName = AnimatedGradientView;
-			productReference = 216F96D65F415AE5D8CEC894A1DF39C9 /* AnimatedGradientView.framework */;
+			productReference = 88264DBCE84234FBBBBDE97DD4CF73EC /* AnimatedGradientView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -766,77 +851,75 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DCF542808146EAD9544F9EDCF42D3F70 /* Products */;
+			productRefGroup = FE1035B4BD165A4383115C0295F9AC9E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CF208A5DCEC262DE51F5CCBA59198D35 /* AnimatedGradientView */,
-				606378774D3A09A1AFEE411481486FB5 /* Pods-HealthyWorld */,
-				522C6B5D4E05915C5DCAEDD8F03C0F62 /* SCLAlertView */,
-				2E5784FE264F2257356E8184E4774052 /* SwiftConfettiView */,
-				96EE57DBC8AD79E5B6F95C1081D7DCE1 /* SwiftConfettiView-SwiftConfettiView */,
-				C78588A39E8599A52D2DF127D8E170BA /* SwiftSpinner */,
-				6443E82400EC176A454BA277CB1875D8 /* VACalendar */,
-				5EB63FBA4EC1AB45A2281CF9978A2D08 /* WBCollectionViewLayout */,
+				59815F66BBBE745534C8DB03794541BB /* Pods-HealthyWorld */,
+				292641873658A0A25E0F81ADFDA536B4 /* RKPieChart */,
+				58A784C945515B2D7626F7479DC058AB /* SCLAlertView */,
+				98629FB93D05B148C10CB448D4D5CE12 /* SwiftConfettiView */,
+				5AC23D0C9F69DE822352CA60D983975C /* SwiftConfettiView-SwiftConfettiView */,
+				31AE3A36802F756E55F2725871F2CBED /* SwiftSpinner */,
+				3C73DAFFDCACE06B2F2D7F18AD99F384 /* VACalendar */,
+				9B9432491254EA7494BB2B1058987737 /* WBCollectionViewLayout */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B07E14AB30DBEC5987E4E1681FC443E7 /* Resources */ = {
+		5A7ECFE3E4F06F8795D3C10B6C4957C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C365AFE4DD80CF22CB98CEC886DC3A15 /* confetti.png in Resources */,
-				B3C8C14F1089071E8BBFE1700411C61C /* diamond.png in Resources */,
-				4C414A91C2F893FAFD4E3A523E4545A3 /* star.png in Resources */,
-				7F81775A3BF3FA3C3E62576CEEF2A079 /* triangle.png in Resources */,
+				45F0610FCC553E0AA08079AC5CA22577 /* confetti.png in Resources */,
+				8DB28EED1ED3BEAF3047831E9D4A534A /* diamond.png in Resources */,
+				731A0982D1AC1E161B0F094F6135D518 /* star.png in Resources */,
+				0D9B63E6410B40164B75EDA8A60F6A31 /* SwiftConfettiView.bundle in Resources */,
+				570BC98C8ABF02C7A4D144268ECA284D /* triangle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5DBBBE926E4A37D926F8F76AE30EC97 /* Resources */ = {
+		629A1B60001B9E1B69E15FBE5F68FD67 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58EB994015DD3D924364CE94D6697E09 /* confetti.png in Resources */,
-				EC5AAC43E5D40B8D9F0927589D182C14 /* diamond.png in Resources */,
-				15A1368A675F10A77943E1D9C2C41CE4 /* star.png in Resources */,
-				F9ECEF0EFD708BA0A669742BB8C46BA2 /* SwiftConfettiView.bundle in Resources */,
-				13B7577DBCBAD1C4D46FCD64111A91FE /* triangle.png in Resources */,
+				52EA897EDCD1A1F8A9BDBDB2A30BFC1E /* confetti.png in Resources */,
+				93FD0CBC0F61DF640770F62C86AE081D /* diamond.png in Resources */,
+				7DD02C9686A04A405F8D651BF6C0462D /* star.png in Resources */,
+				20978302DB64FE6936BB78BFAFBD0C45 /* triangle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5217FED6F8FD51583F550F385F34943F /* Sources */ = {
+		07A117465366B9507E5C362CC8B3F748 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA78878F313F7C81764248B354BEBEFA /* VACalendar-dummy.m in Sources */,
-				2F315A97DDB3C45699227087F7200C00 /* VACalendar.swift in Sources */,
-				9BE3F5F6EE5C1B99125FE5C30A2019DB /* VACalendarMonthDelegate.swift in Sources */,
-				F0F096FD50FD525C8C9D91D2DE95F34D /* VACalendarView.swift in Sources */,
-				39A30AC3E980A5CA0CE527534062FE32 /* VADay.swift in Sources */,
-				40539619A96970349ECC67D0A74AB51E /* VADayView.swift in Sources */,
-				6285B4DA669F633374F67F0CBDC46514 /* VADotView.swift in Sources */,
-				75D1235CA2CC25841B13E207584F0263 /* VAFormatters.swift in Sources */,
-				57C7328CBA0D8D033097A2DAF47571D3 /* VAMonth.swift in Sources */,
-				E13F099FD1FE78556C9518CFAF220A89 /* VAMonthHeaderView.swift in Sources */,
-				C985A554978E868EC57916C322C3409D /* VAMonthView.swift in Sources */,
-				81D7751DDDD4B45A6C6B2BB59428AA90 /* VAWeek.swift in Sources */,
-				9C33416878E70BF64A364455CD34DE84 /* VAWeekDaysView.swift in Sources */,
-				AF2DEBAC01A07A7A65066ABC695C8B15 /* VAWeekView.swift in Sources */,
+				83E8D93B1A0B80F0FC7B39E72DF9ACF9 /* SwiftSpinner-dummy.m in Sources */,
+				F973ECBF22852A2DD4CEEF674523B1DA /* SwiftSpinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5386423AC20AD9DA5CB743B4D5BD8FB5 /* Sources */ = {
+		0AC22EA97E0D9851426FB6180E5E9394 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D253DB7EAF62AEA6BD6B680B0D0DAC7C /* SCLAlertView-dummy.m in Sources */,
-				C8CC68735C08EF16C9CF2ABA72BC68E1 /* SCLAlertView.swift in Sources */,
-				CC4F1B50802C7D84C4921406878F6362 /* SCLExtensions.swift in Sources */,
+				E922B28B3738AEED6984DE5164267576 /* Pods-HealthyWorld-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B4D22B9BDE0B6DB7384419750842202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5CBFC21FFA21ECD973D674E2020D9CC /* RKChartTitleView.swift in Sources */,
+				B2D4504A7006FB21815F0897219EB8FF /* RKPieChart-dummy.m in Sources */,
+				63C497287A11EA4465D203C128C0780F /* RKPieChartItem.swift in Sources */,
+				8D65ACBE4753266A59807AE28BAAC217 /* RKPieChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,173 +938,116 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F67C9273F302E537C0823DD09309FE1 /* Sources */ = {
+		6253CD424B1C6953A88D7C660349D0FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C93C22E30C6D3B2A508F59D8C75130F5 /* Pods-HealthyWorld-dummy.m in Sources */,
+				25FF2409FE73E31D2112BA1CEE4067D7 /* SwiftConfettiView-dummy.m in Sources */,
+				34DAC588C085B3151D680C4AA7E41E88 /* SwiftConfettiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F8F0C14CD54F6F12FAB29501C481BD9 /* Sources */ = {
+		79F1B62296B47FE319F4C4E9C5E41697 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95196CBC9F02EF05C8A1A19B210AFB1E /* SwiftConfettiView-dummy.m in Sources */,
-				0C0CEA368A3FD8B0CBD4D4AA37F05E35 /* SwiftConfettiView.swift in Sources */,
+				CA057FD962657FE7165FDC3E05CC47A6 /* WBCollectionViewLayout-dummy.m in Sources */,
+				95151EF86F3E8E6CF0845440C36FE157 /* WBGridViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC5D1CEF0CB8FBB87964D1AFA978813A /* Sources */ = {
+		B86118DF989E797C32C08EA634C1D076 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C84D017EE97C0AECCF6B4AC8DCA0D8C4 /* SwiftSpinner-dummy.m in Sources */,
-				DBC5F69D1105FF9AC6E2DF1F9E74CDF0 /* SwiftSpinner.swift in Sources */,
+				4B5DD9E65E618299AC7A35F0184FB089 /* SCLAlertView-dummy.m in Sources */,
+				D25ADF9724913D5B04010F8FC5C91A1D /* SCLAlertView.swift in Sources */,
+				3EDCD6AD9EE1DAED63BE6FE2C514FA4C /* SCLExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2C0E0212CA1C05BF43594294A9349E4 /* Sources */ = {
+		C74F86EE2860D926E0369AB4E3673AA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8FF501E383FB698213443DA9FB61955 /* WBCollectionViewLayout-dummy.m in Sources */,
-				31A998124A9C4D81C615599F3AC4B079 /* WBGridViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F12B12635E6F00132DFE0F4763DB1622 /* Sources */ = {
+		FBD5E039AEEF42F390E065809BC36582 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0625CFF1529415885BA078903EF080BD /* VACalendar-dummy.m in Sources */,
+				FA019EB1B181AF79495E7DCCE050B978 /* VACalendar.swift in Sources */,
+				3FDCBBDDCD327E6402DB7B3AA7E2A25F /* VACalendarMonthDelegate.swift in Sources */,
+				61D89FD37BF0C436FAA436CB778443DF /* VACalendarView.swift in Sources */,
+				61962570C6A1951E4F1FBA5278F3ACFE /* VADay.swift in Sources */,
+				777AE6900019ABAB357545BD30EB48A4 /* VADayView.swift in Sources */,
+				96FBC94EF0B1F5989E4D43A63ABAC93A /* VADotView.swift in Sources */,
+				0DBDE452F03020274DFA5C2F80A045F8 /* VAFormatters.swift in Sources */,
+				D9DB2520ECD77FF2E63A5149C04E703B /* VAMonth.swift in Sources */,
+				92B53BC4AC4BB9F71BE97F3E6B16EB79 /* VAMonthHeaderView.swift in Sources */,
+				212CBD2F96E06CFBB779192DB3710DA8 /* VAMonthView.swift in Sources */,
+				6E84775A0C1DAEC416A17D0A0794390C /* VAWeek.swift in Sources */,
+				C3C5B686089E84088DC6422C788BA8C5 /* VAWeekDaysView.swift in Sources */,
+				8C1C8ED60AEF24B0C5B2E7FE829E96F9 /* VAWeekView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		39B7900219AC19A843574A6DA5059154 /* PBXTargetDependency */ = {
+		3E7E913CD8F75BC3B478B733CA87FC0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = WBCollectionViewLayout;
-			target = 5EB63FBA4EC1AB45A2281CF9978A2D08 /* WBCollectionViewLayout */;
-			targetProxy = 1DE6D0E300544B76C4EC85BDE73FA930 /* PBXContainerItemProxy */;
+			name = RKPieChart;
+			target = 292641873658A0A25E0F81ADFDA536B4 /* RKPieChart */;
+			targetProxy = 391F9998E9E70BCDB49A081E3D16CCDA /* PBXContainerItemProxy */;
 		};
-		48409E4B97B05F63894926F133AC42DA /* PBXTargetDependency */ = {
+		4199692F85045D21F0B69A2B849937F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = VACalendar;
-			target = 6443E82400EC176A454BA277CB1875D8 /* VACalendar */;
-			targetProxy = D13354B81D0A81B2B1292E5A6233915F /* PBXContainerItemProxy */;
+			target = 3C73DAFFDCACE06B2F2D7F18AD99F384 /* VACalendar */;
+			targetProxy = F1E70BBC57210C778C2BABD0E89FBE10 /* PBXContainerItemProxy */;
 		};
-		6AAAF359140F0B745A341594E251C9B2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SwiftConfettiView-SwiftConfettiView";
-			target = 96EE57DBC8AD79E5B6F95C1081D7DCE1 /* SwiftConfettiView-SwiftConfettiView */;
-			targetProxy = 14D611B1250A3E6EB6B5D1289965185A /* PBXContainerItemProxy */;
-		};
-		7066F42D527B269CB7FF73FDE65727F5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftConfettiView;
-			target = 2E5784FE264F2257356E8184E4774052 /* SwiftConfettiView */;
-			targetProxy = 7ABB64D53E1C0741E0550BFFFB669EA6 /* PBXContainerItemProxy */;
-		};
-		8BF937C26C85E8697850EF944FF1552E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SCLAlertView;
-			target = 522C6B5D4E05915C5DCAEDD8F03C0F62 /* SCLAlertView */;
-			targetProxy = D87BACFB98BCEEF377D0A54554D96E4A /* PBXContainerItemProxy */;
-		};
-		E8B5E6B9BC4239B64DE0CD66B170C2E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftSpinner;
-			target = C78588A39E8599A52D2DF127D8E170BA /* SwiftSpinner */;
-			targetProxy = A46C8AE4BFEA6214C71B74DA97515AD4 /* PBXContainerItemProxy */;
-		};
-		EFBA36F35CFF53CF22FE7EE7B5D41C0F /* PBXTargetDependency */ = {
+		56A719B8708E4E34336BEB20C47E0533 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AnimatedGradientView;
 			target = CF208A5DCEC262DE51F5CCBA59198D35 /* AnimatedGradientView */;
-			targetProxy = ADA8FE8620D7E4F77BBDF29A7F00732F /* PBXContainerItemProxy */;
+			targetProxy = 2F1ED7DA92007E274239FDD0532A7DF4 /* PBXContainerItemProxy */;
+		};
+		7564A2E81C590CA957FA4F972C566AD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSpinner;
+			target = 31AE3A36802F756E55F2725871F2CBED /* SwiftSpinner */;
+			targetProxy = 07593695FB3F2F9F3C821080DCD11B51 /* PBXContainerItemProxy */;
+		};
+		8CC2E66EB4FE6C394DCC0E92467947FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SCLAlertView;
+			target = 58A784C945515B2D7626F7479DC058AB /* SCLAlertView */;
+			targetProxy = 1FC3CE3F06A23016AF13FBEE35A28D31 /* PBXContainerItemProxy */;
+		};
+		94435623839590C6B171D44B3E208F55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WBCollectionViewLayout;
+			target = 9B9432491254EA7494BB2B1058987737 /* WBCollectionViewLayout */;
+			targetProxy = BE6365658CCCE2051C20BA32A6C0DC3F /* PBXContainerItemProxy */;
+		};
+		A908089528F0F90211320E15BFF861FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftConfettiView;
+			target = 98629FB93D05B148C10CB448D4D5CE12 /* SwiftConfettiView */;
+			targetProxy = 79DDC5329D6B6AB5945696582FCE4BBD /* PBXContainerItemProxy */;
+		};
+		C31985E3E94018AD9D42C3181775EEE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftConfettiView-SwiftConfettiView";
+			target = 5AC23D0C9F69DE822352CA60D983975C /* SwiftConfettiView-SwiftConfettiView */;
+			targetProxy = 0C5F84033644DDF260E26AB833576208 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		02E2C0EA34FDA460B0A6C77E0AFCF07D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B29CF287D045D3243695B8BF0D3D7AC /* WBCollectionViewLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WBCollectionViewLayout/WBCollectionViewLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WBCollectionViewLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/WBCollectionViewLayout/WBCollectionViewLayout.modulemap";
-				PRODUCT_MODULE_NAME = WBCollectionViewLayout;
-				PRODUCT_NAME = WBCollectionViewLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		053C464699107EA1B42D518D535416A1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D21B74FCF819D2915EBEC5DB1C54BA2C /* Pods-HealthyWorld.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HealthyWorld/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HealthyWorld/Pods-HealthyWorld.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		063198AB09B9CDB3A695432FC17AD8CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1080,118 +1106,41 @@
 			};
 			name = Release;
 		};
-		10083B7FDF62ADE9FFA25C99FBC1FC2A /* Debug */ = {
+		0C9094BF66733F1C1B8951E230D4A741 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9171D76B87E0BC35090E465CCB05FAF /* SwiftConfettiView.xcconfig */;
+			baseConfigurationReference = 75994D42E428D0F96D544A473C3F79B4 /* SwiftConfettiView.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftConfettiView/SwiftConfettiView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftConfettiView";
+				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/ResourceBundle-SwiftConfettiView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftConfettiView/SwiftConfettiView.modulemap";
-				PRODUCT_MODULE_NAME = SwiftConfettiView;
 				PRODUCT_NAME = SwiftConfettiView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		37988B94246A647CC9BFB1DC2EF5CEA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9171D76B87E0BC35090E465CCB05FAF /* SwiftConfettiView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftConfettiView/SwiftConfettiView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftConfettiView/SwiftConfettiView.modulemap";
-				PRODUCT_MODULE_NAME = SwiftConfettiView;
-				PRODUCT_NAME = SwiftConfettiView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
-		481EB0D78DF416CC6E415E3014BAE702 /* Debug */ = {
+		355C8E77442AB1EBDD079BEB6DCAEF07 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C718D13B8884FE4C0174A1F366FBFD58 /* SwiftSpinner.xcconfig */;
+			baseConfigurationReference = 75994D42E428D0F96D544A473C3F79B4 /* SwiftConfettiView.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftConfettiView";
+				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/ResourceBundle-SwiftConfettiView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
-				PRODUCT_MODULE_NAME = SwiftSpinner;
-				PRODUCT_NAME = SwiftSpinner;
+				PRODUCT_NAME = SwiftConfettiView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		4F1C04A2D9E4670B4E3C258455230375 /* Debug */ = {
+		66554D98EBA4141DAB15B69D371D8A46 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B29CF287D045D3243695B8BF0D3D7AC /* WBCollectionViewLayout.xcconfig */;
+			baseConfigurationReference = FD02CDF35A72E29E506E63F11F6B7A98 /* WBCollectionViewLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1225,9 +1174,9 @@
 			};
 			name = Debug;
 		};
-		5B7BB41534DC6DCE1EC9C234004131A7 /* Release */ = {
+		8788A32DE0C5B73A167976FE5F4AD6FC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C718D13B8884FE4C0174A1F366FBFD58 /* SwiftSpinner.xcconfig */;
+			baseConfigurationReference = F9205889FB4140DE37EBB9B38C94C68C /* RKPieChart.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1238,18 +1187,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/RKPieChart/RKPieChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RKPieChart/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
-				PRODUCT_MODULE_NAME = SwiftSpinner;
-				PRODUCT_NAME = SwiftSpinner;
+				MODULEMAP_FILE = "Target Support Files/RKPieChart/RKPieChart.modulemap";
+				PRODUCT_MODULE_NAME = RKPieChart;
+				PRODUCT_NAME = RKPieChart;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1261,113 +1210,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		6252C8923F4A904668F42AB90D323E94 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED46DD080D197A0E434C39FD99CE8EA8 /* SCLAlertView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
-				PRODUCT_MODULE_NAME = SCLAlertView;
-				PRODUCT_NAME = SCLAlertView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		70558EE54DBF75D50768D510BDCE2AD1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9171D76B87E0BC35090E465CCB05FAF /* SwiftConfettiView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftConfettiView";
-				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/ResourceBundle-SwiftConfettiView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = SwiftConfettiView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		7DA85905286F892DE5AC5BD3EA4BD99C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12937ACBCB96BF6197D0992134085368 /* VACalendar.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/VACalendar/VACalendar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/VACalendar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/VACalendar/VACalendar.modulemap";
-				PRODUCT_MODULE_NAME = VACalendar;
-				PRODUCT_NAME = VACalendar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		806138B52423E882B64DA5B1A27B3A9F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9171D76B87E0BC35090E465CCB05FAF /* SwiftConfettiView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftConfettiView";
-				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/ResourceBundle-SwiftConfettiView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = SwiftConfettiView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 		87EAC867385563488A6D8F1E74AC46B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1432,9 +1274,9 @@
 			};
 			name = Debug;
 		};
-		BD0FB4A2599805401B93D7BE75B67F07 /* Debug */ = {
+		973E3D19360206D0212171B3E033E189 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED46DD080D197A0E434C39FD99CE8EA8 /* SCLAlertView.xcconfig */;
+			baseConfigurationReference = 75994D42E428D0F96D544A473C3F79B4 /* SwiftConfettiView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1445,8 +1287,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftConfettiView/SwiftConfettiView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1454,9 +1296,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
-				PRODUCT_MODULE_NAME = SCLAlertView;
-				PRODUCT_NAME = SCLAlertView;
+				MODULEMAP_FILE = "Target Support Files/SwiftConfettiView/SwiftConfettiView.modulemap";
+				PRODUCT_MODULE_NAME = SwiftConfettiView;
+				PRODUCT_NAME = SwiftConfettiView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1468,9 +1310,9 @@
 			};
 			name = Debug;
 		};
-		E9F5A3296BDA158142481BBFB2FFB85E /* Release */ = {
+		974C27D31A48F5FE6117C729162CAD55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21157BB2A0A53613B0A518B32C9BEAA1 /* AnimatedGradientView.xcconfig */;
+			baseConfigurationReference = 719ED49754F02AFC246D9ECB9509D789 /* SwiftSpinner.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1481,8 +1323,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AnimatedGradientView/AnimatedGradientView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AnimatedGradientView/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1490,9 +1332,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/AnimatedGradientView/AnimatedGradientView.modulemap";
-				PRODUCT_MODULE_NAME = AnimatedGradientView;
-				PRODUCT_NAME = AnimatedGradientView;
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSpinner;
+				PRODUCT_NAME = SwiftSpinner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1505,9 +1347,9 @@
 			};
 			name = Release;
 		};
-		EA8E0A11AB12421256385A7A020D8BEB /* Debug */ = {
+		A415E04096CD255205222908A2A4BA3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21157BB2A0A53613B0A518B32C9BEAA1 /* AnimatedGradientView.xcconfig */;
+			baseConfigurationReference = FD02CDF35A72E29E506E63F11F6B7A98 /* WBCollectionViewLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1518,8 +1360,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AnimatedGradientView/AnimatedGradientView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AnimatedGradientView/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/WBCollectionViewLayout/WBCollectionViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WBCollectionViewLayout/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1527,9 +1369,46 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/AnimatedGradientView/AnimatedGradientView.modulemap";
-				PRODUCT_MODULE_NAME = AnimatedGradientView;
-				PRODUCT_NAME = AnimatedGradientView;
+				MODULEMAP_FILE = "Target Support Files/WBCollectionViewLayout/WBCollectionViewLayout.modulemap";
+				PRODUCT_MODULE_NAME = WBCollectionViewLayout;
+				PRODUCT_NAME = WBCollectionViewLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A63199B3CF2002754B71EC8C6B56EE35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9205889FB4140DE37EBB9B38C94C68C /* RKPieChart.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RKPieChart/RKPieChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RKPieChart/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RKPieChart/RKPieChart.modulemap";
+				PRODUCT_MODULE_NAME = RKPieChart;
+				PRODUCT_NAME = RKPieChart;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1541,9 +1420,49 @@
 			};
 			name = Debug;
 		};
-		ED0E331E85E476E9F1577F1DF7D3C088 /* Debug */ = {
+		ACF65933824BF37D48DD1DFECF1E4D29 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12937ACBCB96BF6197D0992134085368 /* VACalendar.xcconfig */;
+			baseConfigurationReference = D21B74FCF819D2915EBEC5DB1C54BA2C /* Pods-HealthyWorld.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HealthyWorld/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HealthyWorld/Pods-HealthyWorld.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA08A0CBA061DF07D1283E010C9636AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 692B33C8ED8FF37EFB33DDE22DE3D687 /* VACalendar.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1578,7 +1497,43 @@
 			};
 			name = Debug;
 		};
-		FB1C05356D615F7798B6F3F9765533F4 /* Debug */ = {
+		D2AD503958AA2F0DC50E40E85AFC2555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883B8EF8DF318746632075496A754243 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				PRODUCT_MODULE_NAME = SCLAlertView;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E0DBF75DE4EBE46CCEA9EF8AA5602CE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FDF171C0D0D20636A8715124002B024A /* Pods-HealthyWorld.debug.xcconfig */;
 			buildSettings = {
@@ -1618,14 +1573,235 @@
 			};
 			name = Debug;
 		};
+		E8D1A73E9EE4B1C14773F1A15EB0AE2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883B8EF8DF318746632075496A754243 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				PRODUCT_MODULE_NAME = SCLAlertView;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E9F5A3296BDA158142481BBFB2FFB85E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D55FB40A0FE4D85235FB7E086D63089 /* AnimatedGradientView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AnimatedGradientView/AnimatedGradientView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnimatedGradientView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AnimatedGradientView/AnimatedGradientView.modulemap";
+				PRODUCT_MODULE_NAME = AnimatedGradientView;
+				PRODUCT_NAME = AnimatedGradientView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EA8E0A11AB12421256385A7A020D8BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D55FB40A0FE4D85235FB7E086D63089 /* AnimatedGradientView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AnimatedGradientView/AnimatedGradientView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnimatedGradientView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AnimatedGradientView/AnimatedGradientView.modulemap";
+				PRODUCT_MODULE_NAME = AnimatedGradientView;
+				PRODUCT_NAME = AnimatedGradientView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F529FDFC1056C13527F8BE0F1E3A6FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75994D42E428D0F96D544A473C3F79B4 /* SwiftConfettiView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftConfettiView/SwiftConfettiView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftConfettiView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftConfettiView/SwiftConfettiView.modulemap";
+				PRODUCT_MODULE_NAME = SwiftConfettiView;
+				PRODUCT_NAME = SwiftConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FCD30A69F8ACF380AC321807E2228B63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 692B33C8ED8FF37EFB33DDE22DE3D687 /* VACalendar.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VACalendar/VACalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VACalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VACalendar/VACalendar.modulemap";
+				PRODUCT_MODULE_NAME = VACalendar;
+				PRODUCT_NAME = VACalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FEAE5AE4F93BDADC41A6A54B6659BA66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 719ED49754F02AFC246D9ECB9509D789 /* SwiftSpinner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSpinner;
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1E19170255D6002A90CFB1F4180129A5 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */ = {
+		0ECF6BB493991CBDDBE6396949F34E61 /* Build configuration list for PBXNativeTarget "RKPieChart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				481EB0D78DF416CC6E415E3014BAE702 /* Debug */,
-				5B7BB41534DC6DCE1EC9C234004131A7 /* Release */,
+				A63199B3CF2002754B71EC8C6B56EE35 /* Debug */,
+				8788A32DE0C5B73A167976FE5F4AD6FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1639,38 +1815,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57F0ECA898D6E1DBE436BC8C5404BEBD /* Build configuration list for PBXNativeTarget "VACalendar" */ = {
+		3D5ACFD5B4AEAB78D000228C0D0E4E1D /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED0E331E85E476E9F1577F1DF7D3C088 /* Debug */,
-				7DA85905286F892DE5AC5BD3EA4BD99C /* Release */,
+				D2AD503958AA2F0DC50E40E85AFC2555 /* Debug */,
+				E8D1A73E9EE4B1C14773F1A15EB0AE2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		665699F210617E8DD84A71F499D6C010 /* Build configuration list for PBXNativeTarget "Pods-HealthyWorld" */ = {
+		548FBF16DAA6C723FA45F0776E7F5DB1 /* Build configuration list for PBXNativeTarget "SwiftConfettiView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB1C05356D615F7798B6F3F9765533F4 /* Debug */,
-				053C464699107EA1B42D518D535416A1 /* Release */,
+				973E3D19360206D0212171B3E033E189 /* Debug */,
+				F529FDFC1056C13527F8BE0F1E3A6FA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F42ED40F2C8B167B63994F05F9F669E /* Build configuration list for PBXNativeTarget "WBCollectionViewLayout" */ = {
+		7A2DB209791026CE1CB01FFD318BBC60 /* Build configuration list for PBXNativeTarget "Pods-HealthyWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F1C04A2D9E4670B4E3C258455230375 /* Debug */,
-				02E2C0EA34FDA460B0A6C77E0AFCF07D /* Release */,
+				E0DBF75DE4EBE46CCEA9EF8AA5602CE6 /* Debug */,
+				ACF65933824BF37D48DD1DFECF1E4D29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A326E469F87B98FCB1F8D3958B41F7CF /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
+		9660D874E9797DECC73111732613974D /* Build configuration list for PBXNativeTarget "WBCollectionViewLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD0FB4A2599805401B93D7BE75B67F07 /* Debug */,
-				6252C8923F4A904668F42AB90D323E94 /* Release */,
+				66554D98EBA4141DAB15B69D371D8A46 /* Debug */,
+				A415E04096CD255205222908A2A4BA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEEDD620E30F692C4C083BC65B40DA3C /* Build configuration list for PBXNativeTarget "VACalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA08A0CBA061DF07D1283E010C9636AD /* Debug */,
+				FCD30A69F8ACF380AC321807E2228B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1684,20 +1869,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C370AD2FCC70B477E3962BD1898A863E /* Build configuration list for PBXNativeTarget "SwiftConfettiView" */ = {
+		E3568A76AF01F9321F4805C6A558D512 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				10083B7FDF62ADE9FFA25C99FBC1FC2A /* Debug */,
-				37988B94246A647CC9BFB1DC2EF5CEA0 /* Release */,
+				FEAE5AE4F93BDADC41A6A54B6659BA66 /* Debug */,
+				974C27D31A48F5FE6117C729162CAD55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EDF049959024FCC79D87AE1D4EAFDDB5 /* Build configuration list for PBXNativeTarget "SwiftConfettiView-SwiftConfettiView" */ = {
+		E872AA5128E2743E765BAFD6CD87FA74 /* Build configuration list for PBXNativeTarget "SwiftConfettiView-SwiftConfettiView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				806138B52423E882B64DA5B1A27B3A9F /* Debug */,
-				70558EE54DBF75D50768D510BDCE2AD1 /* Release */,
+				355C8E77442AB1EBDD079BEB6DCAEF07 /* Debug */,
+				0C9094BF66733F1C1B8951E230D4A741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -12,4 +12,5 @@ target 'HealthyWorld' do
   pod 'VACalendar', :git => 'https://github.com/Vodolazkyi/VACalendar.git'
   pod 'WBCollectionViewLayout', :git => 'https://github.com/mwaqasbhati/WBCollectionViewLayout.git'
   pod 'SCLAlertView', :git => 'https://github.com/vikmeup/SCLAlertView-Swift.git'
- end
+  pod 'RKPieChart', :git => 'https://github.com/ridvank/RKPieChart.git'
+end

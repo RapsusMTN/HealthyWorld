@@ -1,5 +1,6 @@
 PODS:
   - AnimatedGradientView (1.1.1)
+  - RKPieChart (0.0.1)
   - SCLAlertView (0.8.1)
   - SwiftConfettiView (0.1.0)
   - SwiftSpinner (1.7.0)
@@ -8,6 +9,7 @@ PODS:
 
 DEPENDENCIES:
   - AnimatedGradientView (from `https://github.com/rwbutler/AnimatedGradientView.git`)
+  - RKPieChart (from `https://github.com/ridvank/RKPieChart.git`)
   - SCLAlertView (from `https://github.com/vikmeup/SCLAlertView-Swift.git`)
   - SwiftConfettiView (from `https://github.com/ugurethemaydin/SwiftConfettiView.git`)
   - SwiftSpinner (from `https://github.com/icanzilb/SwiftSpinner.git`)
@@ -17,6 +19,8 @@ DEPENDENCIES:
 EXTERNAL SOURCES:
   AnimatedGradientView:
     :git: https://github.com/rwbutler/AnimatedGradientView.git
+  RKPieChart:
+    :git: https://github.com/ridvank/RKPieChart.git
   SCLAlertView:
     :git: https://github.com/vikmeup/SCLAlertView-Swift.git
   SwiftConfettiView:
@@ -32,6 +36,9 @@ CHECKOUT OPTIONS:
   AnimatedGradientView:
     :commit: b3638af3a1cf2108c542bae1300f26e047ab9871
     :git: https://github.com/rwbutler/AnimatedGradientView.git
+  RKPieChart:
+    :commit: c54dcdc54cf0811e7dd4709474a1770f042a20ee
+    :git: https://github.com/ridvank/RKPieChart.git
   SCLAlertView:
     :commit: 86ea7613c99cd4896765fabfa773b39b40bc8590
     :git: https://github.com/vikmeup/SCLAlertView-Swift.git
@@ -50,12 +57,13 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AnimatedGradientView: e3d928407034be3e97ae62564a4071da4b10b0f2
+  RKPieChart: 850e6d1ca6fffb05c8dde15ca2e362cf51257d58
   SCLAlertView: 9fea8ac145c0bd4989ef6abe1d3859b48f458986
   SwiftConfettiView: 75f535e9f4ed5d54fa8e2c67640b17766a49d72e
   SwiftSpinner: e7da6c9e2fab46442c02726d2e30105c1a84c59d
   VACalendar: 3e5a001cbf437ebed2bcfc747f3187e555d65175
   WBCollectionViewLayout: d90b4f2516d14b05c313839c5de3c539ca11ce7e
 
-PODFILE CHECKSUM: 1534af68193187ad3a3c8733ed3b893fcb784092
+PODFILE CHECKSUM: 3463780ea34085ab0bc0f44b3b8c72442de340e9
 
 COCOAPODS: 1.5.3
