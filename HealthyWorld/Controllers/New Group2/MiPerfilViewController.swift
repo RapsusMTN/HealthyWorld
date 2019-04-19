@@ -21,12 +21,36 @@ class MiPerfilViewController: UIViewController {
     
     @IBOutlet weak var labelSexo: UILabel!
     
+    @IBOutlet weak var labelAltura: UILabel!
+    
+    @IBOutlet weak var labelPeso: UILabel!
+    
+    @IBOutlet weak var labelBienvenida: UILabel!
+    
+    @IBOutlet weak var descriptionView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         createConfetti()
         setStyleViews()
+        setNavigationBarItems()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
+    
+    func setDataInLabels() {
+        
+        
+        
+        
+    }
+    
+   
     
     func createConfetti() {
         let confettiView = SwiftConfettiView()
@@ -55,7 +79,20 @@ class MiPerfilViewController: UIViewController {
         
         
     }
+    
+    func setNavigationBarItems() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Estadísticas", style: .plain, target: self, action: #selector(MiPerfilViewController.tapped(_:)))
+        
+        
+        
+    }
 
+    
+    @objc func tapped(_ sender:AnyObject) {
+        let miPerfil2 = HealthyMiPerfil2ViewController()
+        self.navigationController?.pushViewController(miPerfil2, animated: true)
+        
+    }
     
 
 }

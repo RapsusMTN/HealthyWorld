@@ -9,4 +9,6 @@ target 'HealthyWorld' do
   pod 'AnimatedGradientView', :git => 'https://github.com/rwbutler/AnimatedGradientView.git'
   pod 'SwiftConfettiView', :git => 'https://github.com/ugurethemaydin/SwiftConfettiView.git'
   pod 'SwiftSpinner', :git => 'https://github.com/icanzilb/SwiftSpinner.git'
+  pod 'VACalendar', :git => 'https://github.com/Vodolazkyi/VACalendar.git'
+  pod 'WBCollectionViewLayout', :git => 'https://github.com/mwaqasbhati/WBCollectionViewLayout.git'
 end

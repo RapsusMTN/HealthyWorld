@@ -2,11 +2,15 @@ PODS:
   - AnimatedGradientView (1.1.1)
   - SwiftConfettiView (0.1.0)
   - SwiftSpinner (1.7.0)
+  - VACalendar (1.3)
+  - WBCollectionViewLayout (0.1.0)
 
 DEPENDENCIES:
   - AnimatedGradientView (from `https://github.com/rwbutler/AnimatedGradientView.git`)
   - SwiftConfettiView (from `https://github.com/ugurethemaydin/SwiftConfettiView.git`)
   - SwiftSpinner (from `https://github.com/icanzilb/SwiftSpinner.git`)
+  - VACalendar (from `https://github.com/Vodolazkyi/VACalendar.git`)
+  - WBCollectionViewLayout (from `https://github.com/mwaqasbhati/WBCollectionViewLayout.git`)
 
 EXTERNAL SOURCES:
   AnimatedGradientView:
@@ -15,6 +19,10 @@ EXTERNAL SOURCES:
     :git: https://github.com/ugurethemaydin/SwiftConfettiView.git
   SwiftSpinner:
     :git: https://github.com/icanzilb/SwiftSpinner.git
+  VACalendar:
+    :git: https://github.com/Vodolazkyi/VACalendar.git
+  WBCollectionViewLayout:
+    :git: https://github.com/mwaqasbhati/WBCollectionViewLayout.git
 
 CHECKOUT OPTIONS:
   AnimatedGradientView:
@@ -26,12 +34,20 @@ CHECKOUT OPTIONS:
   SwiftSpinner:
     :commit: 269f372bf0f4530b0bdb276c144f6473f94e944c
     :git: https://github.com/icanzilb/SwiftSpinner.git
+  VACalendar:
+    :commit: 46ac24bcbd41fa4a8348b9ed2d5e4cac9680131a
+    :git: https://github.com/Vodolazkyi/VACalendar.git
+  WBCollectionViewLayout:
+    :commit: eb68819942287690805d939eb81592abb658edb5
+    :git: https://github.com/mwaqasbhati/WBCollectionViewLayout.git
 
 SPEC CHECKSUMS:
   AnimatedGradientView: e3d928407034be3e97ae62564a4071da4b10b0f2
   SwiftConfettiView: 75f535e9f4ed5d54fa8e2c67640b17766a49d72e
   SwiftSpinner: e7da6c9e2fab46442c02726d2e30105c1a84c59d
+  VACalendar: 3e5a001cbf437ebed2bcfc747f3187e555d65175
+  WBCollectionViewLayout: d90b4f2516d14b05c313839c5de3c539ca11ce7e
 
-PODFILE CHECKSUM: 6e1204ccc17d6dda0f79d66d7b087526b6bdc9fa
+PODFILE CHECKSUM: 69aba77d2f9a8ae7ce5f3dfebb082b90aedc66df
 
 COCOAPODS: 1.5.3

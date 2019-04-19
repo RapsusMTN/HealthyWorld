@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		414308C92269EEA100F8881F /* HealthyMiPerfil2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414308C72269EEA100F8881F /* HealthyMiPerfil2ViewController.swift */; };
+		414308CA2269EEA100F8881F /* HealthyMiPerfil2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 414308C82269EEA100F8881F /* HealthyMiPerfil2ViewController.xib */; };
 		414E6C032263A27800EE02EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C022263A27800EE02EE /* AppDelegate.swift */; };
 		414E6C082263A27800EE02EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414E6C062263A27800EE02EE /* Main.storyboard */; };
 		414E6C0B2263A27800EE02EE /* HealthyWorld.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C092263A27800EE02EE /* HealthyWorld.xcdatamodeld */; };
@@ -55,6 +57,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		414308C72269EEA100F8881F /* HealthyMiPerfil2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyMiPerfil2ViewController.swift; sourceTree = "<group>"; };
+		414308C82269EEA100F8881F /* HealthyMiPerfil2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthyMiPerfil2ViewController.xib; sourceTree = "<group>"; };
 		414E6BFF2263A27800EE02EE /* HealthyWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		414E6C022263A27800EE02EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		414E6C072263A27800EE02EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +130,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		414308C62269EE6D00F8881F /* HealthyPerfilDetail */ = {
+			isa = PBXGroup;
+			children = (
+				414308C72269EEA100F8881F /* HealthyMiPerfil2ViewController.swift */,
+				414308C82269EEA100F8881F /* HealthyMiPerfil2ViewController.xib */,
+			);
+			path = HealthyPerfilDetail;
+			sourceTree = "<group>";
+		};
 		414E6BF62263A27800EE02EE = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +184,7 @@
 		414E6C232263A37400EE02EE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				414308C62269EE6D00F8881F /* HealthyPerfilDetail */,
 				41783BE62268C7D800C9EAF6 /* HealthyRutinaViewController */,
 				41783BDF2268C7B200C9EAF6 /* HealthyMainMenuTabBar */,
 				41783BDA2268C79400C9EAF6 /* HealthyDescriptionRutina */,
@@ -351,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B7A54B2268D021000BD78D /* Podfile in Resources */,
+				414308CA2269EEA100F8881F /* HealthyMiPerfil2ViewController.xib in Resources */,
 				41783C052268C8AF00C9EAF6 /* HealthyProfile2ViewController.xib in Resources */,
 				41B7A54E2268D021000BD78D /* Podfile.lock in Resources */,
 				4192862A22648D4200953634 /* HealthyProfileViewController.xib in Resources */,
@@ -405,12 +420,16 @@
 				"${BUILT_PRODUCTS_DIR}/AnimatedGradientView/AnimatedGradientView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftConfettiView/SwiftConfettiView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
+				"${BUILT_PRODUCTS_DIR}/VACalendar/VACalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/WBCollectionViewLayout/WBCollectionViewLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnimatedGradientView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftConfettiView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VACalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WBCollectionViewLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -439,6 +458,7 @@
 				414E6C212263A2D600EE02EE /* Page.swift in Sources */,
 				4192862922648D4200953634 /* HealthyProfileViewController.swift in Sources */,
 				4192862C22651B2300953634 /* User.swift in Sources */,
+				414308C92269EEA100F8881F /* HealthyMiPerfil2ViewController.swift in Sources */,
 				41783BF42268C81500C9EAF6 /* RutinaTableViewCell.swift in Sources */,
 				41783BDD2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.swift in Sources */,
 				414E6C032263A27800EE02EE /* AppDelegate.swift in Sources */,
