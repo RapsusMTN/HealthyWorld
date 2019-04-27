@@ -32,7 +32,8 @@ class HealthyMenuTabController: UITabBarController {
         
         viewControllers = [perfilNavController,createNavController(title: "Dietas", imageName: "iconEstatura"),rutinasNav,createNavController(title: "AR Healthy", imageName: "iconAge")]
         
-       
+       //Crea el menu dietas
+        
         
     }
     

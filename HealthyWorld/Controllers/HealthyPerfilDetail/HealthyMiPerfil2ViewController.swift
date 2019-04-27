@@ -26,7 +26,32 @@ class HealthyMiPerfil2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setViewsAndConstraints()
+        calculateMetabolismoBasal()
         // Do any additional setup after loading the view.
+    }
+    
+    func calculateMetabolismoBasal() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let peso = Double(appDelegate.usuario.weight)
+        let altura = Double(appDelegate.usuario.height)! * 100
+        let edad = Double(appDelegate.usuario.age)
+        //Mujer
+        if appDelegate.usuario.genre == "Mujer" {
+            let metabolismoBasal = (10 * peso!) + (6.25 * altura)
+            let met2 = metabolismoBasal - (5 * edad!) - 161
+            let exactNumber = Int(met2)
+            self.labelKcal.text = "\(String(exactNumber)) KCal/Día"
+        } else {//Hombre
+            let metabolismoBasal = (10 * peso!) + (6.25 * altura)
+            let met2 = metabolismoBasal - (5 * edad!) + 5
+            let exactNumber = Int(met2)
+            self.labelKcal.text = "\(String(exactNumber)) KCal/Día"
+        }
+        
+        //Calculo de gramos por Kg
+        
+        
     }
     
     func setViewsAndConstraints() {
