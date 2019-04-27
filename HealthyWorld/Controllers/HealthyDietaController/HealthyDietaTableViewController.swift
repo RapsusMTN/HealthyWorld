@@ -9,39 +9,49 @@
 import UIKit
 
 class HealthyDietaTableViewController: UITableViewController {
-        
+    
+    let sections:[String] = ["Desayuno","Almuerzo","Comida","Merienda","Cena"]
+    let almuerzo:[String] = ["Sandwich","Platano","Bocadillo de pavo","Zumo de frutas"]
+    let desayuno:[String] = ["Leche","Zumo","Galletas","Huevo cocido","Avena de Sabores","Piña"]
+    let comida:[String] = ["Pasta","Arroz","Legumbres","Verduras","Ternera","Pollo"]
+    let merienda:[String] = ["Sandwich","Platano","Bocadillo de pavo","Zumo de frutas"]
+    let cena:[String] = ["Pescado","Atún","Ensalada Variada","Patata Cocida","Alubias Verdes"]
+    var sectionData: [Int:[String]] = [:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        sectionData = [0 : desayuno, 1 : almuerzo, 2 : comida, 3 : merienda, 4 : cena ]
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return sections.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        // #warning Incomplte implementation, return the number of rows
         return 0
+        //(sectionData[section]?.count)!
     }
 
-    /*
+   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = comida[indexPath.row]
+    
         return cell
     }
-    */
+    
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 45
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -76,15 +86,6 @@ class HealthyDietaTableViewController: UITableViewController {
         return true
     }
     */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
     
 }

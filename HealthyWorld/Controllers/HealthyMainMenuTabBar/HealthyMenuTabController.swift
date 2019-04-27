@@ -30,10 +30,15 @@ class HealthyMenuTabController: UITabBarController {
         perfilNavController.tabBarItem.title = "Mi Perfil"
         perfilNavController.tabBarItem.image = UIImage(named: "iconName")
         
-        viewControllers = [perfilNavController,createNavController(title: "Dietas", imageName: "iconEstatura"),rutinasNav,createNavController(title: "AR Healthy", imageName: "iconAge")]
+        //Crea el menu dietas
+        let dietaController = HealthyDietaTableViewController()
+        let dietaNav = UINavigationController(rootViewController: dietaController)
+        dietaNav.tabBarItem.title = "Dietas"
+        dietaNav.tabBarItem.image = UIImage(named: "food")
         
-       //Crea el menu dietas
+        viewControllers = [perfilNavController,dietaNav,rutinasNav,createNavController(title: "AR Healthy", imageName: "iconAge")]
         
+      
         
     }
     

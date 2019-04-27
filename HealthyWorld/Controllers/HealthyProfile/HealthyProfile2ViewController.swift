@@ -14,6 +14,16 @@ class HealthyProfile2ViewController: UIViewController,UIPickerViewDataSource,UIP
     
     public var objectives = ["Fuerza","Definición","Perdida de Peso","Mantenimiento"]
 
+    let scrollView:UIScrollView = {
+        let scrollView:UIScrollView = UIScrollView()
+        scrollView.isScrollEnabled = true
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        return scrollView
+    }()
+    
+    
     let weightLabel: UILabel = {
         let label = UILabel()
         label.text = "Peso"
@@ -175,6 +185,12 @@ class HealthyProfile2ViewController: UIViewController,UIPickerViewDataSource,UIP
     }
     
     func setCustomProfileData2() {
+      
+        self.view.addSubview(scrollView)
+        scrollView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 0).isActive = true
+        scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0).isActive = true
+        scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 0).isActive = true
+        scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0).isActive = true
         
         //Añado imagen
         self.view.addSubview(imageView)
