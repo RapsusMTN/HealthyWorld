@@ -18,7 +18,7 @@ class HealthyProfile2ViewController: UIViewController,UIPickerViewDataSource,UIP
         let scrollView:UIScrollView = UIScrollView()
         scrollView.isScrollEnabled = true
         scrollView.translatesAutoresizingMaskIntoConstraints = false
-        
+        scrollView.showsVerticalScrollIndicator = true
         
         return scrollView
     }()

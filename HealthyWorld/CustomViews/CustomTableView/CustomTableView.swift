@@ -43,10 +43,10 @@ class CustomTableView: UIView, UITableViewDelegate,UITableViewDataSource {
     }
     
     func setDelegateAndDataSource() {
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+//        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
+        self.tableView.register(RutinaTableViewCell.nib(), forCellReuseIdentifier: String(describing: RutinaTableViewCell.self))
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         self.keyRutina = appDelegate.keyRutina
         
@@ -57,14 +57,9 @@ class CustomTableView: UIView, UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        var ejers = self.ejercicios[self.keyRutina]
-        //cell.labelEjercicio.text = ejers![indexPath.item]
-        //cell.labelEjercicio.text = ejers![indexPath.item]
-        cell.textLabel?.text = ejers![indexPath.item]
-        cell.textLabel?.textAlignment = .center
-        cell.imageView?.image = #imageLiteral(resourceName: "fitnesscon")
-        cell.detailTextLabel?.text = "Test"
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: String(describing: RutinaTableViewCell.self), for: indexPath) as! RutinaTableViewCell
+        var ejers = self.ejercicios[self.keyRutina]!
+        cell.labelEjercicio.text = ejers[indexPath.item]
         return cell
     }
     

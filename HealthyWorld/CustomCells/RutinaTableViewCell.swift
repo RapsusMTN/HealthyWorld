@@ -14,6 +14,10 @@ class RutinaTableViewCell: UITableViewCell {
     
     public var texto:String!
     
+    static func nib() -> UINib {
+        return UINib.init(nibName: "RutinaTableViewCell", bundle: nil)
+    }
+    
     override func prepareForReuse() {
         super.prepareForReuse()
         
