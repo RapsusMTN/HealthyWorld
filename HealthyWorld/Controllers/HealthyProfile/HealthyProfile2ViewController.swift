@@ -190,68 +190,69 @@ class HealthyProfile2ViewController: UIViewController,UIPickerViewDataSource,UIP
         scrollView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 0).isActive = true
         scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0).isActive = true
         scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 0).isActive = true
-        scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0).isActive = true
+        scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0).isActive = true
         
         //Añado imagen
-        self.view.addSubview(imageView)
+        self.scrollView.addSubview(imageView)
         
-        self.imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
-        self.imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100).isActive = true
-        self.imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100).isActive = true
+        self.imageView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 100).isActive = true
+        self.imageView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
+        self.imageView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 100).isActive = true
+        self.imageView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -100).isActive = true
         self.imageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
         self.imageView.widthAnchor.constraint(equalToConstant: 50).isActive = true
     
         //Añado el label de Peso
-        self.view.addSubview(weightLabel)
+        self.scrollView.addSubview(weightLabel)
         
         self.weightLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 50).isActive = true
-        self.weightLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        self.weightLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        self.weightLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
+        self.weightLabel.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20).isActive = true
         self.weightLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
         self.weightLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
         //Añado el field del peso
-        self.view.addSubview(fieldWeight)
+        self.scrollView.addSubview(fieldWeight)
         
         self.fieldWeight.topAnchor.constraint(equalTo: weightLabel.bottomAnchor, constant: 10).isActive = true
-        self.fieldWeight.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
-        self.fieldWeight.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
+        self.fieldWeight.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 50).isActive = true
+        self.fieldWeight.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -50).isActive = true
         self.fieldWeight.heightAnchor.constraint(equalToConstant: 40).isActive = true
         self.fieldWeight.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
         //añado el label de estatura
-        self.view.addSubview(heightLabel)
+        self.scrollView.addSubview(heightLabel)
         
         self.heightLabel.topAnchor.constraint(equalTo: fieldWeight.bottomAnchor, constant: 50).isActive = true
-        self.heightLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        self.heightLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        self.heightLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
+        self.heightLabel.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20).isActive = true
         self.heightLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
         self.heightLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
         //Añado el field de estatura
-        self.view.addSubview(fieldHeight)
+        self.scrollView.addSubview(fieldHeight)
         
         self.fieldHeight.topAnchor.constraint(equalTo: heightLabel.bottomAnchor, constant: 10).isActive = true
-        self.fieldHeight.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
-        self.fieldHeight.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
+        self.fieldHeight.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 50).isActive = true
+        self.fieldHeight.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -50).isActive = true
         self.fieldHeight.heightAnchor.constraint(equalToConstant: 40).isActive = true
         self.fieldHeight.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
         //Añado label de objetivos
-        self.view.addSubview(objectiveLabel)
+        self.scrollView.addSubview(objectiveLabel)
         
         self.objectiveLabel.topAnchor.constraint(equalTo: fieldHeight.bottomAnchor, constant: 50).isActive = true
-        self.objectiveLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        self.objectiveLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        self.objectiveLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
+        self.objectiveLabel.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20).isActive = true
         self.objectiveLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
         self.objectiveLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
        
         
         //Añado el field de objetivos
-        self.view.addSubview(fieldObjective)
+        self.scrollView.addSubview(fieldObjective)
         self.fieldObjective.topAnchor.constraint(equalTo: objectiveLabel.bottomAnchor, constant: 10).isActive = true
-        self.fieldObjective.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
-        self.fieldObjective.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
+        self.fieldObjective.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 50).isActive = true
+        self.fieldObjective.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -50).isActive = true
         self.fieldObjective.heightAnchor.constraint(equalToConstant: 40).isActive = true
         self.fieldObjective.widthAnchor.constraint(equalToConstant: 20).isActive = true
         let picker = UIPickerView()
@@ -260,10 +261,11 @@ class HealthyProfile2ViewController: UIViewController,UIPickerViewDataSource,UIP
         
         //Añado Boton de registro
         self.view.addSubview(buttonInit)
-    
-        self.buttonInit.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
-        self.buttonInit.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10).isActive = true
-        self.buttonInit.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
+        
+       // self.buttonInit.topAnchor.constraint(equalTo: fieldObjective.bottomAnchor, constant: 40)
+        self.buttonInit.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 10).isActive = true
+        self.buttonInit.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -10).isActive = true
+        self.buttonInit.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -40).isActive = true
         self.buttonInit.heightAnchor.constraint(equalToConstant: 50).isActive = true
         self.buttonInit.widthAnchor.constraint(equalToConstant: 20).isActive = true
         
