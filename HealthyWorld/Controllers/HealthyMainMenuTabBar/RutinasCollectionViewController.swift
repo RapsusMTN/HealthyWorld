@@ -23,7 +23,7 @@ class RutinasCollectionViewController: UICollectionViewController,UICollectionVi
         // self.clearsSelectionOnViewWillAppear = false
         // Register cell classes
         //self.collectionView!.register(RutinaCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-        setAnimationBackground()
+        //setAnimationBackground()
         self.collectionView.register(UINib(nibName: "RutinaCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
         self.title = "Rutinas"
         self.collectionView.backgroundView = setAnimationBackground()
@@ -42,12 +42,7 @@ class RutinasCollectionViewController: UICollectionViewController,UICollectionVi
                                             (colors: ["#833ab4", "#fd1d1d", "#fcb045"], .right, .axial),
                                             (colors: ["#003973", "#E5E5BE"], .down, .axial),
                                             (colors: ["#1E9600", "#FFF200", "#FF0000"], .left, .axial)]
-//        self.collectionView.addSubview(animatedGradient)
-//        animatedGradient.topAnchor.constraint(equalTo: collectionView.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
-//        animatedGradient.leadingAnchor.constraint(equalTo: collectionView.leadingAnchor, constant: 0).isActive = true
-//        animatedGradient.trailingAnchor.constraint(equalTo: collectionView.trailingAnchor, constant: 0).isActive = true
-//        animatedGradient.bottomAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 0).isActive = true
-//
+
         return animatedGradient
     }
     

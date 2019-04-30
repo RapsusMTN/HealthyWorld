@@ -11,9 +11,7 @@ extension Collection {
     
     // swiftlint:disable:next variable_name
     internal func _expectEnd<C: Collection>(of s: C, is i: C.Index) {
-        _debugPrecondition(
-            i == s.endIndex,
-            "invalid Collection: count differed in successive traversals")
+    
     }
     
     /// Whether or not the collection is __not__ empty.

@@ -8,46 +8,99 @@
 
 import UIKit
 
+enum FoodType: Int {
+    case desayuno = 0
+    case almuerzo
+    case comida
+    case merienda
+    case cena
+    
+    func name() -> String {
+        switch self {
+        case .desayuno:
+            return "Desayuno"
+        case .almuerzo:
+            return "Almuerzo"
+        case .comida:
+            return "Comida"
+        case .merienda:
+            return "Merienda"
+        case .cena:
+            return "Cena"
+        }
+    }
+}
+
 class HealthyDietaTableViewController: UITableViewController {
     
-    let sections:[String] = ["Desayuno","Almuerzo","Comida","Merienda","Cena"]
-    let almuerzo:[String] = ["Sandwich","Platano","Bocadillo de pavo","Zumo de frutas"]
-    let desayuno:[String] = ["Leche","Zumo","Galletas","Huevo cocido","Avena de Sabores","Piña"]
-    let comida:[String] = ["Pasta","Arroz","Legumbres","Verduras","Ternera","Pollo"]
-    let merienda:[String] = ["Sandwich","Platano","Bocadillo de pavo","Zumo de frutas"]
-    let cena:[String] = ["Pescado","Atún","Ensalada Variada","Patata Cocida","Alubias Verdes"]
-    var sectionData: [Int:[String]] = [:]
+//    let sections = ["Desayuno","Almuerzo","Comida","Merienda","Cena"]
+//    let comida = ["Pasta","Arroz","Legumbres","Verduras","Ternera","Pollo"]
+//    let merienda = ["Sandwich","Platano","Bocadillo de pavo","Zumo de frutas"]
+//    let cena = ["Pescado","Atún","Ensalada Variada","Patata Cocida","Alubias Verdes"]
+    let sectionData = [
+        FoodType.desayuno : ["Leche","Zumo","Galletas","Huevo cocido","Avena de Sabores","Piña"],
+        FoodType.almuerzo : ["Sandwich","Platano","Bocadillo de pavo","Zumo de frutas"],
+        FoodType.comida : ["Pasta","Arroz","Legumbres","Verduras","Ternera","Pollo"],
+        FoodType.merienda : ["Sandwich","Platano","Bocadillo de pavo","Zumo de frutas"],
+        FoodType.cena : ["Pescado","Atún","Ensalada Variada","Patata Cocida","Alubias Verdes"],
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        sectionData = [0 : desayuno, 1 : almuerzo, 2 : comida, 3 : merienda, 4 : cena ]
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.tableView.reloadData()
     }
 
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return sections.count
+        return sectionData.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplte implementation, return the number of rows
-        return 0
-        //(sectionData[section]?.count)!
+        let foodType = FoodType.init(rawValue: section)!
+        
+        return sectionData[foodType]!.count
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
     }
 
-   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = comida[indexPath.row]
-    
+        
+        let foodType = FoodType.init(rawValue: indexPath.section)!
+        
+        let foodName = sectionData[foodType]![indexPath.row]
+        
+        cell.textLabel?.text = foodName
+        
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view:UIView = UIView()
+        view.backgroundColor = #colorLiteral(red: 0.4156686781, green: 0.8261071507, blue: 0.4655030584, alpha: 1)
+        let label = UILabel()
+        
+        let foodType = FoodType.init(rawValue: section)!
+        
+        label.text = "\(foodType.name())"
+        label.font = UIFont(name: "Avenir Next", size: 25)
+        label.textColor = .white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(label)
+        label.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
+        label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
+        label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 10).isActive = true
+        
+        return view
+    }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 45
@@ -69,21 +122,6 @@ class HealthyDietaTableViewController: UITableViewController {
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
     }
     */
     
