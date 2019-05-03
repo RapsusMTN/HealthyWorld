@@ -55,6 +55,8 @@
 		41B7A54C2268D021000BD78D /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5462268D020000BD78D /* video2.mp4 */; };
 		41B7A54D2268D021000BD78D /* conejo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5472268D020000BD78D /* conejo.mp4 */; };
 		41B7A54E2268D021000BD78D /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5482268D021000BD78D /* Podfile.lock */; };
+		620B22C5227C65D00024F581 /* HealthyARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620B22C3227C65D00024F581 /* HealthyARViewController.swift */; };
+		620B22C6227C65D00024F581 /* HealthyARViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 620B22C4227C65D00024F581 /* HealthyARViewController.xib */; };
 		E576CC475ADBA5764571FFDA /* Pods_HealthyWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4BBEB6D8D44836551323F9 /* Pods_HealthyWorld.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +113,8 @@
 		41B7A5482268D021000BD78D /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		4D4BBEB6D8D44836551323F9 /* Pods_HealthyWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5072670994DC8371C0A70B2D /* Pods-HealthyWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthyWorld/Pods-HealthyWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		620B22C3227C65D00024F581 /* HealthyARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyARViewController.swift; sourceTree = "<group>"; };
+		620B22C4227C65D00024F581 /* HealthyARViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthyARViewController.xib; sourceTree = "<group>"; };
 		73ACCFE52131E4116CBC0B42 /* Pods-HealthyWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthyWorld/Pods-HealthyWorld.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +194,7 @@
 		414E6C232263A37400EE02EE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				620B22C2227C652A0024F581 /* HealthyARController */,
 				41603D322274CF3E00FCE0BA /* HealthyDietaController */,
 				414308C62269EE6D00F8881F /* HealthyPerfilDetail */,
 				41783BE62268C7D800C9EAF6 /* HealthyRutinaViewController */,
@@ -310,6 +315,15 @@
 			path = HealthyProfile;
 			sourceTree = "<group>";
 		};
+		620B22C2227C652A0024F581 /* HealthyARController */ = {
+			isa = PBXGroup;
+			children = (
+				620B22C3227C65D00024F581 /* HealthyARViewController.swift */,
+				620B22C4227C65D00024F581 /* HealthyARViewController.xib */,
+			);
+			path = HealthyARController;
+			sourceTree = "<group>";
+		};
 		B80D077DB2C08AFC55E7CED9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +414,7 @@
 				414E6C082263A27800EE02EE /* Main.storyboard in Resources */,
 				41B7A54C2268D021000BD78D /* video2.mp4 in Resources */,
 				41783BFB2268C85600C9EAF6 /* RutinaDetailCustomView.xib in Resources */,
+				620B22C6227C65D00024F581 /* HealthyARViewController.xib in Resources */,
 				41783BF32268C81500C9EAF6 /* RutinaCollectionViewCell.xib in Resources */,
 				41B7A54A2268D021000BD78D /* video.mp4 in Resources */,
 			);
@@ -478,6 +493,7 @@
 				41783BE92268C7EE00C9EAF6 /* HealthyRutinaViewController.swift in Sources */,
 				414E6C212263A2D600EE02EE /* Page.swift in Sources */,
 				4192862922648D4200953634 /* HealthyProfileViewController.swift in Sources */,
+				620B22C5227C65D00024F581 /* HealthyARViewController.swift in Sources */,
 				4192862C22651B2300953634 /* User.swift in Sources */,
 				414308C92269EEA100F8881F /* HealthyMiPerfil2ViewController.swift in Sources */,
 				41603D352274CFA200FCE0BA /* HealthyDietaTableViewController.swift in Sources */,
