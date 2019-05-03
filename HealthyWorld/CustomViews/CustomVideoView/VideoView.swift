@@ -32,13 +32,15 @@ class VideoView: UIView {
         if let videoURL = URL(string: url) {
             player = AVPlayer(url: videoURL)
             playerLayer = AVPlayerLayer(player: player)
-            playerLayer?.frame = bounds
+            playerLayer?.frame = CGRect(x:0,y:0,width:1000,height:1000)
             playerLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
             if let playerLayer = self.playerLayer {
                 layer.addSublayer(playerLayer)
             }
             NotificationCenter.default.addObserver(self, selector: #selector(reachTheEndOfTheVideo(_:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem)
         }
+        
+        
     }
     
     func play() {
