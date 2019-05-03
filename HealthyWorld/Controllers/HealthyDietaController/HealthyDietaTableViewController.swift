@@ -47,7 +47,7 @@ class HealthyDietaTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Dietas"
         
         self.tableView.delegate = self
         self.tableView.dataSource = self

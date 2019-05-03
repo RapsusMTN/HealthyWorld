@@ -7,24 +7,53 @@
 //
 
 import UIKit
+import ARKit
 
-class HealthyARViewController: UIViewController {
+class HealthyARViewController: UIViewController,ARSCNViewDelegate {
 
+    @IBOutlet weak var sceneView: ARSCNView!
+    
+    
     override func viewDidLoad() {
+        self.title = "AR Healthy"
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.sceneView.delegate = self
+        createNode()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        self.sceneView.session.pause()
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let configuration = ARWorldTrackingConfiguration()
+        configuration.planeDetection = [.horizontal,.vertical]
+        self.sceneView.session.run(configuration, options: [])
     }
-    */
+    
+
+    func createNode() {
+        let box = SCNBox(width: 0.2, height: 0.2, length: 0.2, chamferRadius: 0)
+        box.firstMaterial?.diffuse.contents = UIColor.red
+        let boxNode = SCNNode(geometry: box)
+        boxNode.position = SCNVector3(0, 0, -1.5)
+        
+        let text = SCNText(string: "Healthy World", extrusionDepth: 1.0)
+        text.firstMaterial?.diffuse.contents = UIColor.white
+        let textNode = SCNNode(geometry: text)
+        textNode.scale = SCNVector3(0.2,0.2,0.2)
+        textNode.position = SCNVector3(0, 0.2, -1.5)
+        
+        let scene = SCNScene()
+        self.sceneView.scene = scene
+        
+        self.sceneView.scene.rootNode.addChildNode(boxNode)
+        self.sceneView.scene.rootNode.addChildNode(textNode)
+    }
+    
+
 
 }

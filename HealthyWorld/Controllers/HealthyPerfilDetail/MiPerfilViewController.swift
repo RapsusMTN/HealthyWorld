@@ -42,6 +42,7 @@ class MiPerfilViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Mi Perfil"
         createConfetti()
         setStyleViews()
         setNavigationBarItems()
