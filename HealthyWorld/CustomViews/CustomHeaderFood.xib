@@ -18,6 +18,10 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wsx-86-Hy4">
                     <rect key="frame" x="0.0" y="0.0" width="457" height="168"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbo-cL-Xjo" customClass="GradientView" customModule="HealthyWorld" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="457" height="168"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gos-43-SvZ">
                     <rect key="frame" x="0.0" y="108" width="457" height="60"/>
                     <constraints>
@@ -31,10 +35,14 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="sbo-cL-Xjo" secondAttribute="trailing" id="1hR-3w-3iq"/>
                 <constraint firstAttribute="trailing" secondItem="gos-43-SvZ" secondAttribute="trailing" id="GHX-Pw-mg0"/>
+                <constraint firstAttribute="bottom" secondItem="sbo-cL-Xjo" secondAttribute="bottom" id="HHI-2i-yRu"/>
                 <constraint firstItem="gos-43-SvZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IB0-8K-QnQ"/>
                 <constraint firstItem="gos-43-SvZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="108" id="TFp-zY-AUX"/>
                 <constraint firstAttribute="bottom" secondItem="Wsx-86-Hy4" secondAttribute="bottom" id="ZEP-H0-3R9"/>
+                <constraint firstItem="sbo-cL-Xjo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="igs-5c-byZ"/>
+                <constraint firstItem="sbo-cL-Xjo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oW4-4t-2TD"/>
                 <constraint firstItem="Wsx-86-Hy4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ogL-Z7-viY"/>
                 <constraint firstItem="Wsx-86-Hy4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ost-t1-xFr"/>
                 <constraint firstAttribute="trailing" secondItem="Wsx-86-Hy4" secondAttribute="trailing" id="sOg-at-BBa"/>

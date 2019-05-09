@@ -101,16 +101,15 @@ class HealthyDietaTableViewController: UITableViewController {
         let headerView = Bundle.main.loadNibNamed("CustomHeaderFood", owner: self, options: nil)?.first as! CustomHeaderFood
         headerView.setImageHeader(image: foodType.headerNameImage())
         headerView.setLabelHeader(title: foodType.name())
-
         return headerView
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 200.0
+        return 160.0
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 45
+        return 60
     }
     
     
