@@ -29,6 +29,21 @@ enum FoodType: Int {
             return "Cena"
         }
     }
+    
+    func headerNameImage() -> String {
+        switch self {
+        case .desayuno:
+            return "headerFood"
+        case .almuerzo:
+            return "headerFood1"
+        case .comida:
+            return "headerFood2"
+        case .merienda:
+            return "headerFood3"
+        case .cena:
+            return "headerFood4"
+        }
+    }
 }
 
 class HealthyDietaTableViewController: UITableViewController {
@@ -48,10 +63,11 @@ class HealthyDietaTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Dietas"
-        
+        self.tableView.allowsMultipleSelection = true
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.tableView.register(HeaderComidasTableViewCell.self, forCellReuseIdentifier: "HeaderComidasTableViewCell")
         self.tableView.reloadData()
     }
 
@@ -66,10 +82,6 @@ class HealthyDietaTableViewController: UITableViewController {
         
         return sectionData[foodType]!.count
     }
-    
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 50
-    }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
@@ -83,39 +95,38 @@ class HealthyDietaTableViewController: UITableViewController {
         return cell
     }
     
+    //Returns the view Headers
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view:UIView = UIView()
-        view.backgroundColor = #colorLiteral(red: 0.4156686781, green: 0.8261071507, blue: 0.4655030584, alpha: 1)
-        let label = UILabel()
-        
         let foodType = FoodType.init(rawValue: section)!
-        
-        label.text = "\(foodType.name())"
-        label.font = UIFont(name: "Avenir Next", size: 25)
-        label.textColor = .white
-        label.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(label)
-        label.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
-        label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
-        label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 10).isActive = true
-        
-        return view
+        let headerView = Bundle.main.loadNibNamed("CustomHeaderFood", owner: self, options: nil)?.first as! CustomHeaderFood
+        headerView.setImageHeader(image: foodType.headerNameImage())
+        headerView.setLabelHeader(title: foodType.name())
+
+        return headerView
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 200.0
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 45
     }
-    /*
+    
+    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
+ 
 
-    /*
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Celda seleccionada : \(indexPath.item)")
+    }
+    
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
@@ -123,7 +134,7 @@ class HealthyDietaTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
     
     
 }

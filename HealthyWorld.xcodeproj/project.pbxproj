@@ -55,6 +55,10 @@
 		41B7A54C2268D021000BD78D /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5462268D020000BD78D /* video2.mp4 */; };
 		41B7A54D2268D021000BD78D /* conejo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5472268D020000BD78D /* conejo.mp4 */; };
 		41B7A54E2268D021000BD78D /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5482268D021000BD78D /* Podfile.lock */; };
+		6207DFF522842EDD005CEE03 /* HeaderComidasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6207DFF322842EDD005CEE03 /* HeaderComidasTableViewCell.swift */; };
+		6207DFF622842EDD005CEE03 /* HeaderComidasTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6207DFF422842EDD005CEE03 /* HeaderComidasTableViewCell.xib */; };
+		6207DFFC228435D4005CEE03 /* CustomHeaderFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6207DFFB228435D4005CEE03 /* CustomHeaderFood.swift */; };
+		6207DFFE22843608005CEE03 /* CustomHeaderFood.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6207DFFD22843608005CEE03 /* CustomHeaderFood.xib */; };
 		620B22C5227C65D00024F581 /* HealthyARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620B22C3227C65D00024F581 /* HealthyARViewController.swift */; };
 		620B22C6227C65D00024F581 /* HealthyARViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 620B22C4227C65D00024F581 /* HealthyARViewController.xib */; };
 		E576CC475ADBA5764571FFDA /* Pods_HealthyWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4BBEB6D8D44836551323F9 /* Pods_HealthyWorld.framework */; };
@@ -113,6 +117,10 @@
 		41B7A5482268D021000BD78D /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		4D4BBEB6D8D44836551323F9 /* Pods_HealthyWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5072670994DC8371C0A70B2D /* Pods-HealthyWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthyWorld/Pods-HealthyWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		6207DFF322842EDD005CEE03 /* HeaderComidasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComidasTableViewCell.swift; sourceTree = "<group>"; };
+		6207DFF422842EDD005CEE03 /* HeaderComidasTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderComidasTableViewCell.xib; sourceTree = "<group>"; };
+		6207DFFB228435D4005CEE03 /* CustomHeaderFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderFood.swift; sourceTree = "<group>"; };
+		6207DFFD22843608005CEE03 /* CustomHeaderFood.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderFood.xib; sourceTree = "<group>"; };
 		620B22C3227C65D00024F581 /* HealthyARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyARViewController.swift; sourceTree = "<group>"; };
 		620B22C4227C65D00024F581 /* HealthyARViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthyARViewController.xib; sourceTree = "<group>"; };
 		73ACCFE52131E4116CBC0B42 /* Pods-HealthyWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthyWorld/Pods-HealthyWorld.release.xcconfig"; sourceTree = "<group>"; };
@@ -224,6 +232,8 @@
 				41783BF02268C81500C9EAF6 /* RutinaTableViewCell.swift */,
 				41783BEE2268C81400C9EAF6 /* RutinaTableViewCell.xib */,
 				414E6C1C2263A2D600EE02EE /* PageCell.swift */,
+				6207DFF322842EDD005CEE03 /* HeaderComidasTableViewCell.swift */,
+				6207DFF422842EDD005CEE03 /* HeaderComidasTableViewCell.xib */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -298,6 +308,8 @@
 				41783BFA2268C85600C9EAF6 /* CustomTableView.xib */,
 				41783BF82268C85600C9EAF6 /* RutinaDetailCustomView.swift */,
 				41783BF72268C85600C9EAF6 /* RutinaDetailCustomView.xib */,
+				6207DFFB228435D4005CEE03 /* CustomHeaderFood.swift */,
+				6207DFFD22843608005CEE03 /* CustomHeaderFood.xib */,
 			);
 			name = CustomViews;
 			path = "New Group";
@@ -405,6 +417,7 @@
 				41B7A54D2268D021000BD78D /* conejo.mp4 in Resources */,
 				414E6C0D2263A27900EE02EE /* Assets.xcassets in Resources */,
 				41783BDE2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.xib in Resources */,
+				6207DFF622842EDD005CEE03 /* HeaderComidasTableViewCell.xib in Resources */,
 				41783BFE2268C85600C9EAF6 /* CustomTableView.xib in Resources */,
 				41783C082268C8D300C9EAF6 /* buendia.mp4 in Resources */,
 				41783BF22268C81500C9EAF6 /* RutinaTableViewCell.xib in Resources */,
@@ -415,6 +428,7 @@
 				41B7A54C2268D021000BD78D /* video2.mp4 in Resources */,
 				41783BFB2268C85600C9EAF6 /* RutinaDetailCustomView.xib in Resources */,
 				620B22C6227C65D00024F581 /* HealthyARViewController.xib in Resources */,
+				6207DFFE22843608005CEE03 /* CustomHeaderFood.xib in Resources */,
 				41783BF32268C81500C9EAF6 /* RutinaCollectionViewCell.xib in Resources */,
 				41B7A54A2268D021000BD78D /* video.mp4 in Resources */,
 			);
@@ -479,8 +493,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				41783BE32268C7CA00C9EAF6 /* HealthyMenuTabController.swift in Sources */,
+				6207DFFC228435D4005CEE03 /* CustomHeaderFood.swift in Sources */,
 				41783BFD2268C85600C9EAF6 /* CustomTableView.swift in Sources */,
 				414E6C1D2263A2D600EE02EE /* SwipingControllerExtension.swift in Sources */,
+				6207DFF522842EDD005CEE03 /* HeaderComidasTableViewCell.swift in Sources */,
 				41783C062268C8AF00C9EAF6 /* HealthyProfile2ViewController.swift in Sources */,
 				41783BED2268C80600C9EAF6 /* DataRoutine.swift in Sources */,
 				41783BFC2268C85600C9EAF6 /* RutinaDetailCustomView.swift in Sources */,
@@ -653,7 +669,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8HTZKAEVFY;
 				INFOPLIST_FILE = HealthyWorld/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -673,7 +689,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8HTZKAEVFY;
 				INFOPLIST_FILE = HealthyWorld/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
