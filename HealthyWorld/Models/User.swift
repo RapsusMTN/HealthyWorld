@@ -8,7 +8,7 @@
 
 import Foundation
 
-class User {
+public class User {
     
     static var idUser:Int = 0
     

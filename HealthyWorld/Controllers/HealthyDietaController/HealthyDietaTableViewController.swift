@@ -48,10 +48,9 @@ enum FoodType: Int {
 
 class HealthyDietaTableViewController: UITableViewController {
     
-//    let sections = ["Desayuno","Almuerzo","Comida","Merienda","Cena"]
-//    let comida = ["Pasta","Arroz","Legumbres","Verduras","Ternera","Pollo"]
-//    let merienda = ["Sandwich","Platano","Bocadillo de pavo","Zumo de frutas"]
-//    let cena = ["Pescado","Atún","Ensalada Variada","Patata Cocida","Alubias Verdes"]
+
+    var misAlimentos = [String]()
+    
     let sectionData = [
         FoodType.desayuno : ["Leche","Zumo","Galletas","Huevo cocido","Avena de Sabores","Piña"],
         FoodType.almuerzo : ["Sandwich","Platano","Bocadillo de pavo","Zumo de frutas"],
@@ -62,6 +61,7 @@ class HealthyDietaTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setItemBar()
         self.title = "Dietas"
         self.tableView.allowsMultipleSelection = true
         self.tableView.delegate = self
@@ -70,6 +70,17 @@ class HealthyDietaTableViewController: UITableViewController {
         self.tableView.register(HeaderComidasTableViewCell.self, forCellReuseIdentifier: "HeaderComidasTableViewCell")
         self.tableView.reloadData()
     }
+    
+    func setItemBar() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Mi Dieta", style: .plain, target: self, action: #selector(HealthyRutinaViewController.tapNext(_:)))
+    }
+    
+    @objc func tapNext(_ sender: AnyObject) {
+        let midietaController = HealthyMiDietaViewController()
+        self.navigationController?.pushViewController(midietaController, animated: true)
+        
+    }
+
 
     // MARK: - Table view data source
     
@@ -112,6 +123,7 @@ class HealthyDietaTableViewController: UITableViewController {
         return 60
     }
     
+  
     
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -122,7 +134,18 @@ class HealthyDietaTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Celda seleccionada : \(indexPath.item)")
+        let cell = tableView.cellForRow(at: indexPath)
+        print("Cell text = \(String(describing: cell?.textLabel?.text))")
+        misAlimentos.append((cell?.textLabel!.text)!)
     }
+    
+    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        print("Celda deseleccionada : \(indexPath.item)")
+        let cell = tableView.cellForRow(at: indexPath)
+        removeDataFromArray(with: (cell?.textLabel!.text)!)
+    }
+    
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -132,6 +155,18 @@ class HealthyDietaTableViewController: UITableViewController {
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
+    }
+    
+    func removeDataFromArray(with name:String) {
+        
+        misAlimentos.removeAll { (cadena) -> Bool in
+           return cadena == name
+        }
+                
+        
+        
+//        misAlimentos.removeAll(where: {$0 == name})
+        
     }
     
     

@@ -8,7 +8,7 @@
 
 import Foundation
 //Clase que contiene la clase de los datos
-class RoutineData: NSObject {
+public class RoutineData: NSObject {
     
     public var videos:[URL] = []
     
