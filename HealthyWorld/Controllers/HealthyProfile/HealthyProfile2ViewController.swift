@@ -150,13 +150,7 @@ class HealthyProfile2ViewController: UIViewController,UIPickerViewDataSource,UIP
     }
     
     func saveDataUser() {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.usuario.height = self.fieldHeight.text!
-        appDelegate.usuario.weight = self.fieldWeight.text!
-        appDelegate.usuario.objective = self.fieldObjective.text!
-        
-        
-        
+       
     }
     
     //añadir evento Tap a la vista para salir del picker cuando el usuario toca fuera de este

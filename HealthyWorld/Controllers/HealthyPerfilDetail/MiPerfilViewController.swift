@@ -57,17 +57,19 @@ class MiPerfilViewController: UIViewController {
     
     
     func setDataInLabels() {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        self.labelNombre.text = appDelegate.usuario.username
-        self.labelEdad.text = "\(appDelegate.usuario.age) años"
-        self.labelSexo.text = appDelegate.usuario.genre
-        self.labelAltura.text = "\(appDelegate.usuario.height) m"
-        self.labelPeso.text = "\(appDelegate.usuario.weight) Kg"
-        self.labelObjetivo.text = appDelegate.usuario.objective
-        self.labelBienvenida.text = "Bienvenid@ \(appDelegate.usuario.username)"
-        
+//        self.labelNombre.text = (UserDefault.instance.object(forKey: "UserName") as! String)
+//        self.labelEdad.text = "\(UserDefault.instance.object(forKey: "Edad") as! String) años"
+//        self.labelSexo.text = (UserDefault.instance.object(forKey: "Sexo") as! String)
+//        self.labelAltura.text = "\(UserDefault.instance.object(forKey: "Height") as! String) m"
+//        self.labelPeso.text = "\(UserDefault.instance.object(forKey: "Weight") as! String) Kg"
+//        self.labelObjetivo.text = (UserDefault.instance.object(forKey: "Objective") as! String)
+//        self.labelBienvenida.text = "Bienvenid@ \(UserDefault.instance.object(forKey: "UserName") as! String)"
+//        let saveUser  = User(self.labelNombre.text!, self.labelEdad.text!, self.labelPeso.text!, self.labelAltura.text!, self.labelSexo.text!, self.labelObjetivo.text!)
+//        
+//        if let encoded = try? JSONEncoder().encode(saveUser) {
+//            UserDefault.instance.set(encoded, forKey: "User")
+//        }
     }
-    
    
     
     func createConfetti() {

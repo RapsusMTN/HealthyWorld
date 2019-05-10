@@ -13,12 +13,11 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    var usuario:User = User()//->Almaceno datos del usuario
     var keyRutina:String!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         //Buildear nuestra app en codigo
-        
+
         window = UIWindow()
         window?.makeKeyAndVisible()
         //

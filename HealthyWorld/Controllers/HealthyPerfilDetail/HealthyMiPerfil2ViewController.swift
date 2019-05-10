@@ -31,13 +31,13 @@ class HealthyMiPerfil2ViewController: UIViewController {
     }
     
     func calculateMetabolismoBasal() {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let user = UserManager.instance.getUser(key: UserManager.kUserDefaultsKey)
         
-        let peso = Double(appDelegate.usuario.weight)
-        let altura = Double(appDelegate.usuario.height)! * 100
-        let edad = Double(appDelegate.usuario.age)
+        let peso = Double(user.weight!)
+        let altura = Double(user.height!)! * 100
+        let edad = Double(user.age!)
         //Mujer
-        if appDelegate.usuario.genre == "Mujer" {
+        if user.genre == "Mujer" {
             let metabolismoBasal = (10 * peso!) + (6.25 * altura)
             let met2 = metabolismoBasal - (5 * edad!) - 161
             let exactNumber = Int(met2)

@@ -193,12 +193,14 @@ class HealthyProfileViewController: UIViewController {
     }
     
     func saveDataUser() {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.usuario.username = self.fieldName.text!
-        let edad = self.getAge(fecha: self.datePicker.date)
-        appDelegate.usuario.age = String(edad)
-        appDelegate.usuario.genre = self.sexLabel.text!
+        let user = UserManager.instance.getUser(key: UserManager.kUserDefaultsKey)
         
+        user.username = self.fieldName.text
+                  let edad = self.getAge(fecha: self.datePicker.date)
+        user.age = String(edad)
+        user.genre = self.sexLabel.text
+
+        UserManager.instance.saveUser(user: user, key: UserManager.kUserDefaultsKey)
     }
     
     //añadir evento Tap a la vista para salir del picker cuando el usuario toca fuera de este
