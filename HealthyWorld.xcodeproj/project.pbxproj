@@ -65,6 +65,7 @@
 		62FE555922856C99004909B1 /* Dieta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE555822856C99004909B1 /* Dieta.swift */; };
 		62FE555C22857A4A004909B1 /* HealthyMiDietaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE555A22857A4A004909B1 /* HealthyMiDietaViewController.swift */; };
 		62FE555D22857A4A004909B1 /* HealthyMiDietaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FE555B22857A4A004909B1 /* HealthyMiDietaViewController.xib */; };
+		62FE556022859385004909B1 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE555F22859385004909B1 /* UserDefault.swift */; };
 		E576CC475ADBA5764571FFDA /* Pods_HealthyWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4BBEB6D8D44836551323F9 /* Pods_HealthyWorld.framework */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +132,7 @@
 		62FE555822856C99004909B1 /* Dieta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dieta.swift; sourceTree = "<group>"; };
 		62FE555A22857A4A004909B1 /* HealthyMiDietaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthyMiDietaViewController.swift; path = HealthyWorld/Controllers/HealthyDietaController/HealthyMiDietaViewController.swift; sourceTree = SOURCE_ROOT; };
 		62FE555B22857A4A004909B1 /* HealthyMiDietaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HealthyMiDietaViewController.xib; path = HealthyWorld/Controllers/HealthyDietaController/HealthyMiDietaViewController.xib; sourceTree = SOURCE_ROOT; };
+		62FE555F22859385004909B1 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		73ACCFE52131E4116CBC0B42 /* Pods-HealthyWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthyWorld/Pods-HealthyWorld.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +195,7 @@
 		414E6C012263A27800EE02EE /* HealthyWorld */ = {
 			isa = PBXGroup;
 			children = (
+				62FE555E2285936C004909B1 /* Singleton */,
 				41783BF62268C82200C9EAF6 /* CustomViews */,
 				414E6C252263A3A000EE02EE /* CustomCells */,
 				414E6C242263A37D00EE02EE /* Models */,
@@ -346,6 +349,14 @@
 				620B22C4227C65D00024F581 /* HealthyARViewController.xib */,
 			);
 			path = HealthyARController;
+			sourceTree = "<group>";
+		};
+		62FE555E2285936C004909B1 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				62FE555F22859385004909B1 /* UserDefault.swift */,
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 		B80D077DB2C08AFC55E7CED9 /* Pods */ = {
@@ -521,6 +532,7 @@
 				41783BF52268C81500C9EAF6 /* RutinaCollectionViewCell.swift in Sources */,
 				62FE5555228564F0004909B1 /* CustomHeaderFood.swift in Sources */,
 				41783BE92268C7EE00C9EAF6 /* HealthyRutinaViewController.swift in Sources */,
+				62FE556022859385004909B1 /* UserDefault.swift in Sources */,
 				414E6C212263A2D600EE02EE /* Page.swift in Sources */,
 				4192862922648D4200953634 /* HealthyProfileViewController.swift in Sources */,
 				620B22C5227C65D00024F581 /* HealthyARViewController.swift in Sources */,

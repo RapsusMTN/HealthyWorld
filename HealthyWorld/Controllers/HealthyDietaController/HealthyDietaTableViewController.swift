@@ -162,7 +162,7 @@ class HealthyDietaTableViewController: UITableViewController {
         misAlimentos.removeAll { (cadena) -> Bool in
            return cadena == name
         }
-                
+        
         
         
 //        misAlimentos.removeAll(where: {$0 == name})
