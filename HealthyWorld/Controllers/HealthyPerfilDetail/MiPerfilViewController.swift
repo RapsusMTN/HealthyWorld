@@ -57,6 +57,14 @@ class MiPerfilViewController: UIViewController {
     
     
     func setDataInLabels() {
+        let user = UserManager.instance.getUser(key: UserManager.kUserDefaultsKey)
+        self.labelNombre.text = user.username
+        self.labelEdad.text = "\(String(describing: user.age)) años"
+        self.labelSexo.text = user.genre
+        self.labelAltura.text = "\(String(describing: user.height)) m"
+        self.labelPeso.text = "\(String(describing: user.weight)) kg"
+        self.labelObjetivo.text = user.objective
+        self.labelBienvenida.text = user.username
 //        self.labelNombre.text = (UserDefault.instance.object(forKey: "UserName") as! String)
 //        self.labelEdad.text = "\(UserDefault.instance.object(forKey: "Edad") as! String) años"
 //        self.labelSexo.text = (UserDefault.instance.object(forKey: "Sexo") as! String)
