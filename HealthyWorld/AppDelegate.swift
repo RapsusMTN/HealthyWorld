@@ -17,16 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         //Buildear nuestra app en codigo
-
         window = UIWindow()
         window?.makeKeyAndVisible()
-        //
-        //        let randomViewController = UIViewController()
-        //        randomViewController.view.backgroundColor = .red
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        let swipingViewController = SwipingController(collectionViewLayout: layout)
-        window?.rootViewController = swipingViewController
+        let user = UserManager.instance.getUser(key: UserManager.kUserDefaultsKey)
+        if user.username != nil {
+            let mainMenu = HealthyMenuTabController()
+            window?.rootViewController = mainMenu
+            
+        }else {
+            let layout = UICollectionViewFlowLayout()
+            layout.scrollDirection = .horizontal
+            let swipingViewController = SwipingController(collectionViewLayout: layout)
+            window?.rootViewController = swipingViewController
+        }
         
         return true
     }
