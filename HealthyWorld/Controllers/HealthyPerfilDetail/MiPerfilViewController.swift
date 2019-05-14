@@ -47,7 +47,6 @@ class MiPerfilViewController: UIViewController {
         setStyleViews()
         setNavigationBarItems()
         setDataInLabels()
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,24 +58,12 @@ class MiPerfilViewController: UIViewController {
     func setDataInLabels() {
         let user = UserManager.instance.getUser(key: UserManager.kUserDefaultsKey)
         self.labelNombre.text = user.username
-        self.labelEdad.text = "\(String(describing: user.age)) años"
+        self.labelEdad.text = "\(String(describing: user.age!)) años"
         self.labelSexo.text = user.genre
-        self.labelAltura.text = "\(String(describing: user.height)) m"
-        self.labelPeso.text = "\(String(describing: user.weight)) kg"
+        self.labelAltura.text = "\(String(describing: user.height!)) m"
+        self.labelPeso.text = "\(String(describing: user.weight!)) kg"
         self.labelObjetivo.text = user.objective
         self.labelBienvenida.text = user.username
-//        self.labelNombre.text = (UserDefault.instance.object(forKey: "UserName") as! String)
-//        self.labelEdad.text = "\(UserDefault.instance.object(forKey: "Edad") as! String) años"
-//        self.labelSexo.text = (UserDefault.instance.object(forKey: "Sexo") as! String)
-//        self.labelAltura.text = "\(UserDefault.instance.object(forKey: "Height") as! String) m"
-//        self.labelPeso.text = "\(UserDefault.instance.object(forKey: "Weight") as! String) Kg"
-//        self.labelObjetivo.text = (UserDefault.instance.object(forKey: "Objective") as! String)
-//        self.labelBienvenida.text = "Bienvenid@ \(UserDefault.instance.object(forKey: "UserName") as! String)"
-//        let saveUser  = User(self.labelNombre.text!, self.labelEdad.text!, self.labelPeso.text!, self.labelAltura.text!, self.labelSexo.text!, self.labelObjetivo.text!)
-//        
-//        if let encoded = try? JSONEncoder().encode(saveUser) {
-//            UserDefault.instance.set(encoded, forKey: "User")
-//        }
     }
    
     
