@@ -86,28 +86,28 @@ class HealthyMiPerfil2ViewController: UIViewController {
         //Cantidades en gramos
         let proteLabel = UILabel()
         proteLabel.backgroundColor = .red
-        proteLabel.text = "200 g Proteina"
+        proteLabel.text = "115 g Proteina"
         proteLabel.textAlignment = .center
         proteLabel.textColor = .black
         proteLabel.font = .boldSystemFont(ofSize: 14)
         
         let grasaLabel = UILabel()
         grasaLabel.backgroundColor = .green
-        grasaLabel.text = "200 g Grasa"
+        grasaLabel.text = "90 g Grasa"
         grasaLabel.textAlignment = .center
         grasaLabel.textColor = .black
         grasaLabel.font = .boldSystemFont(ofSize: 14)
         
         let hidratosLabel = UILabel()
         hidratosLabel.backgroundColor = .orange
-        hidratosLabel.text = "150 g Hidratos"
+        hidratosLabel.text = "200 g Hidratos"
         hidratosLabel.textAlignment = .center
         hidratosLabel.textColor = .black
         hidratosLabel.font = .boldSystemFont(ofSize: 14)
         
         let vitLabel = UILabel()
         vitLabel.backgroundColor = .cyan
-        vitLabel.text = "200 g Vit y Min"
+        vitLabel.text = "135 g Vit y Min"
         vitLabel.textAlignment = .center
         vitLabel.textColor = .black
         vitLabel.font = .boldSystemFont(ofSize: 14)

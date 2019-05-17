@@ -20,16 +20,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.makeKeyAndVisible()
         let user = UserManager.instance.getUser(key: UserManager.kUserDefaultsKey)
-        if user.username != nil {
-            let mainMenu = HealthyMenuTabController()
-            window?.rootViewController = mainMenu
-            
-        }else {
-            let layout = UICollectionViewFlowLayout()
-            layout.scrollDirection = .horizontal
-            let swipingViewController = SwipingController(collectionViewLayout: layout)
-            window?.rootViewController = swipingViewController
-        }
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        let swipingViewController = SwipingController(collectionViewLayout: layout)
+        window?.rootViewController = swipingViewController
+//        if user.username != nil {
+//            let mainMenu = HealthyMenuTabController()
+//            window?.rootViewController = mainMenu
+//
+//        }else {
+//            let layout = UICollectionViewFlowLayout()
+//            layout.scrollDirection = .horizontal
+//            let swipingViewController = SwipingController(collectionViewLayout: layout)
+//            window?.rootViewController = swipingViewController
+//        }
         
         return true
     }

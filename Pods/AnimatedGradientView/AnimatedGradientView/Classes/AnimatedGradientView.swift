@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+@IBDesignable
 public class AnimatedGradientView: UIView {
     
     public typealias Animation = AnimatedGradientViewAnimation
