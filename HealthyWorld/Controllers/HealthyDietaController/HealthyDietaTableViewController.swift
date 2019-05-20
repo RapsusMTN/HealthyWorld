@@ -59,6 +59,8 @@ class HealthyDietaTableViewController: UITableViewController {
         FoodType.cena : ["Pescado","Atún","Ensalada Variada","Patata Cocida","Alubias Verdes"],
     ]
     
+    let calorias = ["50 Kcal","100 Kcal","120 Kcal","500 Kcal","600 Kcal","10 Kcal","250 Kcal","400 Kcal","300 Kcal","400 Kcal","250 Kcal","340 Kcal","190 Kcal","120 Kcal","80 Kcal","400 Kcal","450 Kcal","350 Kcal","100 Kcal","500 Kcal","200 Kcal","70 Kcal","200 Kcal","90 Kcal","300 Kcal"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setItemBar()
@@ -66,7 +68,7 @@ class HealthyDietaTableViewController: UITableViewController {
         self.tableView.allowsMultipleSelection = true
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.tableView.register(DietaTableViewCell.nib(), forCellReuseIdentifier: "Cell")
         self.tableView.register(HeaderComidasTableViewCell.self, forCellReuseIdentifier: "HeaderComidasTableViewCell")
         self.tableView.reloadData()
     }
@@ -76,6 +78,10 @@ class HealthyDietaTableViewController: UITableViewController {
     }
     
     @objc func tapNext(_ sender: AnyObject) {
+        let defaults = UserDefaults.standard
+        defaults.set(misAlimentos, forKey: "alimentos")
+        
+        
         let midietaController = HealthyMiDietaViewController()
         self.navigationController?.pushViewController(midietaController, animated: true)
         
@@ -95,13 +101,20 @@ class HealthyDietaTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DietaTableViewCell
         
         let foodType = FoodType.init(rawValue: indexPath.section)!
         
         let foodName = sectionData[foodType]![indexPath.row]
         
-        cell.textLabel?.text = foodName
+        cell.foodLabel.text = foodName
+        cell.kcalLabel.text = calorias[indexPath.row]
+      
+        if cell.isSelected {
+            cell.imageCheck.isHidden = false
+        }else{
+            cell.imageCheck.isHidden = true
+        }
         
         return cell
     }
@@ -134,16 +147,18 @@ class HealthyDietaTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Celda seleccionada : \(indexPath.item)")
-        let cell = tableView.cellForRow(at: indexPath)
-        print("Cell text = \(String(describing: cell?.textLabel?.text))")
-        misAlimentos.append((cell?.textLabel!.text)!)
+        let cell = tableView.cellForRow(at: indexPath) as! DietaTableViewCell
+        print("Cell text = \(String(describing: cell.textLabel?.text))")
+        misAlimentos.append((cell.foodLabel.text!))
+        cell.imageCheck.isHidden = false
     }
     
     
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         print("Celda deseleccionada : \(indexPath.item)")
-        let cell = tableView.cellForRow(at: indexPath)
-        removeDataFromArray(with: (cell?.textLabel!.text)!)
+        let cell = tableView.cellForRow(at: indexPath) as! DietaTableViewCell
+        misAlimentos.removeAll(where: {$0 == cell.foodLabel.text})
+        cell.imageCheck.isHidden = true
     }
     
     
@@ -157,17 +172,6 @@ class HealthyDietaTableViewController: UITableViewController {
         }    
     }
     
-    func removeDataFromArray(with name:String) {
-        
-        misAlimentos.removeAll { (cadena) -> Bool in
-           return cadena == name
-        }
-            
-        
-        
-//        misAlimentos.removeAll(where: {$0 == name})
-        
-    }
     
     
     

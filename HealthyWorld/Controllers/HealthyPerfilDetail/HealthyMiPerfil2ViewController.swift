@@ -11,6 +11,13 @@ import RKPieChart
 
 class HealthyMiPerfil2ViewController: UIViewController {
 
+    
+    @IBOutlet weak var chartView: RKPieChartView!
+    
+    
+    
+    
+    
     let labelKcal: UILabel = {
         let label = UILabel()
         label.text = "1.500 KCal / Día"

@@ -55,6 +55,8 @@
 		41B7A54C2268D021000BD78D /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5462268D020000BD78D /* video2.mp4 */; };
 		41B7A54D2268D021000BD78D /* conejo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5472268D020000BD78D /* conejo.mp4 */; };
 		41B7A54E2268D021000BD78D /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 41B7A5482268D021000BD78D /* Podfile.lock */; };
+		41B8A854229327E900C09A9D /* DietaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B8A852229327E900C09A9D /* DietaTableViewCell.swift */; };
+		41B8A855229327E900C09A9D /* DietaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B8A853229327E900C09A9D /* DietaTableViewCell.xib */; };
 		6207DFF522842EDD005CEE03 /* HeaderComidasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6207DFF322842EDD005CEE03 /* HeaderComidasTableViewCell.swift */; };
 		6207DFF622842EDD005CEE03 /* HeaderComidasTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6207DFF422842EDD005CEE03 /* HeaderComidasTableViewCell.xib */; };
 		620B22C5227C65D00024F581 /* HealthyARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620B22C3227C65D00024F581 /* HealthyARViewController.swift */; };
@@ -120,6 +122,8 @@
 		41B7A5462268D020000BD78D /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
 		41B7A5472268D020000BD78D /* conejo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = conejo.mp4; sourceTree = "<group>"; };
 		41B7A5482268D021000BD78D /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		41B8A852229327E900C09A9D /* DietaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaTableViewCell.swift; sourceTree = "<group>"; };
+		41B8A853229327E900C09A9D /* DietaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DietaTableViewCell.xib; sourceTree = "<group>"; };
 		4D4BBEB6D8D44836551323F9 /* Pods_HealthyWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5072670994DC8371C0A70B2D /* Pods-HealthyWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthyWorld/Pods-HealthyWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		6207DFF322842EDD005CEE03 /* HeaderComidasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComidasTableViewCell.swift; sourceTree = "<group>"; };
@@ -246,6 +250,8 @@
 				414E6C1C2263A2D600EE02EE /* PageCell.swift */,
 				6207DFF322842EDD005CEE03 /* HeaderComidasTableViewCell.swift */,
 				6207DFF422842EDD005CEE03 /* HeaderComidasTableViewCell.xib */,
+				41B8A852229327E900C09A9D /* DietaTableViewCell.swift */,
+				41B8A853229327E900C09A9D /* DietaTableViewCell.xib */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -441,6 +447,7 @@
 				414E6C0D2263A27900EE02EE /* Assets.xcassets in Resources */,
 				41783BDE2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.xib in Resources */,
 				6207DFF622842EDD005CEE03 /* HeaderComidasTableViewCell.xib in Resources */,
+				41B8A855229327E900C09A9D /* DietaTableViewCell.xib in Resources */,
 				41783BFE2268C85600C9EAF6 /* CustomTableView.xib in Resources */,
 				41783C082268C8D300C9EAF6 /* buendia.mp4 in Resources */,
 				41783BF22268C81500C9EAF6 /* RutinaTableViewCell.xib in Resources */,
@@ -544,6 +551,7 @@
 				41783BF42268C81500C9EAF6 /* RutinaTableViewCell.swift in Sources */,
 				41783BDD2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.swift in Sources */,
 				414E6C032263A27800EE02EE /* AppDelegate.swift in Sources */,
+				41B8A854229327E900C09A9D /* DietaTableViewCell.swift in Sources */,
 				41783C002268C87100C9EAF6 /* VideoView.swift in Sources */,
 				41783BD82268C78C00C9EAF6 /* HealthyDietaTableViewController.swift in Sources */,
 				414E6C222263A2D600EE02EE /* PageCell.swift in Sources */,

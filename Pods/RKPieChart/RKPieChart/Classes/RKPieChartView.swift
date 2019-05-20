@@ -75,11 +75,11 @@ public class RKPieChartView: UIView {
         }
     }
     
-    private var items: [RKPieChartItem] = [RKPieChartItem]()
+    public var items: [RKPieChartItem] = [RKPieChartItem]()
     private var titlesView: UIStackView?
     private var totalRatio: CGFloat = 0
     private let itemHeight: CGFloat = 10.0
-    private var centerTitle: String?
+    public var centerTitle: String?
     private var centerLabel: UILabel?
     
     private var currentTime = CACurrentMediaTime()
