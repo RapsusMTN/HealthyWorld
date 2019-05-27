@@ -17,7 +17,12 @@ class RutinaDetalleViewController: UIViewController,UICollectionViewDelegate,UIC
     
     @IBOutlet weak var pageControl: UIPageControl!
     
+    @IBOutlet weak var labelName: UILabel!
+    
+    
     public var indexExercise:Int!
+    
+    public var exerciseName:String!
     
     let pages = [
         Page(imageName: "nutricon", headerText: "Bienvenido a tu app saludable para dietas y rutinas!",bodyText: "Con esta nueva app podrás controlar tu salud de manera adecuada y en el momento que tú desees "),
@@ -30,10 +35,19 @@ class RutinaDetalleViewController: UIViewController,UICollectionViewDelegate,UIC
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.labelName.text = exerciseName
+        configurateViews()
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-        self.collectionView.register(RutinaDetalleCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
-        
+        self.collectionView.register(RutinaDetalleCollectionViewCell.nib(), forCellWithReuseIdentifier: "Cell")
+        self.collectionView.isScrollEnabled = true
+        self.collectionView.showsVerticalScrollIndicator = true
+    }
+    
+    func configurateViews() {
+        self.labelName.font = .boldSystemFont(ofSize: 20)
+        self.labelName.textColor = .white
+        self.labelName.backgroundColor = .black
     }
     
     //MARK: -UICollectionViewDelegate and DataSource
@@ -44,8 +58,7 @@ class RutinaDetalleViewController: UIViewController,UICollectionViewDelegate,UIC
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! RutinaDetalleCollectionViewCell
-        
-    
+        cell.textView.text = pages[indexPath.row].bodyText
         return cell
     }
     
@@ -53,9 +66,10 @@ class RutinaDetalleViewController: UIViewController,UICollectionViewDelegate,UIC
         return 0
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: view.frame.height)
-    }
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: self.collectionView.frame.width, height: self.collectionView.frame.height)
+//    }
 
 
 

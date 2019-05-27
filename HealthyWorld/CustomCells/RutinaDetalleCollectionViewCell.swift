@@ -16,7 +16,7 @@ class RutinaDetalleCollectionViewCell: UICollectionViewCell {
     
     
     static func nib() -> UINib {
-        return UINib.init(nibName: "DietaTableViewCell", bundle: nil)
+        return UINib.init(nibName: "RutinaDetalleCollectionViewCell", bundle: nil)
     }
     
     override func awakeFromNib() {

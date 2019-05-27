@@ -10,6 +10,11 @@ import UIKit
 
 class HealthyRutinaViewController: UIViewController {
     
+    
+    
+    
+    
+    
     @IBOutlet weak var rutinaDetailView: RutinaDetailCustomView!
     
     public var selectedIndex:Int!
@@ -22,6 +27,8 @@ class HealthyRutinaViewController: UIViewController {
         super.viewDidLoad()
         setNavigationItemsBar()
         configurateViews()
+        let customTable = CustomTableView()
+        
         //Lo mismo que en la otra vista y dissmis para ir atras
         //Controlar que celda se ha elegido para mostrar unos datos u otros
         
@@ -60,9 +67,24 @@ class HealthyRutinaViewController: UIViewController {
         
         
     }
+}
+
+
+//MARK: - CustomTableViewDelegate
+//Delegate Navigation in CustomTableView
+
+extension HealthyRutinaViewController:CustomTableViewDelegate {
     
+    func pushNavigation(with index: Int) {
+        let vc = RutinaDetalleViewController()
+        vc.indexExercise = index
+        let nav = UINavigationController(rootViewController: vc)
+        self.navigationController?.pushViewController(nav, animated: true)
+    }
+    
+    func popNavigation() {
+        self.navigationController?.popViewController(animated: true)
+    }
  
-
-  
-
+    
 }

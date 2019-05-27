@@ -21,6 +21,8 @@
 		414E6C222263A2D600EE02EE /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C1C2263A2D600EE02EE /* PageCell.swift */; };
 		414F8543229C0622008C5965 /* RutinaDetalleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F8541229C0622008C5965 /* RutinaDetalleCollectionViewCell.swift */; };
 		414F8544229C0622008C5965 /* RutinaDetalleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 414F8542229C0622008C5965 /* RutinaDetalleCollectionViewCell.xib */; };
+		414F8547229C58FB008C5965 /* HealthyRutinaTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F8545229C58FB008C5965 /* HealthyRutinaTestViewController.swift */; };
+		414F8548229C58FB008C5965 /* HealthyRutinaTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 414F8546229C58FB008C5965 /* HealthyRutinaTestViewController.xib */; };
 		41603D302274CE8300FCE0BA /* MiPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41603D2E2274CE8300FCE0BA /* MiPerfilViewController.swift */; };
 		41603D312274CE8300FCE0BA /* MiPerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41603D2F2274CE8300FCE0BA /* MiPerfilViewController.xib */; };
 		41603D352274CFA200FCE0BA /* HealthyDietaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41603D332274CFA200FCE0BA /* HealthyDietaTableViewController.swift */; };
@@ -95,6 +97,8 @@
 		414E6C1C2263A2D600EE02EE /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		414F8541229C0622008C5965 /* RutinaDetalleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutinaDetalleCollectionViewCell.swift; sourceTree = "<group>"; };
 		414F8542229C0622008C5965 /* RutinaDetalleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RutinaDetalleCollectionViewCell.xib; sourceTree = "<group>"; };
+		414F8545229C58FB008C5965 /* HealthyRutinaTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthyRutinaTestViewController.swift; path = HealthyWorld/CustomCells/HealthyRutinaTestViewController.swift; sourceTree = SOURCE_ROOT; };
+		414F8546229C58FB008C5965 /* HealthyRutinaTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HealthyRutinaTestViewController.xib; path = HealthyWorld/CustomCells/HealthyRutinaTestViewController.xib; sourceTree = SOURCE_ROOT; };
 		41603D2E2274CE8300FCE0BA /* MiPerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiPerfilViewController.swift; sourceTree = "<group>"; };
 		41603D2F2274CE8300FCE0BA /* MiPerfilViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MiPerfilViewController.xib; sourceTree = "<group>"; };
 		41603D332274CFA200FCE0BA /* HealthyDietaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthyDietaTableViewController.swift; path = HealthyWorld/Controllers/HealthyDietaController/HealthyDietaTableViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -336,6 +340,8 @@
 				41783BE82268C7EE00C9EAF6 /* HealthyRutinaViewController.xib */,
 				417C96002299C7C90016479A /* RutinaDetalleViewController.swift */,
 				417C96012299C7C90016479A /* RutinaDetalleViewController.xib */,
+				414F8545229C58FB008C5965 /* HealthyRutinaTestViewController.swift */,
+				414F8546229C58FB008C5965 /* HealthyRutinaTestViewController.xib */,
 			);
 			name = HealthyRutinaViewController;
 			path = "New Group3";
@@ -486,6 +492,7 @@
 				62FE555D22857A4A004909B1 /* HealthyMiDietaViewController.xib in Resources */,
 				62FE5554228564F0004909B1 /* CustomHeaderFood.xib in Resources */,
 				41783BF32268C81500C9EAF6 /* RutinaCollectionViewCell.xib in Resources */,
+				414F8548229C58FB008C5965 /* HealthyRutinaTestViewController.xib in Resources */,
 				41B7A54A2268D021000BD78D /* video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,6 +580,7 @@
 				4192862C22651B2300953634 /* User.swift in Sources */,
 				414308C92269EEA100F8881F /* HealthyMiPerfil2ViewController.swift in Sources */,
 				62FE555C22857A4A004909B1 /* HealthyMiDietaViewController.swift in Sources */,
+				414F8547229C58FB008C5965 /* HealthyRutinaTestViewController.swift in Sources */,
 				62FE555922856C99004909B1 /* Dieta.swift in Sources */,
 				41603D352274CFA200FCE0BA /* HealthyDietaTableViewController.swift in Sources */,
 				41783BF42268C81500C9EAF6 /* RutinaTableViewCell.swift in Sources */,

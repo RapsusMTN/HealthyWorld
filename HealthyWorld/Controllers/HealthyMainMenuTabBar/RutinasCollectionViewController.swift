@@ -48,7 +48,7 @@ class RutinasCollectionViewController: UICollectionViewController,UICollectionVi
     
     func selectExerciseAt(indexCell: Int) {
         
-        let rutinaDetail0 = HealthyRutinaViewController()
+        let rutinaDetail0 = HealthyRutinaTestViewController()
         rutinaDetail0.modalTransitionStyle = .coverVertical
         let navController = UINavigationController(rootViewController: rutinaDetail0)
         //Depende la celda que seleccione entrara a un ViewController u otro

@@ -1,26 +1,33 @@
 //
-//  CustomTableView.swift
+//  HealthyRutinaTestViewController.swift
 //  HealthyWorld
 //
-//  Created by Jorge Martin Reyero on 17/04/2019.
+//  Created by Jorge Martin Reyero on 27/05/2019.
 //  Copyright © 2019 Jorge Martin Reyero. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-public protocol CustomTableViewDelegate {
-    func pushNavigation(with index:Int)
+class HealthyRutinaTestViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    func popNavigation()
-}
 
-class CustomTableView: UIView, UITableViewDelegate,UITableViewDataSource {
+    //MARK: -Outlets & Vars
     
+    @IBOutlet weak var videoView: VideoView!
     
-    public var navigationDelegate:CustomTableViewDelegate!
+    @IBOutlet weak var labelDescription: UILabel!
     
-    public var superView:UIViewController!
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var labelSeries: UILabel!
+    
+    public var selectedIndex:Int!
+    
+    public var texto:String!
+    
+    public var seriesAndReps:String!
+    
+    public var keyRutina:String!
     
     var ejercicios:[String:[String]] = [
         "Rutina de Pectorales":["Press de Banca","Aperturas con Mancuernas","Fondos en Paralelas","Press Inclinado","Cruce de Poleas","Flexiones","Contractor","Press Mancuernas","Peck Deck","Press Declinado","Pull Over","Abdominales"],
@@ -35,43 +42,66 @@ class CustomTableView: UIView, UITableViewDelegate,UITableViewDataSource {
         "Rutina de Definicion":["Bicicleta","Eliptica","Remar","Natacion","Padel","Tenis","Hit","Running"]
     ]
     
-    @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet var contentView: UIView!
-    
-    public var keyRutina:String!
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-        setDelegateAndDataSource()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-        setDelegateAndDataSource()
-    }
-    
-    func setDelegateAndDataSource() {
-//        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    override func viewDidLoad() {
+        super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        setNavigationItemsBar()
+        configurateViews()
         self.tableView.register(RutinaTableViewCell.nib(), forCellReuseIdentifier: String(describing: RutinaTableViewCell.self))
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         self.keyRutina = appDelegate.keyRutina
+        configureVideowith(urlPath: (Bundle.main.url(forResource: "buendia", withExtension: "mp4")?.absoluteString)!)
+    }
+
+    //MARK: -Funcs
+    func configureVideowith(urlPath: String) {
+        self.videoView.configure(url: (urlPath))
+        self.videoView.isLoop = true
+        self.videoView.play()
+        
         
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (ejercicios[self.keyRutina]?.count)!
+    func setNavigationItemsBar() {
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Volver", style: .plain, target: self, action: #selector(HealthyRutinaViewController.dismissView(_:)))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Siguiente", style: .plain, target: self, action: #selector(HealthyRutinaViewController.tapNext(_:)))
+        let image = UIImage(named: "nutricon")
+        let imageView:UIImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
+        self.navigationItem.titleView = imageView
+        
     }
     
+    func configurateViews() {
+        self.labelDescription.text = texto
+        self.labelSeries.text = seriesAndReps
+        self.labelSeries.font = .boldSystemFont(ofSize: 20)
+        self.labelSeries.textColor = .white
+        self.labelSeries.backgroundColor = .black
+        
+    }
+    
+    @objc func dismissView(_ sender: AnyObject){
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func tapNext(_ sender: AnyObject) {
+        let detail = DetailRutinaPage1ViewController()
+        self.navigationController?.pushViewController(detail, animated: true)
+    }
+    
+    
+    //MARK: -TableViewDelegateAndDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = self.tableView.cellForRow(at: indexPath) as! RutinaTableViewCell
         let vc = RutinaDetalleViewController()
         vc.indexExercise = indexPath.item
-        let nav = UINavigationController(rootViewController: vc)
-        navigationDelegate.pushNavigation(with: indexPath.item)
+        vc.exerciseName = cell.labelEjercicio.text
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -81,47 +111,14 @@ class CustomTableView: UIView, UITableViewDelegate,UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (ejercicios[self.keyRutina]?.count)!
+    }
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70.0
     }
     
-    
-    func setup()
-    {
-        contentView = loadViewFromNib()
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-        
-        addSubview(contentView)
-        
-        contentView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        contentView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        contentView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        contentView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        
-     
-    }
-    
-    func loadViewFromNib() -> UIView!
-    {
-        let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
-        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
-        
-        return view
-    }
-    
-    
-    
-
-    
    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 }
