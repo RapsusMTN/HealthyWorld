@@ -19,6 +19,8 @@
 		414E6C1F2263A2D600EE02EE /* SwipingExtensionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C192263A2D600EE02EE /* SwipingExtensionCollectionView.swift */; };
 		414E6C212263A2D600EE02EE /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C1B2263A2D600EE02EE /* Page.swift */; };
 		414E6C222263A2D600EE02EE /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C1C2263A2D600EE02EE /* PageCell.swift */; };
+		414F8543229C0622008C5965 /* RutinaDetalleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F8541229C0622008C5965 /* RutinaDetalleCollectionViewCell.swift */; };
+		414F8544229C0622008C5965 /* RutinaDetalleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 414F8542229C0622008C5965 /* RutinaDetalleCollectionViewCell.xib */; };
 		41603D302274CE8300FCE0BA /* MiPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41603D2E2274CE8300FCE0BA /* MiPerfilViewController.swift */; };
 		41603D312274CE8300FCE0BA /* MiPerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41603D2F2274CE8300FCE0BA /* MiPerfilViewController.xib */; };
 		41603D352274CFA200FCE0BA /* HealthyDietaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41603D332274CFA200FCE0BA /* HealthyDietaTableViewController.swift */; };
@@ -46,6 +48,9 @@
 		41783C052268C8AF00C9EAF6 /* HealthyProfile2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41783C022268C8AF00C9EAF6 /* HealthyProfile2ViewController.xib */; };
 		41783C062268C8AF00C9EAF6 /* HealthyProfile2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41783C032268C8AF00C9EAF6 /* HealthyProfile2ViewController.swift */; };
 		41783C082268C8D300C9EAF6 /* buendia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41783C072268C8D300C9EAF6 /* buendia.mp4 */; };
+		417C96022299C7C90016479A /* RutinaDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417C96002299C7C90016479A /* RutinaDetalleViewController.swift */; };
+		417C96032299C7C90016479A /* RutinaDetalleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417C96012299C7C90016479A /* RutinaDetalleViewController.xib */; };
+		417C96052299C9710016479A /* pechoEjer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 417C96042299C9710016479A /* pechoEjer.jpg */; };
 		4192862922648D4200953634 /* HealthyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192862722648D4200953634 /* HealthyProfileViewController.swift */; };
 		4192862A22648D4200953634 /* HealthyProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4192862822648D4200953634 /* HealthyProfileViewController.xib */; };
 		4192862C22651B2300953634 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192862B22651B2300953634 /* User.swift */; };
@@ -88,6 +93,8 @@
 		414E6C192263A2D600EE02EE /* SwipingExtensionCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingExtensionCollectionView.swift; sourceTree = "<group>"; };
 		414E6C1B2263A2D600EE02EE /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		414E6C1C2263A2D600EE02EE /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		414F8541229C0622008C5965 /* RutinaDetalleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutinaDetalleCollectionViewCell.swift; sourceTree = "<group>"; };
+		414F8542229C0622008C5965 /* RutinaDetalleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RutinaDetalleCollectionViewCell.xib; sourceTree = "<group>"; };
 		41603D2E2274CE8300FCE0BA /* MiPerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiPerfilViewController.swift; sourceTree = "<group>"; };
 		41603D2F2274CE8300FCE0BA /* MiPerfilViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MiPerfilViewController.xib; sourceTree = "<group>"; };
 		41603D332274CFA200FCE0BA /* HealthyDietaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthyDietaTableViewController.swift; path = HealthyWorld/Controllers/HealthyDietaController/HealthyDietaTableViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -115,6 +122,9 @@
 		41783C022268C8AF00C9EAF6 /* HealthyProfile2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HealthyProfile2ViewController.xib; sourceTree = "<group>"; };
 		41783C032268C8AF00C9EAF6 /* HealthyProfile2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthyProfile2ViewController.swift; sourceTree = "<group>"; };
 		41783C072268C8D300C9EAF6 /* buendia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = buendia.mp4; sourceTree = "<group>"; };
+		417C96002299C7C90016479A /* RutinaDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RutinaDetalleViewController.swift; path = HealthyWorld/Controllers/HealthyRutinaViewController/RutinaDetalleViewController.swift; sourceTree = SOURCE_ROOT; };
+		417C96012299C7C90016479A /* RutinaDetalleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RutinaDetalleViewController.xib; path = HealthyWorld/Controllers/HealthyRutinaViewController/RutinaDetalleViewController.xib; sourceTree = SOURCE_ROOT; };
+		417C96042299C9710016479A /* pechoEjer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pechoEjer.jpg; sourceTree = "<group>"; };
 		4192862722648D4200953634 /* HealthyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyProfileViewController.swift; sourceTree = "<group>"; };
 		4192862822648D4200953634 /* HealthyProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthyProfileViewController.xib; sourceTree = "<group>"; };
 		4192862B22651B2300953634 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -211,6 +221,7 @@
 				414E6C022263A27800EE02EE /* AppDelegate.swift */,
 				414E6C062263A27800EE02EE /* Main.storyboard */,
 				414E6C0C2263A27900EE02EE /* Assets.xcassets */,
+				417C96042299C9710016479A /* pechoEjer.jpg */,
 				414E6C0E2263A27900EE02EE /* LaunchScreen.storyboard */,
 				414E6C112263A27900EE02EE /* Info.plist */,
 				414E6C092263A27800EE02EE /* HealthyWorld.xcdatamodeld */,
@@ -256,6 +267,8 @@
 				6207DFF422842EDD005CEE03 /* HeaderComidasTableViewCell.xib */,
 				41B8A852229327E900C09A9D /* DietaTableViewCell.swift */,
 				41B8A853229327E900C09A9D /* DietaTableViewCell.xib */,
+				414F8541229C0622008C5965 /* RutinaDetalleCollectionViewCell.swift */,
+				414F8542229C0622008C5965 /* RutinaDetalleCollectionViewCell.xib */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -321,6 +334,8 @@
 			children = (
 				41783BE72268C7EE00C9EAF6 /* HealthyRutinaViewController.swift */,
 				41783BE82268C7EE00C9EAF6 /* HealthyRutinaViewController.xib */,
+				417C96002299C7C90016479A /* RutinaDetalleViewController.swift */,
+				417C96012299C7C90016479A /* RutinaDetalleViewController.xib */,
 			);
 			name = HealthyRutinaViewController;
 			path = "New Group3";
@@ -443,6 +458,7 @@
 				41603D362274CFA200FCE0BA /* HealthyDietaTableViewController.xib in Resources */,
 				41B7A54B2268D021000BD78D /* Podfile in Resources */,
 				414308CA2269EEA100F8881F /* HealthyMiPerfil2ViewController.xib in Resources */,
+				417C96052299C9710016479A /* pechoEjer.jpg in Resources */,
 				41783C052268C8AF00C9EAF6 /* HealthyProfile2ViewController.xib in Resources */,
 				62FA15E2229428CE00C846AC /* HealthyDietaCreadaViewController.xib in Resources */,
 				41B7A54E2268D021000BD78D /* Podfile.lock in Resources */,
@@ -453,8 +469,10 @@
 				41B7A54D2268D021000BD78D /* conejo.mp4 in Resources */,
 				414E6C0D2263A27900EE02EE /* Assets.xcassets in Resources */,
 				41783BDE2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.xib in Resources */,
+				417C96032299C7C90016479A /* RutinaDetalleViewController.xib in Resources */,
 				6207DFF622842EDD005CEE03 /* HeaderComidasTableViewCell.xib in Resources */,
 				41B8A855229327E900C09A9D /* DietaTableViewCell.xib in Resources */,
+				414F8544229C0622008C5965 /* RutinaDetalleCollectionViewCell.xib in Resources */,
 				41783BFE2268C85600C9EAF6 /* CustomTableView.xib in Resources */,
 				41783C082268C8D300C9EAF6 /* buendia.mp4 in Resources */,
 				41783BF22268C81500C9EAF6 /* RutinaTableViewCell.xib in Resources */,
@@ -532,12 +550,14 @@
 			files = (
 				41783BE32268C7CA00C9EAF6 /* HealthyMenuTabController.swift in Sources */,
 				41783BFD2268C85600C9EAF6 /* CustomTableView.swift in Sources */,
+				417C96022299C7C90016479A /* RutinaDetalleViewController.swift in Sources */,
 				62FE555722856561004909B1 /* GradientView.swift in Sources */,
 				414E6C1D2263A2D600EE02EE /* SwipingControllerExtension.swift in Sources */,
 				6207DFF522842EDD005CEE03 /* HeaderComidasTableViewCell.swift in Sources */,
 				41783C062268C8AF00C9EAF6 /* HealthyProfile2ViewController.swift in Sources */,
 				41783BED2268C80600C9EAF6 /* DataRoutine.swift in Sources */,
 				41783BFC2268C85600C9EAF6 /* RutinaDetailCustomView.swift in Sources */,
+				414F8543229C0622008C5965 /* RutinaDetalleCollectionViewCell.swift in Sources */,
 				41603D302274CE8300FCE0BA /* MiPerfilViewController.swift in Sources */,
 				41783BE42268C7CA00C9EAF6 /* RutinasCollectionViewController.swift in Sources */,
 				41783C042268C8AF00C9EAF6 /* HealthyProfilePickerExtension.swift in Sources */,

@@ -56,6 +56,13 @@ class CustomTableView: UIView, UITableViewDelegate,UITableViewDataSource {
         return (ejercicios[self.keyRutina]?.count)!
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = RutinaDetalleViewController()
+        vc.indexExercise = indexPath.item
+        let nav = UINavigationController(rootViewController: vc)
+        
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: String(describing: RutinaTableViewCell.self), for: indexPath) as! RutinaTableViewCell
         var ejers = self.ejercicios[self.keyRutina]!
