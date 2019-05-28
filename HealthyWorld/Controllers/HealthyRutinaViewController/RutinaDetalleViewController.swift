@@ -46,9 +46,21 @@ class RutinaDetalleViewController: UIViewController,UICollectionViewDelegate,UIC
     
     func configurateViews() {
         self.labelName.font = .boldSystemFont(ofSize: 20)
-        self.labelName.textColor = .white
-        self.labelName.backgroundColor = .black
+        self.labelName.textColor = .black
+        self.labelName.backgroundColor = UIColor(red: 184/255, green: 255/255, blue: 176/255, alpha: 1.0)
+     
     }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        
+        let x = targetContentOffset.pointee.x
+        
+        self.pageControl.currentPage = Int(x / view.frame.width)
+        
+        //print(x, view.frame.width, x / view.frame.width)
+        
+    }
+    
     
     //MARK: -UICollectionViewDelegate and DataSource
 
@@ -67,10 +79,11 @@ class RutinaDetalleViewController: UIViewController,UICollectionViewDelegate,UIC
     }
     
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: self.collectionView.frame.width, height: self.collectionView.frame.height)
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.collectionView.frame.width, height: self.collectionView.frame.height)
+    }
 
 
+    
 
 }

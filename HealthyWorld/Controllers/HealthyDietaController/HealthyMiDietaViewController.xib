@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,24 +24,27 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azO-2g-X19">
                     <rect key="frame" x="0.0" y="593" width="375" height="74"/>
-                    <color key="backgroundColor" red="0.6472139616" green="1" blue="0.78129727520000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.72156862745098038" green="1" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="375" id="F1g-CH-xze"/>
                         <constraint firstAttribute="height" constant="74" id="mWm-XH-yR9"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <state key="normal" title="Crear Dieta">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <connections>
                         <action selector="createDieta:" destination="-1" eventType="touchUpInside" id="0bZ-sk-wwq"/>
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fex-lA-Wu2">
-                    <rect key="frame" x="0.0" y="20" width="375" height="374"/>
+                    <rect key="frame" x="0.0" y="99" width="375" height="295"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="295" id="gvz-8X-MuY"/>
+                    </constraints>
                 </tableView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cig-Z2-o8s">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilocalorías Totales 1200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cig-Z2-o8s">
                     <rect key="frame" x="0.0" y="394" width="375" height="197"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="375" id="CfA-ue-OQ8"/>
@@ -51,19 +54,32 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comidas Totales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkM-yv-73X">
+                    <rect key="frame" x="0.0" y="20" width="375" height="79"/>
+                    <color key="backgroundColor" red="0.72156862749999995" green="1" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="79" id="LM1-zR-lT9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="azO-2g-X19" secondAttribute="bottom" id="595-0p-yVC"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Fex-lA-Wu2" secondAttribute="trailing" id="BXQ-P4-5t0"/>
                 <constraint firstItem="Cig-Z2-o8s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="C8D-z4-czc"/>
+                <constraint firstItem="Fex-lA-Wu2" firstAttribute="top" secondItem="MkM-yv-73X" secondAttribute="bottom" id="JcI-40-nXD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="azO-2g-X19" secondAttribute="trailing" id="KdM-a0-00E"/>
+                <constraint firstItem="MkM-yv-73X" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LV4-Lk-QHV"/>
                 <constraint firstItem="Fex-lA-Wu2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ROz-cC-0qM"/>
                 <constraint firstItem="azO-2g-X19" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="T08-FF-mt0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Cig-Z2-o8s" secondAttribute="bottom" constant="76" id="Zto-Kh-o0P"/>
+                <constraint firstItem="MkM-yv-73X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dcL-O3-96L"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cig-Z2-o8s" secondAttribute="trailing" id="fNZ-Oe-7hB"/>
                 <constraint firstItem="Cig-Z2-o8s" firstAttribute="top" secondItem="Fex-lA-Wu2" secondAttribute="bottom" id="i6f-gs-eDE"/>
-                <constraint firstItem="Fex-lA-Wu2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iua-eV-djG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MkM-yv-73X" secondAttribute="trailing" id="yEM-Gd-8Ha"/>
                 <constraint firstItem="azO-2g-X19" firstAttribute="top" secondItem="Cig-Z2-o8s" secondAttribute="bottom" constant="2" id="zhC-Bi-JHe"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

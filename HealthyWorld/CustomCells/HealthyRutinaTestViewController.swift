@@ -66,7 +66,7 @@ class HealthyRutinaTestViewController: UIViewController,UITableViewDelegate,UITa
     
     func setNavigationItemsBar() {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Volver", style: .plain, target: self, action: #selector(HealthyRutinaViewController.dismissView(_:)))
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Siguiente", style: .plain, target: self, action: #selector(HealthyRutinaViewController.tapNext(_:)))
+        
         let image = UIImage(named: "nutricon")
         let imageView:UIImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         imageView.contentMode = .scaleAspectFit
@@ -77,22 +77,18 @@ class HealthyRutinaTestViewController: UIViewController,UITableViewDelegate,UITa
     
     func configurateViews() {
         self.labelDescription.text = texto
+        self.labelDescription.layer.masksToBounds = true
+        self.labelDescription.layer.cornerRadius = 10
         self.labelSeries.text = seriesAndReps
         self.labelSeries.font = .boldSystemFont(ofSize: 20)
-        self.labelSeries.textColor = .white
-        self.labelSeries.backgroundColor = .black
-        
+        self.labelSeries.textColor = .black
+        self.labelSeries.backgroundColor = UIColor(red: 184/255, green: 255/255, blue: 176/255, alpha: 1.0)
+       
     }
     
     @objc func dismissView(_ sender: AnyObject){
         self.dismiss(animated: true, completion: nil)
     }
-    
-    @objc func tapNext(_ sender: AnyObject) {
-        let detail = DetailRutinaPage1ViewController()
-        self.navigationController?.pushViewController(detail, animated: true)
-    }
-    
     
     //MARK: -TableViewDelegateAndDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
