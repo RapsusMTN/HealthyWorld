@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		413CB263229EE45C00467956 /* tenedor.png in Resources */ = {isa = PBXBuildFile; fileRef = 413CB262229EE45C00467956 /* tenedor.png */; };
+		413CB265229EE82600467956 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413CB264229EE82600467956 /* DataManager.swift */; };
 		414308C92269EEA100F8881F /* HealthyMiPerfil2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414308C72269EEA100F8881F /* HealthyMiPerfil2ViewController.swift */; };
 		414308CA2269EEA100F8881F /* HealthyMiPerfil2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 414308C82269EEA100F8881F /* HealthyMiPerfil2ViewController.xib */; };
 		414E6C032263A27800EE02EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C022263A27800EE02EE /* AppDelegate.swift */; };
@@ -83,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		413CB262229EE45C00467956 /* tenedor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tenedor.png; sourceTree = "<group>"; };
+		413CB264229EE82600467956 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		414308C72269EEA100F8881F /* HealthyMiPerfil2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyMiPerfil2ViewController.swift; sourceTree = "<group>"; };
 		414308C82269EEA100F8881F /* HealthyMiPerfil2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthyMiPerfil2ViewController.xib; sourceTree = "<group>"; };
 		414E6BFF2263A27800EE02EE /* HealthyWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,6 +260,7 @@
 				41783BEC2268C80500C9EAF6 /* DataRoutine.swift */,
 				4192862B22651B2300953634 /* User.swift */,
 				62FE555822856C99004909B1 /* Dieta.swift */,
+				413CB264229EE82600467956 /* DataManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				414E6C032263A27800EE02EE /* AppDelegate.swift in Sources */,
 				41B8A854229327E900C09A9D /* DietaTableViewCell.swift in Sources */,
 				41783C002268C87100C9EAF6 /* VideoView.swift in Sources */,
+				413CB265229EE82600467956 /* DataManager.swift in Sources */,
 				41783BD82268C78C00C9EAF6 /* HealthyDietaTableViewController.swift in Sources */,
 				414E6C222263A2D600EE02EE /* PageCell.swift in Sources */,
 				62FA15E1229428CE00C846AC /* HealthyDietaCreadaViewController.swift in Sources */,

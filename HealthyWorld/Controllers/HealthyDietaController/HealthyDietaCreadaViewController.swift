@@ -20,6 +20,9 @@ class HealthyDietaCreadaViewController: UIViewController {
     
     @IBOutlet weak var image2: UIImageView!
     
+    @IBOutlet weak var labelObjetivo: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setViews()
@@ -38,6 +41,8 @@ class HealthyDietaCreadaViewController: UIViewController {
         self.image1.layer.cornerRadius = 10
         self.image2.layer.masksToBounds = true
         self.image2.layer.cornerRadius = 10
+        self.labelObjetivo.layer.masksToBounds = true
+        self.labelObjetivo.layer.cornerRadius = 10
     }
 
 
@@ -46,11 +51,11 @@ class HealthyDietaCreadaViewController: UIViewController {
         let alimentos = defaults.object(forKey: "arrayAlimentos") as! [String]
         for alimento in alimentos {
             self.textViewComida.text += "\t \(alimento)\n\n\n\n"
-            
         }
         self.textViewComida.font = UIFont(name: "Arial Rounded MT Bold", size: 17.0)
         self.textViewComida.textAlignment = .center
-        
+        let user = UserManager.instance.getUser(key: UserManager.kUserDefaultsKey)
+        self.labelObjetivo.text = user.objective
     }
     
     
