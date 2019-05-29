@@ -85,9 +85,9 @@ class SwipingController: UICollectionViewController,UICollectionViewDelegateFlow
     
     let pages = [
         Page(imageName: "nutricon", headerText: "Bienvenido a tu app saludable para dietas y rutinas!",bodyText: "Con esta nueva app podrás controlar tu salud de manera adecuada y en el momento que tú desees "),
-        Page(imageName: "fitnesscon", headerText: "El ejercicio es muy importante para tu salud!", bodyText: "Entrenar a diario contribuye a mejorar nuestro estado, tanto físico como mental"),
-        Page(imageName: "dormicon", headerText: "Nuestro descanso es imprescindible",bodyText: "Dormir todas las noches las horas necesarias nos ayudará a mejorar nuestra vida"),
-        Page(imageName: "jovecon", headerText: "Mantenerse sano y jóven siempre",bodyText: "Cumpliendo todos los objetivos mencionados anteriormente , la edad no será un impedimento para encontrarnos saludables y jóvenes toda nuestra vida")
+        Page(imageName: "pesanew", headerText: "El ejercicio es muy importante para tu salud!", bodyText: "Entrenar a diario contribuye a mejorar nuestro estado, tanto físico como mental"),
+        Page(imageName: "dormirNew", headerText: "Nuestro descanso es imprescindible",bodyText: "Dormir todas las noches las horas necesarias nos ayudará a mejorar nuestra vida"),
+        Page(imageName: "genteNew", headerText: "Mantenerse sano y jóven siempre",bodyText: "Cumpliendo todos los objetivos mencionados anteriormente , la edad no será un impedimento para encontrarnos saludables y jóvenes toda nuestra vida")
     ]
     
     

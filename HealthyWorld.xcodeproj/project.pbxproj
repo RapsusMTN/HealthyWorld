@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		413CB263229EE45C00467956 /* tenedor.png in Resources */ = {isa = PBXBuildFile; fileRef = 413CB262229EE45C00467956 /* tenedor.png */; };
 		413CB265229EE82600467956 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413CB264229EE82600467956 /* DataManager.swift */; };
+		413CB267229F094800467956 /* pesanew.png in Resources */ = {isa = PBXBuildFile; fileRef = 413CB266229F094800467956 /* pesanew.png */; };
+		413CB269229F0A2800467956 /* genteNew.png in Resources */ = {isa = PBXBuildFile; fileRef = 413CB268229F0A2700467956 /* genteNew.png */; };
+		413CB26B229F0A6500467956 /* dormirNew.png in Resources */ = {isa = PBXBuildFile; fileRef = 413CB26A229F0A6500467956 /* dormirNew.png */; };
 		414308C92269EEA100F8881F /* HealthyMiPerfil2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414308C72269EEA100F8881F /* HealthyMiPerfil2ViewController.swift */; };
 		414308CA2269EEA100F8881F /* HealthyMiPerfil2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 414308C82269EEA100F8881F /* HealthyMiPerfil2ViewController.xib */; };
 		414E6C032263A27800EE02EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C022263A27800EE02EE /* AppDelegate.swift */; };
@@ -54,7 +56,6 @@
 		41783C082268C8D300C9EAF6 /* buendia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41783C072268C8D300C9EAF6 /* buendia.mp4 */; };
 		417C96022299C7C90016479A /* RutinaDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417C96002299C7C90016479A /* RutinaDetalleViewController.swift */; };
 		417C96032299C7C90016479A /* RutinaDetalleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417C96012299C7C90016479A /* RutinaDetalleViewController.xib */; };
-		417C96052299C9710016479A /* pechoEjer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 417C96042299C9710016479A /* pechoEjer.jpg */; };
 		4192862922648D4200953634 /* HealthyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192862722648D4200953634 /* HealthyProfileViewController.swift */; };
 		4192862A22648D4200953634 /* HealthyProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4192862822648D4200953634 /* HealthyProfileViewController.xib */; };
 		4192862C22651B2300953634 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192862B22651B2300953634 /* User.swift */; };
@@ -83,8 +84,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		413CB262229EE45C00467956 /* tenedor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tenedor.png; sourceTree = "<group>"; };
 		413CB264229EE82600467956 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		413CB266229F094800467956 /* pesanew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pesanew.png; sourceTree = "<group>"; };
+		413CB268229F0A2700467956 /* genteNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = genteNew.png; sourceTree = "<group>"; };
+		413CB26A229F0A6500467956 /* dormirNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dormirNew.png; sourceTree = "<group>"; };
 		414308C72269EEA100F8881F /* HealthyMiPerfil2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyMiPerfil2ViewController.swift; sourceTree = "<group>"; };
 		414308C82269EEA100F8881F /* HealthyMiPerfil2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthyMiPerfil2ViewController.xib; sourceTree = "<group>"; };
 		414E6BFF2263A27800EE02EE /* HealthyWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,7 +135,6 @@
 		41783C072268C8D300C9EAF6 /* buendia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = buendia.mp4; sourceTree = "<group>"; };
 		417C96002299C7C90016479A /* RutinaDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RutinaDetalleViewController.swift; path = HealthyWorld/Controllers/HealthyRutinaViewController/RutinaDetalleViewController.swift; sourceTree = SOURCE_ROOT; };
 		417C96012299C7C90016479A /* RutinaDetalleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RutinaDetalleViewController.xib; path = HealthyWorld/Controllers/HealthyRutinaViewController/RutinaDetalleViewController.xib; sourceTree = SOURCE_ROOT; };
-		417C96042299C9710016479A /* pechoEjer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pechoEjer.jpg; sourceTree = "<group>"; };
 		4192862722648D4200953634 /* HealthyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyProfileViewController.swift; sourceTree = "<group>"; };
 		4192862822648D4200953634 /* HealthyProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthyProfileViewController.xib; sourceTree = "<group>"; };
 		4192862B22651B2300953634 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -229,8 +231,9 @@
 				414E6C022263A27800EE02EE /* AppDelegate.swift */,
 				414E6C062263A27800EE02EE /* Main.storyboard */,
 				414E6C0C2263A27900EE02EE /* Assets.xcassets */,
-				413CB262229EE45C00467956 /* tenedor.png */,
-				417C96042299C9710016479A /* pechoEjer.jpg */,
+				413CB268229F0A2700467956 /* genteNew.png */,
+				413CB26A229F0A6500467956 /* dormirNew.png */,
+				413CB266229F094800467956 /* pesanew.png */,
 				414E6C0E2263A27900EE02EE /* LaunchScreen.storyboard */,
 				414E6C112263A27900EE02EE /* Info.plist */,
 				414E6C092263A27800EE02EE /* HealthyWorld.xcdatamodeld */,
@@ -470,18 +473,20 @@
 				41603D362274CFA200FCE0BA /* HealthyDietaTableViewController.xib in Resources */,
 				41B7A54B2268D021000BD78D /* Podfile in Resources */,
 				414308CA2269EEA100F8881F /* HealthyMiPerfil2ViewController.xib in Resources */,
-				417C96052299C9710016479A /* pechoEjer.jpg in Resources */,
 				41783C052268C8AF00C9EAF6 /* HealthyProfile2ViewController.xib in Resources */,
 				62FA15E2229428CE00C846AC /* HealthyDietaCreadaViewController.xib in Resources */,
 				41B7A54E2268D021000BD78D /* Podfile.lock in Resources */,
 				4192862A22648D4200953634 /* HealthyProfileViewController.xib in Resources */,
+				413CB26B229F0A6500467956 /* dormirNew.png in Resources */,
 				41783BEA2268C7EE00C9EAF6 /* HealthyRutinaViewController.xib in Resources */,
 				41783BE52268C7CA00C9EAF6 /* RutinasCollectionViewController.xib in Resources */,
 				414E6C102263A27900EE02EE /* LaunchScreen.storyboard in Resources */,
 				41B7A54D2268D021000BD78D /* conejo.mp4 in Resources */,
 				414E6C0D2263A27900EE02EE /* Assets.xcassets in Resources */,
 				41783BDE2268C7AC00C9EAF6 /* DetailRutinaPage1ViewController.xib in Resources */,
+				413CB269229F0A2800467956 /* genteNew.png in Resources */,
 				417C96032299C7C90016479A /* RutinaDetalleViewController.xib in Resources */,
+				413CB267229F094800467956 /* pesanew.png in Resources */,
 				6207DFF622842EDD005CEE03 /* HeaderComidasTableViewCell.xib in Resources */,
 				41B8A855229327E900C09A9D /* DietaTableViewCell.xib in Resources */,
 				414F8544229C0622008C5965 /* RutinaDetalleCollectionViewCell.xib in Resources */,
@@ -494,7 +499,6 @@
 				414E6C082263A27800EE02EE /* Main.storyboard in Resources */,
 				41B7A54C2268D021000BD78D /* video2.mp4 in Resources */,
 				41783BFB2268C85600C9EAF6 /* RutinaDetailCustomView.xib in Resources */,
-				413CB263229EE45C00467956 /* tenedor.png in Resources */,
 				620B22C6227C65D00024F581 /* HealthyARViewController.xib in Resources */,
 				62FE555D22857A4A004909B1 /* HealthyMiDietaViewController.xib in Resources */,
 				62FE5554228564F0004909B1 /* CustomHeaderFood.xib in Resources */,
