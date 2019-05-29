@@ -10,21 +10,50 @@ import UIKit
 
 class HealthyDietaCreadaViewController: UIViewController {
 
+    @IBOutlet weak var labelTitle: UILabel!
+    
+    @IBOutlet weak var labelComidas: UILabel!
+    
+    @IBOutlet weak var textViewComida: UITextView!
+    
+    @IBOutlet weak var image1: UIImageView!
+    
+    @IBOutlet weak var image2: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setViews()
+        setFoodSavedInTextView()
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func setViews() {
+        self.labelTitle.layer.masksToBounds = true
+        self.labelTitle.layer.cornerRadius = 10
+        self.labelComidas.layer.masksToBounds = true
+        self.labelComidas.layer.cornerRadius = 10
+        self.textViewComida.layer.masksToBounds = true
+        self.textViewComida.layer.cornerRadius = 10
+        self.image1.layer.masksToBounds = true
+        self.image1.layer.cornerRadius = 10
+        self.image2.layer.masksToBounds = true
+        self.image2.layer.cornerRadius = 10
     }
-    */
+
+
+    func setFoodSavedInTextView() {
+        let defaults = UserDefaults.standard
+        let alimentos = defaults.object(forKey: "arrayAlimentos") as! [String]
+        for alimento in alimentos {
+            self.textViewComida.text += "\t \(alimento)\n\n\n\n"
+            
+        }
+        self.textViewComida.font = UIFont(name: "Arial Rounded MT Bold", size: 17.0)
+        self.textViewComida.textAlignment = .center
+        
+    }
+    
+    
+    
 
 }

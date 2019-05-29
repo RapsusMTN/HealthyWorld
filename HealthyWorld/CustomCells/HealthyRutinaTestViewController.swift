@@ -72,7 +72,6 @@ class HealthyRutinaTestViewController: UIViewController,UITableViewDelegate,UITa
         imageView.contentMode = .scaleAspectFit
         imageView.image = image
         self.navigationItem.titleView = imageView
-        
     }
     
     func configurateViews() {

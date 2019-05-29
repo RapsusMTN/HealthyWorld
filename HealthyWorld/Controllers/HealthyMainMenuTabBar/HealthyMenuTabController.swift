@@ -31,10 +31,7 @@ class HealthyMenuTabController: UITabBarController {
         perfilNavController.tabBarItem.image = UIImage(named: "iconName")
         
         //Crea el menu dietas
-        let dietaController = HealthyDietaTableViewController()
-        let dietaNav = UINavigationController(rootViewController: dietaController)
-        dietaNav.tabBarItem.title = "Dietas"
-        dietaNav.tabBarItem.image = UIImage(named: "food")
+        let vc = isDietaCreated()
         
         //Crea el menu ARHealthy
         let arcontroller = HealthyARViewController()
@@ -42,7 +39,7 @@ class HealthyMenuTabController: UITabBarController {
         navigationAR.tabBarItem.title = "AR Healthy"
         navigationAR.tabBarItem.image = UIImage(named: "iconAge")
         
-        viewControllers = [perfilNavController,dietaNav,rutinasNav,navigationAR]
+        viewControllers = [perfilNavController,vc,rutinasNav,navigationAR]
         
       
         
@@ -59,6 +56,22 @@ class HealthyMenuTabController: UITabBarController {
         
         
         
+    }
+    
+    func isDietaCreated() -> UIViewController {
+        let defaults = UserDefaults.standard
+        if defaults.object(forKey: "arrayAlimentos") != nil {
+            let vc = HealthyDietaCreadaViewController()
+            vc.tabBarItem.title = "Dietas"
+            vc.tabBarItem.image = UIImage(named: "food")
+            return vc
+        }else {
+            let dietaController = HealthyDietaTableViewController()
+            let dietaNav = UINavigationController(rootViewController: dietaController)
+            dietaNav.tabBarItem.title = "Dietas"
+            dietaNav.tabBarItem.image = UIImage(named: "food")
+            return dietaNav
+        }
     }
     
     

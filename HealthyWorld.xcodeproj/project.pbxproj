@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		413CB263229EE45C00467956 /* tenedor.png in Resources */ = {isa = PBXBuildFile; fileRef = 413CB262229EE45C00467956 /* tenedor.png */; };
 		414308C92269EEA100F8881F /* HealthyMiPerfil2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414308C72269EEA100F8881F /* HealthyMiPerfil2ViewController.swift */; };
 		414308CA2269EEA100F8881F /* HealthyMiPerfil2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 414308C82269EEA100F8881F /* HealthyMiPerfil2ViewController.xib */; };
 		414E6C032263A27800EE02EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C022263A27800EE02EE /* AppDelegate.swift */; };
@@ -81,6 +82,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		413CB262229EE45C00467956 /* tenedor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tenedor.png; sourceTree = "<group>"; };
 		414308C72269EEA100F8881F /* HealthyMiPerfil2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyMiPerfil2ViewController.swift; sourceTree = "<group>"; };
 		414308C82269EEA100F8881F /* HealthyMiPerfil2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthyMiPerfil2ViewController.xib; sourceTree = "<group>"; };
 		414E6BFF2263A27800EE02EE /* HealthyWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +227,7 @@
 				414E6C022263A27800EE02EE /* AppDelegate.swift */,
 				414E6C062263A27800EE02EE /* Main.storyboard */,
 				414E6C0C2263A27900EE02EE /* Assets.xcassets */,
+				413CB262229EE45C00467956 /* tenedor.png */,
 				417C96042299C9710016479A /* pechoEjer.jpg */,
 				414E6C0E2263A27900EE02EE /* LaunchScreen.storyboard */,
 				414E6C112263A27900EE02EE /* Info.plist */,
@@ -488,6 +491,7 @@
 				414E6C082263A27800EE02EE /* Main.storyboard in Resources */,
 				41B7A54C2268D021000BD78D /* video2.mp4 in Resources */,
 				41783BFB2268C85600C9EAF6 /* RutinaDetailCustomView.xib in Resources */,
+				413CB263229EE45C00467956 /* tenedor.png in Resources */,
 				620B22C6227C65D00024F581 /* HealthyARViewController.xib in Resources */,
 				62FE555D22857A4A004909B1 /* HealthyMiDietaViewController.xib in Resources */,
 				62FE5554228564F0004909B1 /* CustomHeaderFood.xib in Resources */,

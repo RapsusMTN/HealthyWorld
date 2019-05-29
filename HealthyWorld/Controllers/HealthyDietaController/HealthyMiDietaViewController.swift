@@ -51,10 +51,13 @@ class HealthyMiDietaViewController: UIViewController,UITableViewDelegate,UITable
         
         let alert = UIAlertController(title: "Crear Dieta", message: "¿Desea crear la dieta?", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { (UIAlertAction) in
-            print("Pressed")
+        //Save into user defaults
+            let defaults = UserDefaults.standard
+            defaults.set(self.alimentos, forKey: "arrayAlimentos")
         }
+        
         let cancelAction = UIAlertAction(title: "Cancelar", style: .default) { (UIAlertAction) in
-            print("Cancelado")
+            
         }
         alert.addAction(okAction)
         alert.addAction(cancelAction)
