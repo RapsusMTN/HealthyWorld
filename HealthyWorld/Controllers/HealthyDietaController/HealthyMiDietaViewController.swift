@@ -54,6 +54,8 @@ class HealthyMiDietaViewController: UIViewController,UITableViewDelegate,UITable
         //Save into user defaults
             let defaults = UserDefaults.standard
             defaults.set(self.alimentos, forKey: "arrayAlimentos")
+            let vc = HealthyMenuTabController()
+            self.present(vc, animated: true, completion: nil)
         }
         
         let cancelAction = UIAlertAction(title: "Cancelar", style: .default) { (UIAlertAction) in
